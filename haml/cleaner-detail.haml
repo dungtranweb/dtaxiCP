@@ -1,0 +1,401 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="cleaner-dashboard.html") Cleaner
+  %li.cp-breadcrumb-item
+    %a(href="cleaner-list-cleaner.html") List Cleaner
+  %li.cp-breadcrumb-item.active Cleaner Detail
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / General Information
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-summary.online
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/thang-tran.png" alt="User Avatar" )
+          .cp-detail-summary-info
+            .cp-typo-code CN5246
+            .cp-typo-name Thang Tran
+            .cp-typo-text Level 4
+      %hr
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Email:
+            %td thang.tran@nexx.vn
+          %tr
+            %td Date of Birth:
+            %td 15/10/1990
+          %tr
+            %td Gender:
+            %td
+              %i.cp-icn-male
+          %tr
+            %td Address:
+            %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+          %tr
+            %td Description:
+            %td Praesent consectetur ultrices tellus eu ultricies. Maecenas interdum magna et mollis lobortis. Fusce sed ultricies mauris. Quisque in purus vitae ex bibendum condimentum et in nisl.
+
+  / Service & Banking
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Service & Banking
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Rating:
+            %td
+              230
+              %i.cp-icn-star
+          %tr
+            %td Activity:
+            %td
+              .cp-btn-act.cp-booking-completed Completed
+          %tr
+            %td Verify:
+            %td Yes
+          %tr
+            %td Status:
+            %td Active
+          %tr
+            %td Training Level:
+            %td Training Level 3
+          %tr
+            %td Service Location:
+            %td HCM1 include District 1, District 3, District 11, District 5, District 10
+      %hr.cp-space-detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Bank Name:
+            %td HSBC
+          %tr
+            %td Bank Brand:
+            %td Ho Chi Minh City
+          %tr
+            %td Account Name:
+            %td Tran Duc Thang
+          %tr
+            %td Account Number:
+            %td 542369548721
+
+
+  / Relationship
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Relationship
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Refer To:
+            %td Ty Luu
+          %tr
+            %td Service Fee:
+            %td 1%
+      %hr.cp-space-detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td(colspan="3" )
+              .cp-label list cleaner invited
+          %tr
+            %td Thi Huynh
+            %td 2%
+          %tr
+            %td Anh Nguyen
+            %td 2%
+
+  / Address
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Address
+      .scrollable
+        %table.table.cp-table-list
+          %thead
+            %tr
+              %th &nbsp;
+              %th ADDRESS
+              %th COUNTRY
+              %th PROVINCE
+              %th DISTRICT
+              %th WARD
+              %th TYPE
+              %th STATUS
+          %tbody
+            %tr
+              %td
+                %input#chb-1(type="checkbox" checked disabled)
+                %label.checkbox(for="chb-1")
+              %td Him Lam Cho Lon
+              %td Viet Nam
+              %td Ho Chi Minh City
+              %td District 6
+              %td Ward 11
+              %td Home
+              %td Active
+            %tr
+              %td
+                %input#chb-2(type="checkbox" disabled)
+                %label.checkbox(for="chb-2")
+              %td 297/3 Ly Thuong Kiet
+              %td Viet Nam
+              %td Ho Chi Minh City
+              %td District 11
+              %td Ward 15
+              %td Girl Friend
+              %td Deactive
+            %tr
+              %td
+                %input#chb-3(type="checkbox" disabled)
+                %label.checkbox(for="chb-3")
+              %td 124 Tan Tho
+              %td Viet Nam
+              %td Ho Chi Minh City
+              %td Tan Binh
+              %td Ward 14
+              %td Unknown
+              %td Active
+
+  / Summary
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Summary
+      .scrollable
+        .cp-detail-container
+          .cp-column.cp-detail-onehaft
+            .cp-column-item
+              .cp-row
+                .cp-count-block
+                  %div &nbsp;
+                  %div 471
+                  %div Total Booking
+                .cp-count-block
+                  %div &nbsp;
+                  %div 346
+                  %div Completed Booking
+              .cp-row
+                .cp-count-block
+                  %div 17/09/2016 15:12:24
+                  %div 2
+                  %div Today Booking
+                .cp-count-block
+                  %div &nbsp;
+                  %div 12
+                  %div Cancelled Booking
+              .cp-row
+                .cp-count-block
+                  %div VND
+                  %div 17,500,000
+                  %div Total Income
+                .cp-count-block
+                  %div VND
+                  %div 2,820,000
+                  %div Total Service Fee
+              .cp-row
+                .cp-count-block
+                  %div VND
+                  %div +3,450,000
+                  %div Balance
+                .cp-count-block
+                  %div VND
+                  %div 840,000
+                  %div Today Earning
+            .cp-column-item
+              .cp-label rating & comment
+              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
+              %hr
+              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
+              %hr
+              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
+              %hr
+              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
+
+              %ul.cp-pagination
+                %li.cp-pagination-item
+                  %a.cp-pagination-link.disable(href="#") &laquo;
+                %li.cp-pagination-item
+                  %a.cp-pagination-link.active(href="#" ) 1
+                %li.cp-pagination-item
+                  %a.cp-pagination-link(href="#" ) 2
+                %li.cp-pagination-item
+                  %a.cp-pagination-link(href="#" ) 3
+                %li.cp-pagination-item
+                  %a.cp-pagination-link(href="#" ) 4
+                %li.cp-pagination-item
+                  %a.cp-pagination-link(href="#" ) 5
+                %li.cp-pagination-item
+                  %a.cp-pagination-link(href="#" ) &raquo;
+
+  / Document
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Document
+      .scrollable
+        .cp-detail-container
+          .cp-flex-inner
+            .cp-detail-onethird
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label identity card
+                %tr
+                  %td ID No.:
+                  %td 257456985
+                %tr
+                  %td Issue Date:
+                  %td 17/11/2005
+                %tr
+                  %td Issue By:
+                  %td HTPD
+              .cp-document-image
+                .cp-image-item
+                  .cp-label ID Front Image
+                  %img(src="../images/id-front.png" alt="ID front" )
+                .cp-image-item
+                  .cp-label ID Back Image
+                  %img(src="../images/id-back.png" alt="ID back" )
+
+            .cp-detail-onethird
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label insurance
+                %tr
+                  %td Insurance No.:
+                  %td 5693578451346
+                %tr
+                  %td Insurance Type:
+                  %td Health Care
+                %tr
+                  %td Effective Time:
+                  %td 11/09/2016 - 11/09/2017
+                %tr
+                  %td Issue By:
+                  %td Viet Nam Health Insurance
+              .cp-document-image
+                .cp-image-item
+                  .cp-label Insurance Front Image
+                  %img(src="../images/insurance-front.png" alt="/Insurance front" )
+                .cp-image-item
+                  .cp-label Insurance Back Image
+                  %img(src="../images/placeholder-document.png" alt="Insurance back" )
+
+            .cp-detail-onethird
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label certificate
+                %tr
+                  %td Certificate No.:
+                  %td 257456985
+                %tr
+                  %td Issue Date:
+                  %td 17/09/2016
+                %tr
+                  %td Issue By:
+                  %td Happy Clean
+              .cp-document-image
+                .cp-image-item
+                  .cp-label Certificate Image
+                  %img(src="../images/certificate.png" alt="Certificate" )
+
+  / System & Meta Data
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title System & Meta Data
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Join At:
+            %td 15/09/2016 12:19:22
+          %tr
+            %td Create At:
+            %td 10/09/2016 14:29:38
+          %tr
+            %td Create By:
+            %td Admin
+          %tr
+            %td Update At:
+            %td 21/09/2016 09:34:12
+          %tr
+            %td Update By:
+            %td Admin
+      %hr.cp-space-detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td os:
+            %td REL
+          %tr
+            %td version:
+            %td 1.0
+          %tr
+            %td platform:
+            %td android
+          %tr
+            %td deviceToken:
+            %td bb5ab0cf-e008-4c07-b5a4-6dc6e03e5b0e
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

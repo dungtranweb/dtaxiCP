@@ -1,0 +1,188 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item.active Customer Dashboard
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / Summary
+  .cp-flex-item.cp-flex-equal.cp-flex-1of4
+    .cp-flex-content.cp-card-count-block
+      %div &nbsp;
+      %div 471
+      %div Total Booking
+
+  .cp-flex-item.cp-flex-equal.cp-flex-1of4
+    .cp-flex-content.cp-card-count-block
+      %div &nbsp;
+      %div 346
+      %div Completed Booking
+
+  .cp-flex-item.cp-flex-equal.cp-flex-1of4
+    .cp-flex-content.cp-card-count-block
+      %div &nbsp;
+      %div 125
+      %div Cancelled Booking
+
+  .cp-flex-item.cp-flex-equal.cp-flex-1of4
+    .cp-flex-content.cp-card-count-block
+      %div VND
+      %div 60,000,000
+      %div Total Spending
+
+  / General Information
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-summary.online
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/hoang-giang.png" alt="Customer Avatar" )
+          .cp-detail-summary-info
+            .cp-typo-code CT854231
+            .cp-typo-name Hoang Giang
+            .cp-btn-act.cp-customer-waiting Waiting for Cleaner
+      %hr
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Email:
+            %td giang.hoang@nexx.vn
+          %tr
+            %td Date of Birth:
+            %td 15/10/1996
+          %tr
+            %td Gender:
+            %td
+              %i.cp-icn-male
+          %tr
+            %td Address:
+            %td 192 Le Van Viet, Ward 5, District 9, Ho Chi Minh City
+          %tr
+            %td Phone:
+            %td 0987254354
+          %tr
+            %td Join At:
+            %td 15/10/2016
+          %tr
+            %td Status:
+            %td Active
+
+  / Booking History
+  .cp-flex-item.cp-flex-2of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Booking History
+      .scrollable
+        %table.table.cp-table-list
+          %thead
+            %tr
+              %th &nbsp;
+              %th &nbsp;
+              %th ADDRESS
+              %th CLEANER
+              %th PRICE <br>(VND)
+              %th DATE
+              %th STATUS
+          %tbody
+            %tr
+              %td &nbsp;
+              %td 1
+              %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+              %td Ty Luu <br>0985745963
+              %td 250,000
+              %td 13/10/2016
+              %td Active
+            %tr
+              %td &nbsp;
+              %td 2
+              %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+              %td Ty Luu <br>0985745963
+              %td 250,000
+              %td 13/10/2016
+              %td Active
+            %tr
+              %td &nbsp;
+              %td 3
+              %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+              %td Ty Luu <br>0985745963
+              %td 250,000
+              %td 13/10/2016
+              %td Active
+            %tr
+              %td &nbsp;
+              %td 4
+              %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+              %td Ty Luu <br>0985745963
+              %td 250,000
+              %td 13/10/2016
+              %td Active
+            %tr
+              %td &nbsp;
+              %td 5
+              %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+              %td Ty Luu <br>0985745963
+              %td 250,000
+              %td 13/10/2016
+              %td Active
+
+        %ul.cp-pagination
+          %li.cp-pagination-item
+            %a.cp-pagination-link.disable(href="#") &laquo;
+          %li.cp-pagination-item
+            %a.cp-pagination-link.active(href="#" ) 1
+          %li.cp-pagination-item
+            %a.cp-pagination-link(href="#" ) 2
+          %li.cp-pagination-item
+            %a.cp-pagination-link(href="#" ) 3
+          %li.cp-pagination-item
+            %a.cp-pagination-link(href="#" ) 4
+          %li.cp-pagination-item
+            %a.cp-pagination-link(href="#" ) 5
+          %li.cp-pagination-item
+            %a.cp-pagination-link(href="#" ) &raquo;
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

@@ -1,0 +1,104 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item.active Cleaner Dashboard
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex.cp-cleaner-dashboard
+  / Total Cleaner
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Total Cleaner
+
+      .cp-dashboard
+        %i.cp-icn-total-cleaner
+        .cp-typo-dashboard-count 175
+        .cp-typo-dashboard-title Cleaner
+
+  / Cleaner Status
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Cleaner Status
+
+      .cp-dashboard
+        .cp-chart-pie
+          %canvas#cleaner-status(width="200" height="200" )
+
+  / System Status
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title System Status
+
+      .cp-dashboard
+        .cp-chart-doughnut
+          %canvas#cleaner-system-status(width="200" height="200" )
+          .cp-dashboard-icn-center
+            %i.cp-icn-active-cleaner
+        .cp-typo-dashboard-subcount 70
+        .cp-typo-code Active Cleaner
+
+  // New Cleaner
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title New Cleaner
+        .cp-card-config
+          .btn-group.cp-btn-group
+            %button.btn.cp-btn-white(type="button" ) Year
+            %button.btn.cp-btn-white(type="button" ) Month
+            %button.btn.cp-btn-white.active(type="button" ) Week
+
+      .cp-dashboard
+        .cp-chart-full
+          %canvas#cleaner-new-cleaner(width="1200" height="500" )
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

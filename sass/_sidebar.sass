@@ -1,0 +1,75 @@
+/* Sidebar
+ * =======
+aside#sidebar
+  background: image-url('sidebar-bg.png') repeat center center
+  width: 190px
+  height: 100%
+  display: block
+  position: fixed
+  top: 0
+  .sidebar-nav
+    background-color: rgba($login, 0.95)
+    width: 100%
+    height: 100%
+    border-right: 2px solid rgba($login, 0.95)
+    padding-bottom: 70px
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+      li
+        display: block
+        a
+          text-align: left
+          padding: 15px 10px 15px 20px
+          font-size: rem(14px)
+          font-weight: 400
+          color: white
+          text-decoration: none
+          display: block
+          outline: none
+          &:hover,
+          &:focus,
+          &:active
+            outline: none
+            font-weight: 600
+          span
+            display: inline-block
+            width: 105px
+        .active-alone
+          &:focus,
+          &:active
+            background-color: rgba($background, 0.15)
+      ul a
+        padding-left: 65px
+        &:hover,
+        &:focus,
+        &:active
+          background-color: rgba($background, 0.15)
+
+    .user-info
+      padding-top: 70px
+      margin-bottom: 10px
+      text-align: center
+      .cp-avatar-container
+        margin: 0 auto 5px auto
+      #user-name
+        font-size: rem(16px)
+        font-weight: 600
+        text-align: center
+        span
+          display: inline-block
+          width: 135px
+      ul#user-menu-item
+        li a
+          padding-left: 20px
+          span
+            display: inline-block
+            width: 120px
+    .icn-left
+      vertical-align: top
+      padding-right: 30px
+    .icn-right
+      float: right
+      margin-top: 10px
+      padding-right: 15px

@@ -1,0 +1,81 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="user-dashboard.html") User
+  %li.cp-breadcrumb-item
+    %a(href="user-list-user.html") List User
+  %li.cp-breadcrumb-item.active Change Password
+/ End Breadcrumb
+
+/ Float Container
+%form.cp-float-container.clearfix(method="post" enctype="multipart/form-data" )
+  .cp-float-item-13.cp-card.cp-left
+    %header
+      .cp-card-title
+        .cp-typo-title Change Password
+
+    .cp-card-content
+      %table.cp-card-detail
+        %tr
+          %td Name:
+          %td Lady Killer
+        %tr
+          %td Email:
+          %td lady_killer@nexx.vn
+        %tr
+          %td Role:
+          %td Admin
+        %tr
+          %td Position:
+          %td Boss
+
+      .cp-label password
+      %input(type="password" placeholder="Enter password" )
+      .cp-label retype password
+      %input(type="password" placeholder="Retype password" )
+      %button.cp-btn.cp-btn-success(type="submit" ) Create
+
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

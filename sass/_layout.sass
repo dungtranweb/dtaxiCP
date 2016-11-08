@@ -1,0 +1,120 @@
+// Define Layout Using Float
+// =========================
+.cp-float-container
+  width: 100%
+  height: auto
+
+.cp-left
+  float: left
+
+.cp-right
+  float: right
+
+.cp-clear
+  clear: both
+
+//@for $i from 1 through 3
+//  .cp-float-item-s#{$i}
+//    background-color: white
+//    margin-left: 30px
+//    margin-bottom: 30px
+//    border: 1px solid $line
+//    width: (1170px - (30px * $i)) / $i
+//    +border-radius(7px)
+
+@for $i from 1 through 4
+  @for $j from 1 through 4
+    @if (($i == $j) and ($j == 1)) or ($i < $j)
+      .cp-float-item-#{$i}#{$j}
+        background-color: white
+        margin-bottom: 30px
+        border: 1px solid $line
+        width: ((1170px / $j) * $i) - 30px
+        +border-radius(7px)
+
+// Define Layout Using Column
+// ==========================
+.cp-column
+  +column-count(2)
+  +column-width(440px)
+  +column-gap(30px)
+  width: 100%
+  margin: 0 auto
+  .cp-column-item
+    display: inline-block
+    width: 100%
+    background-color: white
+    margin-bottom: 26px
+    border: 1px solid $line
+    +border-radius(7px)
+    +column-break-inside(avoid)
+    &.cp-cutout
+      margin-bottom: 0
+      @media (max-width: 1160px)
+        margin-bottom: 26px
+  .cp-column-item-fake
+    width: 100%
+    visibility: hidden
+
+// Define Layout Using Flexbox
+// ===========================
+.cp-flex
+  +display-flex(flex)
+  +flex-flow(row wrap)
+  padding: 0
+  margin: 0 0 0 -30px
+  .cp-flex-item
+    padding: 0 0 30px 30px
+    +flex(1)
+    .cp-flex-content
+      width: 100%
+      overflow: hidden
+      background-color: white
+      border: 1px solid $line
+      +border-radius(7px)
+  .cp-flex-1of1
+    width: 100%
+    +flex(none !important)
+    .scrollable
+      overflow-y: auto
+      width: 100%
+      table.cp-table-list
+        min-width: 1000px
+      .cp-detail-onehaft
+        min-width: 550px
+        &.cp-column
+          +column-width(510px)
+          .cp-column-item
+            border: none
+  .cp-flex-1of2
+    width: 50%
+    +flex(none !important)
+    @media (max-width: 1100px)
+      width: 100%
+  .cp-flex-1of3
+    width: (100% / 3)
+    +flex(none !important)
+    @media (max-width: 1100px)
+      width: 100%
+  .cp-flex-1of4
+    width: (100% / 4)
+    +flex(none !important)
+    @media (max-width: 1100px)
+      width: 100%
+  .cp-flex-2of3
+    width: (100% / 3 * 2)
+    +flex(none !important)
+    @media (max-width: 1100px)
+      width: 100%
+
+.cp-flex-equal
+  +display-flex(flex)
+
+.cp-flex-inner
+  +display-flex(flex)
+  +flex-flow(row wrap)
+  +justify-content(space-between)
+
+.cp-flex-center
+  +display-flex(flex)
+  +justify-content(center)

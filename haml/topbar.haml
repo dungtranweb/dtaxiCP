@@ -1,0 +1,77 @@
+%nav#topbar.navbar.navbar-light
+  %a.navbar-brand(href="#" )
+    .switch
+      %input#switch-sidebar.switch-toggle.switch-toggle-round(type="checkbox" checked )
+      %label(for="switch-sidebar")
+    %img(src="../images/logo.png" alt="Logo of GVN")
+  %ul#topbar-right.nav.navbar-nav.cp-right
+    %li.nav-item.dropdown
+      %a.nav-link.dropdown-toggle#noti-topbar(data-toggle="dropdown" href="#" aria-haspopup="true" )
+        %i.cp-icn-noti-topbar.icn-noti
+        .noti-bubble 10
+      %ul.dropdown-menu.dropdown-menu-right.dropdown-messages(aria-labelledby="#noti-topbar")
+        %li.dropdown-item
+          .topbar-wraplink
+            %div
+              %strong Johnny Depp
+              %em.pull-xs-right 14:30
+            %div This is a message for just one who has right to read it. If you're not that one, please don't read it.
+            %a.topbar-link(href="#" )
+        %hr
+        %li.dropdown-item
+          .topbar-wraplink
+            %div
+              %strong Benedict Cumberbatch
+              %em.pull-xs-right 10:30
+            %div This is a message for just one who has right to read it. If you're not that one, please don't read it.
+            %a.topbar-link(href="#" )
+        %hr
+        %li.dropdown-item
+          .topbar-wraplink
+            %div
+              %strong Elon Musk
+              %em.pull-xs-right Yesterday
+            %div This is a message for just one who has right to read it. If you're not that one, please don't read it.
+            %a.topbar-link(href="#" )
+        %hr
+        %li.dropdown-item
+          .topbar-wraplink.read-more
+            %strong Read All Messages
+            %a.topbar-link(href="#" )
+
+    %li.nav-item.dropdown
+      %a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#")
+        %i.cp-icn-config-topbar
+      %ul.dropdown-menu.dropdown-menu-right
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-config-topbar-small icn-left"></i> Configuration 1
+            %a.topbar-link(href="#")
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-config-topbar-small icn-left"></i> Configuration 2
+            %a.topbar-link(href="#")
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-config-topbar-small icn-left"></i> Configuration 3
+            %a.topbar-link(href="#")
+    %li.nav-item.dropdown
+      %a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#")
+        %i.cp-icn-setting-topbar
+      %ul.dropdown-menu.dropdown-menu-right
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-en-flag icn-left"></i> English
+            %a.topbar-link(href="#")
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-setting-topbar-small icn-left"></i> Setting 2
+            %a.topbar-link(href="#")
+        %li.dropdown-item
+          .topbar-wraplink
+            %div <i class="cp-icn-setting-topbar-small icn-left"></i> Setting 3
+            %a.topbar-link(href="#")
+
+
+
+

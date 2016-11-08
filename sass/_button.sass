@@ -1,0 +1,100 @@
+// Define Button Style
+// ===================
+
+// Button Action
+// =============
+$list-btn: trans upload instant primary danger success deactive warning
+$list-btn-color: transparent $primaryText $purple $primary $red $blue $primaryText $orange
+$btn-style-list: zip($list-btn, $list-btn-color)
+
+%cp-btn,
+.cp-btn
+  height: 40px
+  padding: 10px 40px
+  border: none
+  outline: none
+  color: white
+  cursor: pointer
+  font-size: rem(16px)
+  line-height: rem(16px)
+  +border-radius(3px)
+  +box-shadow(none)
+  &:focus,
+  &:active
+    outline: none
+    +box-shadow(none)
+
+@each $btn in $btn-style-list
+  .cp-btn-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+    border: 1px solid darken(nth($btn, 2), 5%)
+    &:hover,
+    &:focus
+      background-color: darken(nth($btn, 2), 3%)
+
+.cp-btn-white
+  background-color: white
+  border: 1px solid $line
+  &:hover,
+  &:focus,
+  &.active
+    background-color: $background
+    border-color: darken($background, 10%)
+
+
+.cp-btn-group .cp-btn-white
+  padding: 8px 20px
+  font-size: rem(16px)
+  font-weight: 300
+  color: $primaryText
+  +border-radius(5px)
+
+
+
+.cp-btn-upload
+  width: 162px !important
+  margin-top: 5px
+
+.cp-btn-close
+  background-color: transparent
+  border: none
+  +box-shadow(none)
+  &:hover,
+  &:focus,
+  &:active
+    outline: none
+
+
+// Button Activities
+// =========================
+.cp-btn-act
+  padding: 3px 10px
+  color: white
+  text-align: center
+  display: inline-block
+  +border-radius(3px)
+
+$list-cleaner-act: available accept inprogress outbalance
+$list-cleaner-color: $primary $pink $purple $primaryText
+$btn-cleaner-act: zip($list-cleaner-act, $list-cleaner-color)
+
+@each $btn in $btn-cleaner-act
+  .cp-cleaner-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+
+$list-customer-act: available create-booking waiting is-serving
+$list-customer-color: $primary $lightRed $purple $blue
+$btn-customer-act: zip($list-customer-act, $list-customer-color)
+
+@each $btn in $btn-customer-act
+  .cp-customer-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+
+$list-booking-act: new accepted approved inprogress completed cancelled expired rating
+$list-booking-color: $primary $pink $lightRed $purple $blue $red $primaryText $brandText
+$btn-booking-act: zip($list-booking-act, $list-booking-color)
+
+@each $btn in $btn-booking-act
+  .cp-booking-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+

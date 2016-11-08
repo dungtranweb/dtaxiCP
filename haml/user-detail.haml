@@ -1,0 +1,97 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="user-dashboard.html") User
+  %li.cp-breadcrumb-item
+    %a(href="user-list-user.html") List User
+  %li.cp-breadcrumb-item.active User Detail
+/ End Breadcrumb
+
+/ Float Container
+\<div class="cp-float-container clearfix">
+
+.cp-float-item-13.cp-card.cp-left
+  %header
+    .cp-card-summary.online
+      .cp-detail-avatar
+        .cp-image-rec90
+          %img(src="../images/lady-killer.png" alt="User Avatar" )
+      .cp-detail-summary-info
+        .cp-typo-code &nbsp;
+        .cp-typo-name Lady Killer
+        .cp-typo-text Admin
+  %hr
+  .cp-detail-container
+    %table.cp-card-detail
+      %tr
+        %td Email:
+        %td lady_killer@nexx.vn
+      %tr
+        %td Date of Birth:
+        %td 15/10/1991
+      %tr
+        %td Gender:
+        %td
+          %i.cp-icn-female
+      %tr
+        %td Address:
+        %td 123 Heaven Valley, Earth, Galaxy
+      %tr
+        %td Phone:
+        %td 01234567890
+      %tr
+        %td Position:
+        %td Boss
+      %tr
+        %td Status:
+        %td Active
+      %tr
+        %td Create:
+        %td 11/10/2016
+      %tr
+        %td Description:
+        %td I'm your boss, I'm the best and I like SM
+\</div>
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
