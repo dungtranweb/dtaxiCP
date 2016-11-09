@@ -11,7 +11,7 @@
   #board-wrap
     .board-login
       .title
-        %div Admin Control Panel
+        %div DTaxi Control Panel
         %div Sign In
         %img(src="../images/login/lock.png" alt="Lock icon")
       %form.form-login
@@ -27,8 +27,8 @@
         .space
         %input#chb-login(type="checkbox")
         %label#checkbox-login.checkbox(for="chb-login") Remember me
-
         %input(type="submit" name="submit" value="ACCESS")
+    .board-image
 
 = Haml::Engine.new(File.read('footer.haml')).render
 
