@@ -94,7 +94,7 @@ input.switch-toggle-round + label:after
   +transition(margin 0.4s)
 
 input.switch-toggle-round:checked + label:before
-  background-color: #8ce196
+  background-color: #fcb040
 
 input.switch-toggle-round:checked + label:after
   margin-left: 30px
@@ -153,9 +153,9 @@ select
   &:hover
     border-color: $inputText
   &:focus
-    border-color: rgba($primary, 0.6)
+    border-color: rgba($primary, 0.3)
     outline: none
-    +box-shadow(inset 0 1px 1px rgba($primary, 0.075), 0 0 8px rgba($primary, 0.6))
+    +box-shadow(inset 0 1px 1px rgba($primary, 0.075), 0 0 8px rgba($primary, 0.3))
 
 textarea
   height: 115px
@@ -188,7 +188,7 @@ form
     background-position-y: 12px
   .fake-input
     width: 100%
-    height: 40px
+    height: 42px
     background-color: $background
     border: 1px solid rgba($inputText, 0.6)
     +border-radius(3px)

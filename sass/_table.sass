@@ -32,8 +32,7 @@ table.cp-table-list
         width: 320px
     tr.filter td
       border: none
-      padding-left: 10px
-      padding-bottom: 10px
+      padding: 10px 0 10px 10px
       &:nth-child(2)
         padding-left: 0
       input[type="text"]
@@ -52,11 +51,11 @@ table.cp-table-list
         &.cp-input-s1
           width: 65px
         &.cp-input-s2
-          width: 95px
+          width: 160px
         &.cp-input-s3
-          width: 120px
+          width: 210px
         &.cp-input-s4
-          width: 165px
+          width: 320px
       select
         border: none
         border-bottom: 1px solid rgba($primaryText, 0.4)
@@ -64,7 +63,7 @@ table.cp-table-list
         background-position-x: right
         background-position-y: 8px
         font-weight: 400
-        padding: 0 15px 4px 15px
+        padding: 0 15px 2px 15px
         font-size: rem(12px)
         text-transform: capitalize
         +box-shadow(none)
@@ -83,6 +82,9 @@ table.cp-table-list
     tr
       &.cp-highlight
         color: $red
+        span.subtext
+          font-size: rem(10px)
+          color: lighten($red, 20%)
       &:hover
         background-color: rgba($hover, 0.05)
       &:first-child td
@@ -92,15 +94,21 @@ table.cp-table-list
         font-size: rem(12px)
         font-weight: 400
         padding: 10px 0 10px 10px
+        span.subtext
+          font-size: rem(10px)
+          color: lighten($primaryText, 25%)
         &:nth-child(2)
           padding-left: 0
         &.online
-          border-left: 10px solid $blue
+          border-left: 10px solid $green
         &.action
           width: 90px
           padding-right: 30px
         &.action-second
           width: 90px
+        &.action-third
+          width: 90px
+          padding-right: 20px
         &.cell-center
           text-align: center
         a.btn-list
@@ -135,4 +143,3 @@ table.cp-card-detail
         text-align: right
       .cp-label
         padding-bottom: 6px
-

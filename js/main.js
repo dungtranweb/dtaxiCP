@@ -41,12 +41,12 @@ $(document).ready(function () {
 
 // Setup NiceScroll plugin
 // =======================
-    $('html').niceScroll({
-        cursorcolor: 'rgba(33, 119, 86 , 0.6)',
-        cursorborder: 'none',
-        scrollspeed: 30,
-        mousescrollstep: 50
-    });
+//     $('html').niceScroll({
+//         cursorcolor: 'rgba(38, 34, 98, 0.9)',
+//         cursorborder: 'none',
+//         scrollspeed: 30,
+//         mousescrollstep: 50
+//     });
     $('.sidebar-nav').niceScroll({
         cursorcolor: 'rgba(238, 238, 238 , 0.2)',
         cursorborder: 'none'

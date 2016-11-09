@@ -1,28 +1,34 @@
-// Cleaner Charts
+// Driver Charts
 // ==============
 
-    // Cleaner Status
-var cleanerStatus = $("#cleaner-status");
-var cleanerStatusData= {
+    // Driver Status
+var driverStatus = $("#driver-status");
+var driverStatusData= {
     labels: [
+        "Offline",
         "Available",
-        "Accepted",
-        "In Progress"
+        "On Trip",
+        "On Way",
+        "On Hold",
+        "Blocked"
     ],
     datasets: [
         {
-            data: [20, 50, 105],
+            data: [20, 450, 105, 94, 162, 15],
             backgroundColor: [
-                "#3c57a7",
-                "#77C044",
-                "#e13370"
+                "#666666",
+                "#76c044",
+                "#00d2ff",
+                "#e85324",
+                "#fcb040",
+                "#ee1414"
             ]
         }
     ]
 };
-var cleanerStatusChart= new Chart(cleanerStatus, {
+var driverStatusChart= new Chart(driverStatus, {
     type: 'pie',
-    data: cleanerStatusData,
+    data: driverStatusData,
     options: {
         legend: {
             display: true,
@@ -40,9 +46,9 @@ var cleanerStatusChart= new Chart(cleanerStatus, {
     }
 });
 
-    // Cleaner System Status
-var cleanerSystemStatus = $("#cleaner-system-status");
-var cleanerSystemStatusData= {
+    // Driver System Status
+var driverSystemStatus = $("#driver-system-status");
+var driverSystemStatusData= {
     labels: [
         "Active",
         "Deactive",
@@ -59,9 +65,9 @@ var cleanerSystemStatusData= {
         }
     ]
 };
-var cleanerSystemStatusChart= new Chart(cleanerSystemStatus, {
+var driverSystemStatusChart= new Chart(driverSystemStatus, {
     type: 'doughnut',
-    data: cleanerSystemStatusData,
+    data: driverSystemStatusData,
     options: {
         legend: {
             display: false
@@ -75,9 +81,9 @@ var cleanerSystemStatusChart= new Chart(cleanerSystemStatus, {
     }
 });
 
-    // New Cleaner
-var cleanerNewCleaner = $("#cleaner-new-cleaner");
-var cleanerNewCleanerData= {
+    // New Driver
+var driverNewDriver = $("#driver-new-driver");
+var driverNewDriverData= {
     labels: [
         "Monday",
         "Tuesday",
@@ -90,31 +96,31 @@ var cleanerNewCleanerData= {
     datasets: [
         {
             data: [5, 7, 12, 2, 3, 8, 5],
-            label: "New Cleaner",
+            label: "New Driver",
             fill: false,
             lineTension: 0.1,
             borderWidth: 3,
-            borderColor: "#77C044",
+            borderColor: "#262262",
             borderCapStyle: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: "#eeeeee",
-            pointBackgroundColor: "#77C044",
+            pointBorderColor: "#e6e6e6",
+            pointBackgroundColor: "#333471",
             pointBorderWidth: 2,
             pointBorderRadius: 2,
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: "#217756",
-            pointHoverBorderColor: "#b0d553",
+            pointHoverBackgroundColor: "#3b3957",
+            pointHoverBorderColor: "#e6e6e6",
             pointHoverBorderWidth: 3,
             pointHitRadius: 10,
             spanGaps: false
         }
     ]
 };
-var cleanerNewCleanerChart= new Chart(cleanerNewCleaner, {
+var driverNewDriverChart= new Chart(driverNewDriver, {
     type: 'line',
-    data: cleanerNewCleanerData,
+    data: driverNewDriverData,
     options: {
         legend: {
             display: false

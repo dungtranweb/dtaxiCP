@@ -26,33 +26,33 @@
 %ol.cp-breadcrumb
   %li.cp-breadcrumb-item
     %a(href="index.html") Home
-  %li.cp-breadcrumb-item.active Cleaner Dashboard
+  %li.cp-breadcrumb-item.active Driver Dashboard
 / End Breadcrumb
 
 / Flexbox Layout
-.cp-flex.cp-cleaner-dashboard
-  / Total Cleaner
+.cp-flex.cp-driver-dashboard
+  / Total Driver
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Total Cleaner
+          .cp-typo-title Total Driver
 
       .cp-dashboard
-        %i.cp-icn-total-cleaner
-        .cp-typo-dashboard-count 175
-        .cp-typo-dashboard-title Cleaner
+        %i.cp-icn-total-driver
+        .cp-typo-dashboard-count 1725
+        .cp-typo-dashboard-title Driver
 
-  / Cleaner Status
+  / Driver Status
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Cleaner Status
+          .cp-typo-title Driver Status
 
       .cp-dashboard
         .cp-chart-pie
-          %canvas#cleaner-status(width="200" height="200" )
+          %canvas#driver-status(width="200" height="200" )
 
   / System Status
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
@@ -63,18 +63,18 @@
 
       .cp-dashboard
         .cp-chart-doughnut
-          %canvas#cleaner-system-status(width="200" height="200" )
+          %canvas#driver-system-status(width="200" height="200" )
           .cp-dashboard-icn-center
-            %i.cp-icn-active-cleaner
-        .cp-typo-dashboard-subcount 70
-        .cp-typo-code Active Cleaner
+            %i.cp-icn-active-driver
+        .cp-typo-dashboard-subcount 700
+        .cp-typo-code Active Driver
 
-  // New Cleaner
+  // New Driver
   .cp-flex-item.cp-flex-1of1
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title New Cleaner
+          .cp-typo-title New Driver
         .cp-card-config
           .btn-group.cp-btn-group
             %button.btn.cp-btn-white(type="button" ) Year
@@ -83,7 +83,7 @@
 
       .cp-dashboard
         .cp-chart-full
-          %canvas#cleaner-new-cleaner(width="1200" height="500" )
+          %canvas#driver-new-driver(width="1200" height="500" )
 / End Flexbox Layout
 
 \</div>
@@ -101,4 +101,3 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-

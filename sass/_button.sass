@@ -74,12 +74,12 @@ $btn-style-list: zip($list-btn, $list-btn-color)
   display: inline-block
   +border-radius(3px)
 
-$list-cleaner-act: available accept inprogress outbalance
-$list-cleaner-color: $primary $pink $purple $primaryText
-$btn-cleaner-act: zip($list-cleaner-act, $list-cleaner-color)
+$list-driver-act: available offline ontrip onway onhold blocked
+$list-driver-color: $green $primaryText $blue $lightRed $orange $red
+$btn-driver-act: zip($list-driver-act, $list-driver-color)
 
-@each $btn in $btn-cleaner-act
-  .cp-cleaner-#{nth($btn, 1)}
+@each $btn in $btn-driver-act
+  .cp-driver-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
 $list-customer-act: available create-booking waiting is-serving
@@ -90,11 +90,11 @@ $btn-customer-act: zip($list-customer-act, $list-customer-color)
   .cp-customer-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
-$list-booking-act: new accepted approved inprogress completed cancelled expired rating
-$list-booking-color: $primary $pink $lightRed $purple $blue $red $primaryText $brandText
-$btn-booking-act: zip($list-booking-act, $list-booking-color)
+$list-trip-act: new accepted approved inprogress completed cancelled expired rating
+$list-trip-color: $primary $pink $lightRed $purple $blue $red $primaryText $brandText
+$btn-trip-act: zip($list-trip-act, $list-trip-color)
 
-@each $btn in $btn-booking-act
-  .cp-booking-#{nth($btn, 1)}
+@each $btn in $btn-trip-act
+  .cp-trip-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 

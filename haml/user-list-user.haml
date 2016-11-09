@@ -37,7 +37,7 @@
       .cp-modal-header
         %i.cp-icn-modal-warning
         .cp-modal-title Are you sure?
-        .cp-modal-subtitle You will not able to recover this cleaner!
+        .cp-modal-subtitle You will not able to recover this item!
       .cp-modal-footer
         %button.cp-btn.cp-btn-danger(type="button" ) Yes
         %button.cp-btn.cp-btn-success(type="button" data-dismiss="modal" ) No
@@ -76,7 +76,7 @@
             %th &nbsp;
             %th &nbsp;
             %th &nbsp;
-            %th CODE
+            %th.cp-thead-small CODE
             %th NAME
             %th EMAIL
             %th DATE OF BIRTH
@@ -91,7 +91,7 @@
               %label.checkbox(for="chb-all")
             %td &nbsp;
             %td
-              %input.cp-input-s1(type="text")
+              %input(type="text")
             %td
               %input(type="text")
             %td
@@ -333,4 +333,3 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-

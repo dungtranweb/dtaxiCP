@@ -13,10 +13,10 @@ var userRoleData= {
         {
             data: [1, 2, 1, 8],
             backgroundColor: [
-                "#77C044",
-                "#40c7f1",
-                "#3c57a7",
-                "#e75425"
+                "#262262",
+                "#00d2ff",
+                "#fcb040",
+                "#e85324"
             ]
         }
     ]
@@ -53,9 +53,9 @@ var userSystemStatusData= {
         {
             data: [8, 2, 2],
             backgroundColor: [
-                "#77C044",
+                "#262262",
                 "#666666",
-                "#ed1c24"
+                "#ee1414"
             ]
         }
     ]
@@ -95,7 +95,7 @@ var userNewUserData= {
             fill: false,
             lineTension: 0.1,
             borderWidth: 3,
-            borderColor: "#40c7f1",
+            borderColor: "#00d2ff",
             borderCapStyle: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,

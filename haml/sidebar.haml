@@ -1,4 +1,5 @@
 %aside#sidebar
+  .sidebar-image
   .sidebar-nav(data-scollable)
     .user-info
       .cp-image-circle
@@ -32,16 +33,20 @@
           %li
             %a(href="user-configuration.html" )Configuration
       %li
-        %a(href="#" aria-expanded="false" ) <i class="cp-icn-cleaner icn-left"></i><span>Cleaner</span><i class="cp-icn-caret-down icn-right"></i>
+        %a(href="#" aria-expanded="false" ) <i class="cp-icn-driver icn-left"></i><span>Driver</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
           %li
-            %a(href="cleaner-dashboard.html" )Dashboard
+            %a(href="driver-dashboard.html" )Dashboard
           %li
-            %a(href="cleaner-list-cleaner.html" )List Cleaner
+            %a(href="driver-list-driver.html" )List Driver
           %li
-            %a(href="cleaner-create-cleaner.html" )Create Cleaner
+            %a(href="driver-create-driver.html" )Create Driver
           %li
-            %a(href="cleaner-configuration.html" )Configuration
+            %a(href="driver-create-driver.html" )Driver Group
+          %li
+            %a(href="driver-create-driver.html" )Driver Report
+          %li
+            %a(href="driver-configuration.html" )Configuration
       %li
         %a(href="#" aria-expanded="false" ) <i class="cp-icn-customer icn-left"></i><span>Customer</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
@@ -52,30 +57,49 @@
           %li
             %a(href="customer-create-customer.html" )Create Customer
           %li
+            %a(href="customer-list-customer.html" )Cancelation Reason
+          %li
+            %a(href="customer-create-customer.html" )Customer Report
+          %li
             %a(href="customer-configuration.html" )Configuration
       %li
-        %a(href="#" aria-expanded="false" ) <i class="cp-icn-booking icn-left"></i><span>Booking</span><i class="cp-icn-caret-down icn-right"></i>
+        %a(href="#" aria-expanded="false" ) <i class="cp-icn-trips icn-left"></i><span>Trips</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
           %li
-            %a(href="booking-dashboard.html" )Dashboard
+            %a(href="trip-dashboard.html" )Dashboard
           %li
-            %a(href="booking-new.html" )New
+            %a(href="trip-new.html" )New
           %li
-            %a(href="booking-approved.html" )Approved
+            %a(href="trip-approved.html" )Approved
           %li
-            %a(href="booking-in-progress.html" )In Progress
+            %a(href="trip-in-progress.html" )In Progress
           %li
-            %a(href="booking-completed.html" )Completed
+            %a(href="trip-completed.html" )Completed
           %li
-            %a(href="booking-cancelled.html" )Cancelled
+            %a(href="trip-cancelled.html" )Cancelled
           %li
-            %a(href="booking-expired.html" )Expired
+            %a(href="trip-complete.html" )Complete
           %li
-            %a(href="booking-complete.html" )Complete
+            %a(href="trip-cancel.html" )Cancel
           %li
-            %a(href="booking-cancel.html" )Cancel
+            %a(href="trip-configuration.html" )Configuration
+      %li
+        %a(href="#" aria-expanded="false" ) <i class="cp-icn-vehicle icn-left"></i><span>Vehicles</span><i class="cp-icn-caret-down icn-right"></i>
+        %ul(aria-expanded="false" )
           %li
-            %a(href="booking-configuration.html" )Configuration
+            %a(href="vehicle-dashboard.html" )Dashboard
+          %li
+            %a(href="vehicle-brand.html" )Brand
+          %li
+            %a(href="vehicle-model.html" )Model
+          %li
+            %a(href="vehicle-type.html" )Type
+          %li
+            %a(href="vehicle-list-vehicle.html" )List Vehicle
+          %li
+            %a(href="vehicle-create-vehicle.html" )Create Vehicle
+          %li
+            %a(href="vehicle-configuration.html" )Configuration
       %li
         %a(href="#" aria-expanded="false" ) <i class="cp-icn-notification icn-left"></i><span>Notification</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
@@ -90,24 +114,22 @@
           %li
             %a(href="noti-customer-devices.html" )Customer Devices
           %li
-            %a(href="noti-cleaner-devices.html" )Cleaner Devices
+            %a(href="noti-driver-devices.html" )driver Devices
           %li
             %a(href="noti-configuration.html" )Configuration
       %li
-        %a(href="#" aria-expanded="false" ) <i class="cp-icn-service icn-left"></i><span>Location & Service</span><i class="cp-icn-caret-down icn-right"></i>
+        %a(href="#" aria-expanded="false" ) <i class="cp-icn-service icn-left"></i><span>Fare & Service</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
           %li
             %a(href="service-dashboard.html" )Dashboard
           %li
-            %a(href="service-training-level.html" )Training Level
+            %a(href="service-training-level.html" )Service Type
           %li
-            %a(href="service-cleaner-level.html" )Cleaner Level
+            %a(href="service-driver-level.html" )Create Service Type
           %li
-            %a(href="service-categories.html" )Service Categories
+            %a(href="service-categories.html" )Location & Fare
           %li
-            %a(href="service-create-category.html" )Create Category
-          %li
-            %a(href="service-manager.html" )Service Manager
+            %a(href="service-create-category.html" )Create Location
           %li
             %a(href="service-configuration.html" )Configuration
       %li
@@ -116,7 +138,7 @@
           %li
             %a(href="finance-dashboard.html" )Dashboard
           %li
-            %a(href="finance-cleaner-transaction.html" )Cleaner Transaction
+            %a(href="finance-driver-transaction.html" )driver Transaction
           %li
             %a(href="finance-deposit.html" )Deposit
           %li
@@ -181,7 +203,7 @@
           %li
             %a(href="#" )Configuration
       %li
-        %a(href="#" aria-expanded="false" ) <i class="cp-icn-online-register icn-left"></i><span>Online Register Cleaner</span><i class="cp-icn-caret-down icn-right"></i>
+        %a(href="#" aria-expanded="false" ) <i class="cp-icn-online-register icn-left"></i><span>Online Register Driver</span><i class="cp-icn-caret-down icn-right"></i>
         %ul(aria-expanded="false" )
           %li
             %a(href="#" )Dashboard
