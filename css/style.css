@@ -2939,6 +2939,7 @@ aside#sidebar {
   position: fixed;
   top: 0;
   background-color: rgba(38, 34, 98, 0.95);
+  outline: none;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVkMzI5NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI2MjI2MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d3297), color-stop(100%, #262262));
@@ -2946,35 +2947,36 @@ aside#sidebar {
   background-image: -webkit-linear-gradient(top, #5d3297 0%, #262262 100%);
   background-image: linear-gradient(to bottom, #5d3297 0%, #262262 100%);
 }
-/* line 11, ../sass/_sidebar.sass */
+/* line 12, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-image {
-  height: 100%;
+  height: 1100px;
   width: 100%;
   opacity: 0.05;
-  background: url('../images/sidebar-bg.png?1476365216') repeat center center;
+  background: url('../images/sidebar-bg.png?1476365216') repeat top center;
+  overflow: hidden;
 }
-/* line 16, ../sass/_sidebar.sass */
+/* line 18, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav {
   border-right: 2px solid rgba(38, 34, 98, 0.95);
-  padding-bottom: 70px;
-  z-index: 999;
+  z-index: 200;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  padding-bottom: 200px;
 }
-/* line 21, ../sass/_sidebar.sass */
+/* line 23, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 25, ../sass/_sidebar.sass */
+/* line 27, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul li {
   display: block;
 }
-/* line 27, ../sass/_sidebar.sass */
+/* line 29, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul li a {
   text-align: left;
   padding: 15px 10px 15px 20px;
@@ -2985,26 +2987,26 @@ aside#sidebar .sidebar-nav ul li a {
   display: block;
   outline: none;
 }
-/* line 36, ../sass/_sidebar.sass */
-aside#sidebar .sidebar-nav ul li a:hover, aside#sidebar .sidebar-nav ul li a:focus, aside#sidebar .sidebar-nav ul li a:active {
+/* line 38, ../sass/_sidebar.sass */
+aside#sidebar .sidebar-nav ul li a:hover, aside#sidebar .sidebar-nav ul li a:active {
   outline: none;
-  font-weight: 600;
+  background-color: rgba(238, 238, 238, 0.15);
 }
-/* line 41, ../sass/_sidebar.sass */
+/* line 42, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul li a span {
   display: inline-block;
   width: 105px;
 }
-/* line 45, ../sass/_sidebar.sass */
+/* line 46, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul li .active-alone:focus, aside#sidebar .sidebar-nav ul li .active-alone:active {
   background-color: rgba(238, 238, 238, 0.15);
 }
-/* line 48, ../sass/_sidebar.sass */
+/* line 49, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul ul a {
   padding-left: 65px;
 }
-/* line 50, ../sass/_sidebar.sass */
-aside#sidebar .sidebar-nav ul ul a:hover, aside#sidebar .sidebar-nav ul ul a:focus, aside#sidebar .sidebar-nav ul ul a:active {
+/* line 51, ../sass/_sidebar.sass */
+aside#sidebar .sidebar-nav ul ul a:hover, aside#sidebar .sidebar-nav ul ul a:active {
   background-color: rgba(238, 238, 238, 0.15);
 }
 /* line 55, ../sass/_sidebar.sass */
@@ -3047,6 +3049,21 @@ aside#sidebar .sidebar-nav .icn-right {
   float: right;
   margin-top: 10px;
   padding-right: 15px;
+}
+/* line 81, ../sass/_sidebar.sass */
+aside#sidebar .sidebar-nav .cp-bubble {
+  display: inline;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  height: 20px;
+  text-align: center;
+  padding: 2px 6px 3px 5px;
+  margin-left: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #00d2ff;
 }
 
 /* line 3, ../sass/_topbar.sass */

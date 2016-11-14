@@ -41,16 +41,16 @@ $(document).ready(function () {
 
 // Setup NiceScroll plugin
 // =======================
-//     $('html').niceScroll({
-//         cursorcolor: 'rgba(38, 34, 98, 0.9)',
-//         cursorborder: 'none',
-//         scrollspeed: 30,
-//         mousescrollstep: 50
-//     });
-    $('.sidebar-nav').niceScroll({
-        cursorcolor: 'rgba(238, 238, 238 , 0.2)',
-        cursorborder: 'none'
-    });
+    if (!Modernizr.touchevents) {
+        console.log('this is no touch device');
+        $('.sidebar-nav').niceScroll({
+            cursorcolor: 'rgba(238, 238, 238 , 0.2)',
+            cursorborder: 'none'
+        });
+    } else {
+        console.log('this is touch device');
+        $('aside#sidebar').css('overflow', 'auto');
+    }
 
 // Setup datePicker plugin
 // ======================
