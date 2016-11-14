@@ -27,16 +27,16 @@
   %li.cp-breadcrumb-item
     %a(href="index.html") Home
   %li.cp-breadcrumb-item
-    %a(href="cleaner-dashboard.html") Cleaner
+    %a(href="driver-dashboard.html") Driver
   %li.cp-breadcrumb-item
-    %a(href="cleaner-list-cleaner.html") List Cleaner
-  %li.cp-breadcrumb-item.active Cleaner Detail
+    %a(href="driver-list-driver.html") List Driver
+  %li.cp-breadcrumb-item.active Driver Detail
 / End Breadcrumb
 
 / Flexbox Layout
 .cp-flex
   / General Information
-  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+  .cp-flex-item.cp-flex-equal.cp-flex-1of2
     .cp-flex-content.cp-card
       %header
         .cp-card-summary.online
@@ -46,13 +46,14 @@
           .cp-detail-summary-info
             .cp-typo-code CN5246
             .cp-typo-name Thang Tran
-            .cp-typo-text Level 4
+            .cp-typo-text Honda Civic 2016 / 51H1-25.254
       %hr
       .cp-detail-container
         %table.cp-card-detail
           %tr
             %td Email:
-            %td thang.tran@nexx.vn
+            %td
+              %a(href="mailto:thang.tran@nexx.vn" ) thang.tran@nexx.vn
           %tr
             %td Date of Birth:
             %td 15/10/1990
@@ -61,14 +62,25 @@
             %td
               %i.cp-icn-male
           %tr
-            %td Address:
-            %td Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
+            %td Is Verified:
+            %td
+              %i.cp-icn-complete
+              %i.cp-icn-delete
           %tr
-            %td Description:
-            %td Praesent consectetur ultrices tellus eu ultricies. Maecenas interdum magna et mollis lobortis. Fusce sed ultricies mauris. Quisque in purus vitae ex bibendum condimentum et in nisl.
+            %td Rating:
+            %td
+              3.5
+              %i.cp-icn-star
+          %tr
+            %td Activity:
+            %td
+              .cp-btn-act.cp-driver-onway On Way
+          %tr
+            %td Status:
+            %td Active
 
   / Service & Banking
-  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+  .cp-flex-item.cp-flex-equal.cp-flex-1of2
     .cp-flex-content.cp-card
       %header
         .cp-card-title
@@ -76,23 +88,14 @@
       .cp-detail-container
         %table.cp-card-detail
           %tr
-            %td Rating:
-            %td
-              230
-              %i.cp-icn-star
+            %td Driver Rate:
+            %td 5%
           %tr
-            %td Activity:
-            %td
-              .cp-btn-act.cp-booking-completed Completed
+            %td Driver Group:
+            %td Dam Sen
           %tr
-            %td Verify:
-            %td Yes
-          %tr
-            %td Status:
-            %td Active
-          %tr
-            %td Training Level:
-            %td Training Level 3
+            %td Service Type:
+            %td DTaxi 4 Seats
           %tr
             %td Service Location:
             %td HCM1 include District 1, District 3, District 11, District 5, District 10
@@ -111,34 +114,6 @@
           %tr
             %td Account Number:
             %td 542369548721
-
-
-  / Relationship
-  .cp-flex-item.cp-flex-equal.cp-flex-1of3
-    .cp-flex-content.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title Relationship
-      .cp-detail-container
-        %table.cp-card-detail
-          %tr
-            %td Refer To:
-            %td Ty Luu
-          %tr
-            %td Service Fee:
-            %td 1%
-      %hr.cp-space-detail
-      .cp-detail-container
-        %table.cp-card-detail
-          %tr
-            %td(colspan="3" )
-              .cp-label list cleaner invited
-          %tr
-            %td Thi Huynh
-            %td 2%
-          %tr
-            %td Anh Nguyen
-            %td 2%
 
   / Address
   .cp-flex-item.cp-flex-1of1
@@ -201,26 +176,26 @@
           .cp-typo-title Summary
       .scrollable
         .cp-detail-container
-          .cp-column.cp-detail-onehaft
+          .cp-column.cp-detail-column
             .cp-column-item
               .cp-row
                 .cp-count-block
                   %div &nbsp;
                   %div 471
-                  %div Total Booking
-                .cp-count-block
-                  %div &nbsp;
-                  %div 346
-                  %div Completed Booking
-              .cp-row
+                  %div Total Trip
                 .cp-count-block
                   %div 17/09/2016 15:12:24
                   %div 2
-                  %div Today Booking
+                  %div Total Today Trip
+              .cp-row
+                .cp-count-block
+                  %div &nbsp;
+                  %div 346
+                  %div Completed Trip
                 .cp-count-block
                   %div &nbsp;
                   %div 12
-                  %div Cancelled Booking
+                  %div Cancelled Trip
               .cp-row
                 .cp-count-block
                   %div VND
@@ -241,16 +216,16 @@
                   %div Today Earning
             .cp-column-item
               .cp-label rating & comment
-              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-trip-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
               .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
               %hr
-              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-trip-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
               .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
               %hr
-              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-trip-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
               .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
               %hr
-              .cp-booking-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
+              .cp-trip-star.cp-typo-label-detail BK25134578 &nbsp; - &nbsp; <i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i><i class="cp-icn-star"></i>
               .cp-comment Nullam eros quam, commodo a metus ut, lobortis blandit arcu. Ut auctor sapien mi, non eleifend lectus cursus sit amet. Sed laoreet porttitor tortor, at fringilla ante aliquet et.
 
               %ul.cp-pagination
@@ -269,6 +244,86 @@
                 %li.cp-pagination-item
                   %a.cp-pagination-link(href="#" ) &raquo;
 
+  / Vehicle
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Vehicle
+      .scrollable
+        .cp-detail-container
+          .cp-flex-inner
+            .cp-detail-flex.cp-flex-2of3
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label driver vehicle
+                %tr
+                  %td Brand:
+                  %td Toyota
+                %tr
+                  %td Model:
+                  %td Innova
+                %tr
+                  %td Type:
+                  %td SUV
+                %tr
+                  %td Manufacture Year:
+                  %td 2015
+                %tr
+                  %td Seat Quantity:
+                  %td 7
+                %tr
+                  %td Color:
+                  %td Silver
+                %tr
+                  %td Cylinder Capacity:
+                  %td 1998cc
+                %tr
+                  %td Engine No.:
+                  %td OTA8000020
+                %tr
+                  %td Chassis No.:
+                  %td OBH088005N
+              .cp-document-image.cp-flex-center
+                .cp-image-item
+                  .cp-label Vehicle Front Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle front" )
+                .cp-image-item
+                  .cp-label Vehicle Back Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle back" )
+                .cp-image-item
+                  .cp-label Vehicle Left Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle front" )
+                .cp-image-item
+                  .cp-label Vehicle Right Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle back" )
+
+            .cp-detail-flex.cp-flex-1of3
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label Registration Certificate
+                %tr
+                  %td RC No.:
+                  %td 23155154
+                %tr
+                  %td Insurance Type:
+                  %td Health Care
+                %tr
+                  %td Effective Time:
+                  %td 11/09/2016 - 11/09/2017
+                %tr
+                  %td Issue By:
+                  %td Viet Nam Health Insurance
+              .cp-document-image
+                .cp-image-item
+                  .cp-label Insurance Front Image
+                  %img(src="../images/placeholder-document.png" alt="Insurance front" )
+                .cp-image-item
+                  .cp-label Insurance Back Image
+                  %img(src="../images/placeholder-document.png" alt="Insurance back" )
+
   / Document
   .cp-flex-item.cp-flex-1of1
     .cp-flex-content.cp-card
@@ -278,7 +333,7 @@
       .scrollable
         .cp-detail-container
           .cp-flex-inner
-            .cp-detail-onethird
+            .cp-detail-flex
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
@@ -295,12 +350,12 @@
               .cp-document-image
                 .cp-image-item
                   .cp-label ID Front Image
-                  %img(src="../images/id-front.png" alt="ID front" )
+                  %img(src="http://media.blogkhoahoc.net/files/elenabui/2016/09/26/trac-nghiem-vui-doan-so-menh-qua-so-chung-minh-thu-nhan-dan-1-blogkhoahocnet-2002.jpg" alt="ID front" )
                 .cp-image-item
                   .cp-label ID Back Image
                   %img(src="../images/id-back.png" alt="ID back" )
 
-            .cp-detail-onethird
+            .cp-detail-flex
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
@@ -310,39 +365,54 @@
                   %td 5693578451346
                 %tr
                   %td Insurance Type:
-                  %td Health Care
+                  %td Auto Insurance
                 %tr
-                  %td Effective Time:
-                  %td 11/09/2016 - 11/09/2017
+                  %td Issue Date:
+                  %td 11/09/2016
+                %tr
+                  %td Expire Date:
+                  %td 11/09/2018
                 %tr
                   %td Issue By:
-                  %td Viet Nam Health Insurance
+                  %td Bao Viet Insurance
               .cp-document-image
                 .cp-image-item
                   .cp-label Insurance Front Image
-                  %img(src="../images/insurance-front.png" alt="/Insurance front" )
+                  %img(src="../images/insurance-front.png" alt="Insurance front" )
                 .cp-image-item
                   .cp-label Insurance Back Image
                   %img(src="../images/placeholder-document.png" alt="Insurance back" )
 
-            .cp-detail-onethird
+            .cp-detail-flex
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
-                    .cp-label certificate
+                    .cp-label driver license
                 %tr
-                  %td Certificate No.:
+                  %td Experience Years:
+                  %td 20
+                %tr
+                  %td DL No.:
                   %td 257456985
                 %tr
+                  %td DL Type:
+                  %td B2
+                %tr
                   %td Issue Date:
-                  %td 17/09/2016
+                  %td 17/09/2010
+                %tr
+                  %td Expire Date:
+                  %td 17/09/2025
                 %tr
                   %td Issue By:
-                  %td Happy Clean
+                  %td HPD
               .cp-document-image
                 .cp-image-item
-                  .cp-label Certificate Image
-                  %img(src="../images/certificate.png" alt="Certificate" )
+                  .cp-label Driver License Front Image
+                  %img(src="../images/placeholder-document.png" alt="Driver License front" )
+                .cp-image-item
+                  .cp-label Driver License Back Image
+                  %img(src="../images/placeholder-document.png" alt="Driver License back" )
 
   / System & Meta Data
   .cp-flex-item.cp-flex-1of1

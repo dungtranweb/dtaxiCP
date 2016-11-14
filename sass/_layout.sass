@@ -55,6 +55,13 @@
   .cp-column-item-fake
     width: 100%
     visibility: hidden
+  .cp-fake-margin-1
+    margin: -242px
+    @media (max-width: 1160px)
+      margin: 0
+  .cp-fake-margin-2
+    @extend .cp-fake-margin-1
+    margin: -43px
 
 // Define Layout Using Flexbox
 // ===========================
@@ -80,7 +87,7 @@
       width: 100%
       table.cp-table-list
         min-width: 1000px
-      .cp-detail-onehaft
+      .cp-detail-column
         min-width: 550px
         &.cp-column
           +column-width(510px)
@@ -117,4 +124,5 @@
 
 .cp-flex-center
   +display-flex(flex)
-  +justify-content(center)
+  +justify-content(space-around)
+  +flex-flow(row wrap)

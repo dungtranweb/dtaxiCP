@@ -110,10 +110,6 @@ $(document).ready(function () {
         $("#cp-old-address").css("display", "block");
         $("#cp-old-address").addClass("animated fadeIn");
     });
-    $("#edit-address").on('click', function () {
-        $("#cp-old-address").css("display", "block");
-        $("#cp-old-address").addClass("animated fadeIn");
-    });
 
 // Set position of foobar
 // ======================
@@ -176,6 +172,12 @@ $(document).ready(function () {
             // $('.cp-float-item-s2').css({'margin-left':'38px', 'transition': 'margin-left 1s'});
             // $('.cp-float-item-11').css({'width': '97.5% !important', 'transition': 'width 1s'});
         }
+    });
+
+// Control Button
+// ==============
+    $('#add-new-address').click(function () {
+        $('.cp-fake-margin-2').css('margin', '-269px');
     });
 
 // End Nexx Control Panel Javascript

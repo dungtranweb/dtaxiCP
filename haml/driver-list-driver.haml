@@ -119,9 +119,9 @@
             %td
               %select.cp-table-select
                 %option All
-                %option Group A
-                %option Group B
-                %option Group C
+                %option Dam Sen
+                %option Vinasun
+                %option Mai Linh
             %td
               %input(type="text")
             %td
@@ -131,11 +131,10 @@
             %td
               %select.cp-table-select
                 %option All
+                %option DTaxi
                 %option DTaxi 4 Seats
                 %option DTaxi 7 Seats
-                %option DMoto
-                %option DBike
-                %option DTruck
+                %option DTaxi Suburban
             %td
               %select.cp-table-select
                 %option All
@@ -166,17 +165,46 @@
                 %option Blocked
             %td &nbsp;
         %tbody.have-avatar
-          %tr.cp-highlight
-            %td &nbsp;
+          %tr
+            %td.online &nbsp;
             %td
               %input#chb-1(type="checkbox")
               %label.checkbox(for="chb-1")
             %td
               .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
+                %img(src="../images/hoang-giang.png" alt="Avatar" )
             %td 1
             %td DR5246
-            %td Group A
+            %td Vinasun
+            %td Hoang Giang <br> <span class="subtext">Toyota Inova <br> 59H1-23.841</span>
+            %td 01236581245
+            %td 4.5
+            %td DTaxi 7 Seats
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-ontrip On Trip
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 28
+            %td 3,180,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-2(type="checkbox")
+              %label.checkbox(for="chb-2")
+            %td
+              .cp-image-rec56
+                %img(src="../images/thang-tran.png" alt="Avatar" )
+            %td 2
+            %td DR1246
+            %td Dam Sen
             %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
             %td 01236581245
             %td 3.5
@@ -188,6 +216,209 @@
             %td 02/11/2016 <br>10:14
             %td 34
             %td 4,850,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td.online &nbsp;
+            %td
+              %input#chb-3(type="checkbox")
+              %label.checkbox(for="chb-3")
+            %td
+              .cp-image-rec56
+                %img(src="../images/vu-nguyen.png" alt="Avatar" )
+            %td 3
+            %td DR5451
+            %td Dam Sen
+            %td Vu Nguyen <br> <span class="subtext">Mazda3 2015 <br> 51H2-12.154</span>
+            %td 01236585445
+            %td 3.5
+            %td DTaxi 4 Seats, DTaxi Suburban
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-onway On Way
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 52
+            %td 8,450,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td.online &nbsp;
+            %td
+              %input#chb-4(type="checkbox")
+              %label.checkbox(for="chb-4")
+            %td
+              .cp-image-rec56
+                %img(src="../images/ty-luu.png" alt="Avatar" )
+            %td 4
+            %td DR8451
+            %td Mai Linh
+            %td Ty Luu <br> <span class="subtext">Kia Morning 2014 <br> 51H1-58.471</span>
+            %td 01236581854
+            %td 4.5
+            %td DTaxi 4 Seats
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-available Available
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 27
+            %td 4,000,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-5(type="checkbox")
+              %label.checkbox(for="chb-5")
+            %td
+              .cp-image-rec56
+                %img(src="../images/thinh-nguyen.png" alt="Avatar" )
+            %td 5
+            %td DR6214
+            %td Dam Sen
+            %td Thinh Nguyen <br> <span class="subtext">Toyota Vios 2015 <br> 51H1-85.698</span>
+            %td 01239654185
+            %td 3
+            %td DTaxi 4 Seats, DTaxi Suburban
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-onhold On Hold
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 12
+            %td 2,250,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr.cp-highlight
+            %td.online &nbsp;
+            %td
+              %input#chb-6(type="checkbox")
+              %label.checkbox(for="chb-6")
+            %td
+              .cp-image-rec56
+                %img(src="../images/placeholder.png" alt="Avatar" )
+            %td 6
+            %td DR2541
+            %td Dam Sen
+            %td Anh Nguyen <br> <span class="subtext">Toyota Camry 2015 <br> 51K1-56.187</span>
+            %td 01236875964
+            %td 4.2
+            %td DTaxi 4 Seats
+            %td No
+            %td.cell-center
+              .cp-btn-act.cp-driver-offline Offline
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 0
+            %td 0
+            %td Deactive
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-7(type="checkbox")
+              %label.checkbox(for="chb-7")
+            %td
+              .cp-image-rec56
+                %img(src="../images/placeholder.png" alt="Avatar" )
+            %td 7
+            %td DR6512
+            %td Vinasun
+            %td Thi Huynh <br> <span class="subtext">Honda Civic 2016 <br> 51H1-87.321</span>
+            %td 01236625312
+            %td 3.2
+            %td DTaxi 4 Seats, DTaxi Suburban
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-blocked Blocked
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 14
+            %td 1,850,000
+            %td Blocked
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td.online &nbsp;
+            %td
+              %input#chb-8(type="checkbox")
+              %label.checkbox(for="chb-8")
+            %td
+              .cp-image-rec56
+                %img(src="../images/male-models.png" alt="Avatar" )
+            %td 8
+            %td DR1124
+            %td Dam Sen
+            %td David Gay <br> <span class="subtext">Ford EcoSport 2015 <br> 51L8-25.987</span>
+            %td 01236545124
+            %td 4.7
+            %td DTaxi 4 Seats
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-onway On Way
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 18
+            %td 2.450,000
+            %td Active
+            %td.action-third
+              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
+              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-9(type="checkbox")
+              %label.checkbox(for="chb-9")
+            %td
+              .cp-image-rec56
+                %img(src="../images/phuong-mai.png" alt="Avatar" )
+            %td 9
+            %td DR8541
+            %td Dam Sen
+            %td Phuong Mai <br> <span class="subtext">Honda Civic 2016 <br> 51H1-25.251</span>
+            %td 01563211245
+            %td 3.2
+            %td DTaxi 4 Seats
+            %td Yes
+            %td.cell-center
+              .cp-btn-act.cp-driver-available Available
+            %td 11/11/2016 <br>13:22
+            %td 02/11/2016 <br>10:14
+            %td 9
+            %td 850,000
             %td Active
             %td.action-third
               %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
@@ -198,257 +429,25 @@
           %tr.cp-highlight
             %td &nbsp;
             %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-2")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 2
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td.online &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-3")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 3
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td.online &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-4")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 4
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-5")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 5
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td.online &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-6")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 6
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-7")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 7
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td.online &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-8")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 8
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
-              %label.checkbox(for="chb-9")
-            %td
-              .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
-            %td 9
-            %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
-            %td DTaxi 4 Seats
-            %td Yes
-            %td.cell-center
-              .cp-btn-act.cp-driver-available Available
-            %td 11/11/2016 <br>13:22
-            %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
-            %td Active
-            %td.action-third
-              %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
-              %a.btn-list(href="driver-change-pass.html" data-hover="tooltip" data-placement="top" title="Change password" ) <i class="cp-icn-pass"></i>
-              %a.btn-list(href="driver-edit.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
-              %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
-
-          %tr
-            %td &nbsp;
-            %td
-              %input#chb-1(type="checkbox")
+              %input#chb-10(type="checkbox")
               %label.checkbox(for="chb-10")
             %td
               .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
+                %img(src="../images/placeholder.png" alt="Avatar" )
             %td 10
             %td DR5246
-            %td Group A
-            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
-            %td 01236581245
-            %td 3.5
+            %td Dam Sen
+            %td Toan Nguyen <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-85.14</span>
+            %td 01236558465
+            %td 3.7
             %td DTaxi 4 Seats
-            %td Yes
+            %td No
             %td.cell-center
-              .cp-btn-act.cp-driver-available Available
+              .cp-btn-act.cp-driver-offline Offline
             %td 11/11/2016 <br>13:22
             %td 02/11/2016 <br>10:14
-            %td 34
-            %td 4,850,000
+            %td 0
+            %td 0
             %td Active
             %td.action-third
               %a.btn-list#eg(href="driver-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>

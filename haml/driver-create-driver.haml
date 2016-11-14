@@ -27,24 +27,24 @@
   %li.cp-breadcrumb-item
     %a(href="index.html") Home
   %li.cp-breadcrumb-item
-    %a(href="cleaner-dashboard.html") Cleaner
-  %li.cp-breadcrumb-item.active Create Cleaner
+    %a(href="driver-dashboard.html") Driver
+  %li.cp-breadcrumb-item.active Create Driver
 / End Breadcrumb
 
 / Real Content
 %form(method="post" enctype="multipart/form-data" )
   / Column Layout
   .cp-column
-    / Create Cleaner
+    / Create Driver
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Create Cleaner
+          .cp-typo-title Create Driver
 
       .cp-card-content
         .cp-label avatar
         .kv-avatar
-          %input.cp-upimage.file-loading(name="cleaner-avatar" type="file" )
+          %input.cp-upimage.file-loading(name="driver-avatar" type="file" )
         .cp-label first name
         %input(type="text" placeholder="Enter first name" )
         .cp-label last name
@@ -118,8 +118,8 @@
       .cp-card-content
         .cp-label is default?
         .cp-is
-          %input#is-default-cleaner(type="checkbox" checked )
-          %label.checkbox(for="is-default-cleaner")
+          %input#is-default-driver(type="checkbox" checked )
+          %label.checkbox(for="is-default-driver")
         .cp-label address
         %input(type="text" placeholder="Enter address" )
         .cp-label type
@@ -160,110 +160,6 @@
           %option 10
           %option 11
           %option 12
-
-    / Certificate
-    .cp-column-item.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title Certificate
-
-      .cp-card-content
-        .cp-label certificate number
-        %input(type="text" placeholder="Enter certificate number" )
-        .cp-label issue date
-        .cp-date
-          %select
-            %option(disabled selected) Day
-            %option 1
-            %option 2
-            %option 3
-            %option 4
-            %option 5
-            %option 6
-            %option 7
-            %option 8
-            %option 9
-            %option 10
-            %option 11
-            %option 12
-          %select
-            %option(disabled selected) Month
-            %option 1
-            %option 2
-            %option 3
-            %option 4
-            %option 5
-            %option 6
-            %option 7
-            %option 8
-            %option 9
-            %option 10
-            %option 11
-            %option 12
-          %select
-            %option(disabled selected) Year
-            %option 1990
-            %option 1991
-            %option 1992
-            %option 1993
-            %option 1994
-            %option 1995
-            %option 1996
-            %option 1997
-            %option 1998
-            %option 1999
-            %option 2000
-        .cp-label issued by
-        %input(type="text" placeholder="Enter issued by" )
-        .cp-upload-oneline
-          .cp-upload-item
-            .cp-label front
-            .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-certificate-front" type="file" )
-          .cp-upload-item
-            .cp-label back
-            .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-certificate-back" type="file" )
-
-    / Fake Column Item
-    .cp-column-item-fake
-
-    / System Information
-    .cp-column-item.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title System Information
-
-      .cp-card-content
-        .cp-label is verified?
-        .cp-is
-          %input#is-verify-cleaner(type="checkbox" checked )
-          %label.checkbox(for="is-verify-cleaner")
-        .cp-label cleaner rate (%)
-        %input(type="text" placeholder="Enter cleaner rate" )
-        .cp-label service location
-        %select
-          %option(selected disabled) Select one
-          %option HCM1 include District 1, District 3, District 11, District 5, District 10
-          %option HCM2 include District 2, District 9, District 12, District 4, District 8
-        .cp-label training level
-        %select
-          %option(selected disabled) Select one
-          %option Training Level 1
-          %option Training Level 2
-          %option Training Level 3
-        .cp-label level
-        %select
-          %option(selected disabled) Select one
-          %option Level 1
-          %option Level 2
-          %option Level 3
-          %option Level 4
-          %option Level 5
-        .cp-label hometown
-        %input(type="text" placeholder="Enter hometown" )
-        .cp-label description
-        %textarea(placeholder="Enter description" )
 
     / Identity
     .cp-column-item.cp-card
@@ -319,15 +215,282 @@
             %option 2000
         .cp-label issued by
         %input(type="text" placeholder="Enter issued by" )
-        .cp-upload-oneline
+        .cp-upload-oneline.clearfix
           .cp-upload-item
             .cp-label front
             .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-identity-front" type="file" )
+              %input.cp-upimage.file-loading(name="driver-identity-front" type="file" )
           .cp-upload-item
             .cp-label back
             .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-identity-back" type="file" )
+              %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
+
+    / Driver License
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Driver License
+
+      .cp-card-content
+        .cp-label experience years
+        %input(type="text" placeholder="Enter experience years" )
+        .cp-label driver license number
+        %input(type="text" placeholder="Enter driver license number" )
+        .cp-label driver license type
+        %input(type="text" placeholder="Enter driver license type" )
+        .cp-label issue by
+        %input(type="text" placeholder="Enter driver license type" )
+        .cp-label issue date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-label expire date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-insurance-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-insurance-back" type="file" )
+
+    / Fake Column Item
+    .cp-column-item-fake.cp-fake-margin-1
+
+    / System Information
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title System Information
+
+      .cp-card-content
+        .cp-label is verified?
+        .cp-is
+          %input#is-verify-driver(type="checkbox" checked )
+          %label.checkbox(for="is-verify-driver")
+        .cp-label driver rate (%)
+        %input(type="text" placeholder="Enter driver rate" )
+        .cp-label driver group
+        %select
+          %option(selected disabled) Select one
+          %option Dam Sen
+          %option Vinasun
+          %option Mai Linh
+        .cp-label service location
+        %select
+          %option(selected disabled) Select one
+          %option HCM1 include District 1, District 3, District 11, District 5, District 10
+          %option HCM2 include District 2, District 9, District 12, District 4, District 8
+        .cp-label service type
+        .cp-group-checkbox
+          %div
+            %input#dtaxi-4-seats(type="checkbox" )
+            %label.checkbox(for="dtaxi-4-seats") DTaxi 4 Seats
+          %div
+            %input#dtaxi-7-seats(type="checkbox" )
+            %label.checkbox(for="dtaxi-7-seats") DTaxi 7 Seats
+          %div
+            %input#dtaxi-suburban(type="checkbox" )
+            %label.checkbox(for="dtaxi-suburban") DTaxi Suburban
+
+    / Vehicle
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Vehicle
+
+      .cp-card-content
+        .cp-label model
+        %select
+          %option(selected disabled) Select one
+          %option Honda Civic 2016
+          %option Toyota Vios 2015
+          %option Toyota Inova 2015
+          %option Toyota Camry 2016
+          %option Mazda3 2016
+          %option Kia Morning 2015
+          %option Ford EcoSport 2015
+        .cp-label color
+        %input(type="text" placeholder="Enter color" )
+        .cp-label cylinder capacity
+        %input(type="text" placeholder="Enter cylinder capacity" )
+        .cp-label engine number
+        %input(type="text" placeholder="Enter engine number" )
+        .cp-label chasis number
+        %input(type="text" placeholder="Enter chasis number" )
+        .cp-label condition
+        %select
+          %option(selected disabled) Select one
+          %option Normal
+          %option Fixing
+          %option Damage
+          %option Inactive
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label left
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-left" type="file" )
+          .cp-upload-item
+            .cp-label right
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-right" type="file" )
+
+    / Registration Certificate
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Registration Certificate
+
+      .cp-card-content
+        .cp-label registration number
+        %input(type="text" placeholder="Enter registration number" )
+        .cp-label issued by
+        %input(type="text" placeholder="Enter issued by" )
+        .cp-label issue date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997Float Container
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-label license plate
+        %input(type="text" placeholder="Enter license plate" )
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
 
     / Insurance
     .cp-column-item.cp-card
@@ -342,7 +505,7 @@
         %input(type="text" placeholder="Enter insurance type" )
         .cp-label issued by
         %input(type="text" placeholder="Enter issued by" )
-        .cp-label effective time (from)
+        .cp-label issue date
         .cp-date
           %select
             %option(disabled selected) Day
@@ -385,7 +548,7 @@
             %option 1998
             %option 1999
             %option 2000
-        .cp-label effective time (to)
+        .cp-label expire date
         .cp-date
           %select
             %option(disabled selected) Day
@@ -428,15 +591,15 @@
             %option 1998
             %option 1999
             %option 2000
-        .cp-upload-oneline
+        .cp-upload-oneline.clearfix
           .cp-upload-item
             .cp-label front
             .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-insurance-front" type="file" )
+              %input.cp-upimage.file-loading(name="driver-insurance-front" type="file" )
           .cp-upload-item
             .cp-label back
             .kv-avatar
-              %input.cp-upimage.file-loading(name="cleaner-insurance-back" type="file" )
+              %input.cp-upimage.file-loading(name="driver-insurance-back" type="file" )
 
     / Banking Information
     .cp-column-item.cp-cutout.cp-card
