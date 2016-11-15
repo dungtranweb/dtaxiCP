@@ -58,9 +58,9 @@ var driverSystemStatusData= {
         {
             data: [70, 50, 20],
             backgroundColor: [
-                "#77C044",
+                "#262262",
                 "#666666",
-                "#ed1c24"
+                "#ee1414"
             ]
         }
     ]

@@ -106,8 +106,6 @@
             %option 1998
             %option 1999
             %option 2000
-        .cp-label description
-        %textarea(placeholder="Enter description" )
 
     / Fake Column Item
     .cp-column-item-fake
@@ -139,12 +137,16 @@
         %input(type="text" placeholder="Enter address" )
         .cp-label type
         %input(type="text" placeholder="Eg: Home, Company..." )
+        .cp-typo-error This is an error, very funny error. But, don't mess with me!
         .cp-label country
         %select(disabled)
           %option Viet Nam
         .cp-label province
-        %select(disabled)
+        %select
           %option Ho Chi Minh
+          %option Binh Duong
+          %option Long An
+          %option Dong Nai
         .cp-label district
         %select
           %option(disabled selected) Select one
@@ -208,3 +210,4 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
+

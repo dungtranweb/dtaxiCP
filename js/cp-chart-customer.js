@@ -5,17 +5,17 @@
 var customerStatus = $("#customer-status");
 var customerStatusData= {
     labels: [
-        "Booking",
-        "In Progress",
-        "No Booking"
+        "Available",
+        "On Trip",
+        "Waiting for Pickup"
     ],
     datasets: [
         {
-            data: [245, 102, 1118],
+            data: [1118, 102, 204],
             backgroundColor: [
-                "#77C044",
-                "#40c7f1",
-                "#e75425"
+                "#76c044",
+                "#00d2ff",
+                "#e85324"
             ]
         }
     ]
@@ -52,9 +52,9 @@ var customerSystemStatusData= {
         {
             data: [987, 330, 148],
             backgroundColor: [
-                "#77C044",
+                "#262262",
                 "#666666",
-                "#ed1c24"
+                "#ee1414"
             ]
         }
     ]
@@ -94,18 +94,18 @@ var customerNewCustomerData= {
             fill: false,
             lineTension: 0.1,
             borderWidth: 3,
-            borderColor: "#e75425",
+            borderColor: "#fcb040",
             borderCapStyle: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: "#eeeeee",
-            pointBackgroundColor: "#e75425",
+            pointBorderColor: "#fee0b4",
+            pointBackgroundColor: "#fcb040",
             pointBorderWidth: 2,
             pointBorderRadius: 2,
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: "#e72527",
-            pointHoverBorderColor: "#ef8a6a",
+            pointHoverBackgroundColor: "#fc8140",
+            pointHoverBorderColor: "#fdc067",
             pointHoverBorderWidth: 3,
             pointHitRadius: 10,
             spanGaps: false

@@ -902,6 +902,14 @@ select {
   font-weight: 600;
 }
 
+/* line 72, ../sass/_typography.sass */
+.cp-typo-error {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #ee1414;
+}
+
 /* line 7, ../sass/_image.sass */
 .cp-image-circle {
   margin: 0 auto;
@@ -1033,12 +1041,12 @@ progress[value]::-webkit-progress-bar {
 }
 /* line 11, ../sass/_progress.sass */
 progress[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(left, #77c044 0%, #77c044 100%);
+  background-image: -webkit-linear-gradient(left, #262262 0%, #262262 100%);
   background-size: 100% 100%, 100% 100%;
 }
 /* line 14, ../sass/_progress.sass */
 progress[value]::-moz-progress-bar {
-  background-image: -moz-linear-gradient(left, #77c044 0%, #77c044 100%);
+  background-image: -moz-linear-gradient(left, #262262 0%, #262262 100%);
   background-size: 100% 100%, 100% 100%;
 }
 
@@ -1237,22 +1245,17 @@ progress[value]::-moz-progress-bar {
 
 /* line 90, ../sass/_button.sass */
 .cp-customer-available {
-  background-color: #262262;
+  background-color: #76c044;
 }
 
 /* line 90, ../sass/_button.sass */
-.cp-customer-create-booking {
-  background-color: #e85324;
-}
-
-/* line 90, ../sass/_button.sass */
-.cp-customer-waiting {
-  background-color: #3c57a7;
-}
-
-/* line 90, ../sass/_button.sass */
-.cp-customer-is-serving {
+.cp-customer-ontrip {
   background-color: #00d2ff;
+}
+
+/* line 90, ../sass/_button.sass */
+.cp-customer-pickup {
+  background-color: #e85324;
 }
 
 /* line 98, ../sass/_button.sass */
@@ -2683,7 +2686,7 @@ input:focus {
 
 /* line 225, ../sass/_card.sass */
 .cp-customer-dashboard .cp-typo-dashboard-count {
-  color: #e85324;
+  color: #fcb040;
   margin-top: 50px;
 }
 /* line 228, ../sass/_card.sass */

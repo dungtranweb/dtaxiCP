@@ -86,6 +86,8 @@
             %th
               %a(href="" ) PHONE
             %th
+              %a(href="" ) EMAIL
+            %th
               %a(href="" ) ACTIVITY
             %th
               %a(href="" ) STATUS
@@ -107,12 +109,13 @@
             %td
               %input(type="text")
             %td
+              %input(type="text")
+            %td
               %select.cp-table-select
                 %option All
                 %option Available
-                %option Create Booking
-                %option Waiting for Cleaner
-                %option Cleaner is Serving
+                %option On Trip
+                %option Waiting for Pickup
             %td
               %select.cp-table-select
                 %option All
@@ -130,11 +133,12 @@
               %label.checkbox(for="chb-1")
             %td
               .cp-image-rec56
-                %img(src="../images/thang-tran.png" alt="Avatar" )
+                %img(src="../images/faces/adelle-charles.png" alt="Avatar" )
             %td 1
-            %td CN5246
-            %td Thang Tran
+            %td CT85312
+            %td Adelle Charles
             %td 01236581245
+            %td adelle@gmail.com
             %td.cell-center
               .cp-btn-act.cp-customer-available Available
             %td Active
@@ -151,13 +155,14 @@
               %label.checkbox(for="chb-2")
             %td
               .cp-image-rec56
-                %img(src="../images/vu-nguyen.png" alt="Avatar" )
+                %img(src="../images/faces/caleb-ogden.png" alt="Avatar" )
             %td 2
-            %td CN7845
-            %td Vu Nguyen
+            %td CT88412
+            %td Caleb Ogden
             %td 0128564245
+            %td caleb@gmail.com
             %td.cell-center
-              .cp-btn-act.cp-customer-create-booking  Create Booking
+              .cp-btn-act.cp-customer-ontrip  On Trip
             %td Active
             %td 12/09/2016
             %td.action
@@ -172,13 +177,14 @@
               %label.checkbox(for="chb-3")
             %td
               .cp-image-rec56
-                %img(src="../images/ty-luu.png" alt="Avatar" )
+                %img(src="../images/faces/felipe-bogs.png" alt="Avatar" )
             %td 3
-            %td CN8513
-            %td Ty Luu
+            %td CT24112
+            %td Felipe Bogs
             %td 0975321856
+            %td felipe@gmail.com
             %td.cell-center
-              .cp-btn-act.cp-customer-waiting Waiting for Cleaner
+              .cp-btn-act.cp-customer-pickup Waiting for Cleaner
             %td Active
             %td 12/09/2016
             %td.action
@@ -193,13 +199,14 @@
               %label.checkbox(for="chb-4")
             %td
               .cp-image-rec56
-                %img(src="../images/hoang-giang.png" alt="Avatar" )
+                %img(src="../images/faces/jame-anderson.png" alt="Avatar" )
             %td 4
-            %td CN8542
-            %td Hoang Giang
+            %td CT83653
+            %td Jame Anderson
             %td 01236581896
+            %td jame@gmail.com
             %td.cell-center
-              .cp-btn-act.cp-customer-is-serving Cleaner is Serving
+              .cp-btn-act.cp-customer-pickup Waiting for Pickup
             %td Deactive
             %td 12/09/2016
             %td.action
@@ -214,13 +221,14 @@
               %label.checkbox(for="chb-5")
             %td
               .cp-image-rec56
-                %img(src="../images/placeholder.png" alt="Placeholder" )
+                %img(src="../images/faces/jarrod-mosen.png" alt="Placeholder" )
             %td 5
-            %td CN2163
-            %td Andy Nguyen
+            %td CT65612
+            %td Jarrod Mosen
             %td 01236581245
+            %td jarrod@gmail.com
             %td.cell-center
-              .cp-btn-act.cp-customer-create-booking  Create Booking
+              .cp-btn-act.cp-customer-ontrip  On Trip
             %td Active
             %td 12/09/2016
             %td.action
@@ -235,11 +243,12 @@
               %label.checkbox(for="chb-6")
             %td
               .cp-image-rec56
-                %img(src="../images/phuong-mai.png" alt="Avatar" )
+                %img(src="../images/faces/jeremy-goillot.png" alt="Avatar" )
             %td 6
-            %td NV2516
-            %td Phuong Mai
+            %td CT25214
+            %td Jeremy Goillot
             %td 01236896412
+            %td jeremy@gmail.com
             %td.cell-center
               .cp-btn-act.cp-customer-available Available
             %td Active
@@ -256,13 +265,14 @@
               %label.checkbox(for="chb-7")
             %td
               .cp-image-rec56
-                %img(src="../images/thinh-nguyen.png" alt="Avatar" )
+                %img(src="../images/faces/jina-anne.png" alt="Avatar" )
             %td 7
-            %td CN2648
-            %td Thinh Nguyen
+            %td CT63956
+            %td Jina Anne
             %td 01239632631
+            %td jina@gmail.com
             %td.cell-center
-              .cp-btn-act.cp-customer-waiting Waiting for Cleaner
+              .cp-btn-act.cp-customer-pickup Waiting for Pickup
             %td Active
             %td 12/09/2016
             %td.action
@@ -277,11 +287,12 @@
               %label.checkbox(for="chb-8")
             %td
               .cp-image-rec56
-                %img(src="../images/placeholder.png" alt="Placeholder" )
+                %img(src="../images/faces/marcos-moralez.png" alt="Placeholder" )
             %td 8
-            %td CN4521
-            %td Huong Nguyen
+            %td CT45245
+            %td Marcos Moralez
             %td 01236588641
+            %td marcos@gmail.com
             %td.cell-center
               .cp-btn-act.cp-customer-available Available
             %td Active
@@ -298,11 +309,12 @@
               %label.checkbox(for="chb-9")
             %td
               .cp-image-rec56
-                %img(src="../images/placeholder.png" alt="Placeholder" )
+                %img(src="../images/faces/matt-cheuvront.png" alt="Placeholder" )
             %td 9
-            %td CN8751
-            %td Nhut Tran
+            %td CT57521
+            %td Matt Cheuveront
             %td 012823142714
+            %td matt@gmail.com
             %td.cell-center
               .cp-btn-act.cp-customer-available Available
             %td Active
@@ -319,11 +331,12 @@
               %label.checkbox(for="chb-10")
             %td
               .cp-image-rec56
-                %img(src="../images/male-models.png" alt="Avatar" )
+                %img(src="../images/faces/mike-kamanski.png" alt="Avatar" )
             %td 10
-            %td CN6234
-            %td David Gay
+            %td CT65126
+            %td Mike Kamanski
             %td 01289635422
+            %td mike@gmail.com
             %td.cell-center
               .cp-btn-act.cp-customer-available Available
             %td Active
