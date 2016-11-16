@@ -247,16 +247,28 @@
     &.cp-down-progress
       color: $orange
 
-
 .cp-trip-dashboard
   .cp-typo-dashboard-count
     color: $lightRed
     margin-top: 50px
   .cp-typo-dashboard-subcount
-    color: $blue
     margin-top: 30px
+    &.cp-down-progress
+      color: $lightRed
+    &.cp-up-progress
+      color: $blue
     &.cp-second
       color: $orange
+  progress[value]
+    color: $blue
+    &::-webkit-progress-bar
+      background-color: $lightRed
+    &::-webkit-progress-value
+      background-image: -webkit-linear-gradient(left, rgb(0,210,255) 0%, rgb(0,210,255) 100%)
+      background-size: 100% 100%, 100% 100%
+    &::-moz-progress-bar
+      background-image: -moz-linear-gradient(left, rgb(0,210,255) 0%, rgb(0,210,255) 100%)
+      background-size: 100% 100%, 100% 100%
 
 .cp-card-count-block
   overflow: hidden

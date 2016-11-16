@@ -54,18 +54,19 @@
         .cp-chart-pie
           %canvas#trip-status(width="200" height="200" )
 
-  / System Status
+  / In Progress Trip
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title System Status
+          .cp-typo-title In Progress Trip
 
       .cp-dashboard
-        .cp-chart-doughnut
-          %canvas#trip-system-status(width="200" height="200" )
-          .cp-dashboard-icn-center
-            %i.cp-icn-trip-status
+        .cp-typo-dashboard-subcount.cp-up-progress 330
+        .cp-typo-code On Trip
+        %progress.cp-progress(max="478" value="330" )
+        .cp-typo-dashboard-subcount.cp-down-progress 148
+        .cp-typo-code On Way
 
   // Completed & Cancelled
   .cp-flex-item.cp-flex-1of1

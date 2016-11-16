@@ -44,44 +44,6 @@ var tripStatusChart= new Chart(tripStatus, {
     }
 });
 
-// Trip System Status
-var tripSystemStatus = $("#trip-system-status");
-var tripSystemStatusData= {
-    labels: [
-        "On Trip",
-        "On Way"
-    ],
-    datasets: [
-        {
-            data: [330, 148],
-            backgroundColor: [
-                "#00d2ff",
-                "#e85324"
-            ]
-        }
-    ]
-};
-var tripSystemStatusChart= new Chart(tripSystemStatus, {
-    type: 'doughnut',
-    data: tripSystemStatusData,
-    options: {
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                boxWidth: 16,
-                padding: 20
-            }
-        },
-        tooltips: {
-            bodyFontSize: 12,
-            bodyFontStyle: 400,
-            yPadding: 12
-        },
-        cutoutPercentage: 80
-    }
-});
-
 // Completed and Cancelled
 var tripBarTrip = $("#trip-bar-trip");
 var tripBarTripData= {
