@@ -1,0 +1,43 @@
+// Define Timeline
+// ===============
+.cp-timeline
+  position: relative
+  padding: 10px 0 0 50px
+  width: 100%
+  .cp-timeline-tree
+    width: 2px
+    background-color: $breadcrumb
+    z-index: 9
+    +stretch(64px, auto, 40px, 56px)
+  .cp-timeline-dotzone
+    width: 40px
+  .cp-timeline-time
+    width: 190px
+    padding-left: 10px
+    border-top: 1px solid $line
+    border-bottom: 1px solid $line
+  .cp-timeline-location
+    padding-right: 10px
+    border-top: 1px solid $line
+    border-bottom: 1px solid $line
+    tr:first-child &
+      border-top: none
+    tr:last-child &
+      border-bottom: none
+
+  table
+    width: 100%
+    tr:first-child
+      .cp-timeline-time,
+      .cp-timeline-location
+        border-top: none
+    tr:last-child
+      .cp-timeline-time,
+      .cp-timeline-location
+        border-bottom: none
+    td
+      vertical-align: text-top
+      padding: 25px 0
+
+.cp-timeline-date
+  padding: 15px 0 15px 100px

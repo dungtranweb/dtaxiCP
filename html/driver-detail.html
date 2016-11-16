@@ -111,7 +111,7 @@
             <a href='customer-dashboard.html'>Dashboard</a>
           </li>
           <li>
-            <a href='customer-list-customer.html'>List Customer</a>
+            <a href='customer-list-customer.html'>List Customer <span class="cp-bubble cp-bubble-danger">5</span></a>
           </li>
           <li>
             <a href='customer-create-customer.html'>Create Customer</a>
@@ -134,19 +134,16 @@
             <a href='trip-dashboard.html'>Dashboard</a>
           </li>
           <li>
-            <a href='trip-new.html'>New <span class="cp-bubble">25</span></a>
+            <a href='trip-new.html'>New <span class="cp-bubble cp-bubble-success">25</span></a>
           </li>
           <li>
-            <a href='trip-approved.html'>Approved <span class="cp-bubble">12</span></a>
+            <a href='trip-in-progress.html'>In Progress <span class="cp-bubble cp-bubble-success">120</span></a>
           </li>
           <li>
-            <a href='trip-in-progress.html'>In Progress <span class="cp-bubble">120</span></a>
+            <a href='trip-completed.html'>Completed <span class="cp-bubble cp-bubble-success">220</span></a>
           </li>
           <li>
-            <a href='trip-completed.html'>Completed <span class="cp-bubble">420</span></a>
-          </li>
-          <li>
-            <a href='trip-cancelled.html'>Cancelled <span class="cp-bubble">3</span></a>
+            <a href='trip-cancelled.html'>Cancelled <span class="cp-bubble cp-bubble-success">13</span></a>
           </li>
           <li>
             <a href='trip-complete.html'>Complete</a>
@@ -541,9 +538,9 @@
             </div>
           </div>
           <div class='cp-detail-summary-info'>
-            <div class='cp-typo-code'>CN5246</div>
+            <div class='cp-typo-code'>DR1246</div>
             <div class='cp-typo-name'>Thang Tran</div>
-            <div class='cp-typo-text'>Honda Civic 2016 / 51H1-25.254</div>
+            <div class='cp-typo-text'>Toyota Innova 2015 / 51H1-56.152</div>
           </div>
         </div>
       </header>
@@ -555,6 +552,10 @@
             <td>
               <a href='mailto:thang.tran@nexx.vn'>thang.tran@nexx.vn</a>
             </td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>01236585469</td>
           </tr>
           <tr>
             <td>Date of Birth:</td>
@@ -569,8 +570,8 @@
           <tr>
             <td>Is Verified:</td>
             <td>
-              <i class='cp-icn-complete'></i>
-              <i class='cp-icn-delete'></i>
+              <i class='cp-icn-yes'></i>
+              <i class='cp-icn-no'></i>
             </td>
           </tr>
           <tr>
@@ -662,20 +663,27 @@
           <thead>
             <tr>
               <th>&nbsp;</th>
-              <th></th>
-              <a href=''>ADDRESS</a>
-              <th></th>
-              <a href=''>COUNTRY</a>
-              <th></th>
-              <a href=''>PROVINCE</a>
-              <th></th>
-              <a href=''>DISTRICT</a>
-              <th></th>
-              <a href=''>WARD</a>
-              <th></th>
-              <a href=''>TYPE</a>
-              <th></th>
-              <a href=''>STATUS</a>
+              <th>
+                <a href=''>ADDRESS</a>
+              </th>
+              <th>
+                <a href=''>COUNTRY</a>
+              </th>
+              <th>
+                <a href=''>PROVINCE</a>
+              </th>
+              <th>
+                <a href=''>DISTRICT</a>
+              </th>
+              <th>
+                <a href=''>WARD</a>
+              </th>
+              <th>
+                <a href=''>TYPE</a>
+              </th>
+              <th>
+                <a href=''>STATUS</a>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -1147,9 +1155,19 @@
 <script src='../js/modernizr-custom.js' type='text/javascript'></script>
 <script src='../js/Chart.bundle.min.js' type='text/javascript'></script>
 <script src='../js/cp-chart.js' type='text/javascript'></script>
+<script src='../js/cp-chart-home.js' type='text/javascript'></script>
 <script src='../js/cp-chart-user.js' type='text/javascript'></script>
 <script src='../js/cp-chart-driver.js' type='text/javascript'></script>
 <script src='../js/cp-chart-customer.js' type='text/javascript'></script>
+<script src='../js/cp-chart-trip.js' type='text/javascript'></script>
+<script src='../js/cp-chart-vehicle.js' type='text/javascript'></script>
+<script src='../js/cp-chart-notification.js' type='text/javascript'></script>
+<script src='../js/cp-chart-service.js' type='text/javascript'></script>
+<script src='../js/cp-chart-finance.js' type='text/javascript'></script>
+<script src='../js/cp-chart-business.js' type='text/javascript'></script>
+<script src='../js/cp-chart-payment.js' type='text/javascript'></script>
+<script src='../js/cp-chart-news.js' type='text/javascript'></script>
+<script src='../js/cp-chart-geography.js' type='text/javascript'></script>
 <script src='../js/main.js' type='text/javascript'></script>
 </body>
 </html>

@@ -68,6 +68,7 @@ $btn-style-list: zip($list-btn, $list-btn-color)
 // Button Activities
 // =========================
 .cp-btn-act
+  white-space: nowrap
   padding: 3px 10px
   color: white
   text-align: center
@@ -90,11 +91,49 @@ $btn-customer-act: zip($list-customer-act, $list-customer-color)
   .cp-customer-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
-$list-trip-act: new accepted approved inprogress completed cancelled expired rating
-$list-trip-color: $primary $pink $lightRed $purple $blue $red $primaryText $brandText
+$list-trip-act: requesting onway ontrip complete cancel
+$list-trip-color: $orange $lightRed $blue $green $primaryText
 $btn-trip-act: zip($list-trip-act, $list-trip-color)
 
 @each $btn in $btn-trip-act
   .cp-trip-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
+// Bubble
+// ======
+.cp-bubble
+  display: inline
+  +border-radius(10px)
+  height: 20px
+  text-align: center
+  padding: 2px 6px 3px 5px
+  margin-left: 5px
+  color: white
+  font-weight: 600
+  font-size: rem(12px)
+
+$list-bubble: danger success warning disable
+$list-bubble-color: $red $blue $orange $primaryText
+$bubble-act: zip($list-bubble, $list-bubble-color)
+
+@each $bubble in $bubble-act
+  .cp-bubble-#{nth($bubble, 1)}
+    background-color: nth($bubble, 2)
+
+// Timeline Dots
+// =============
+.cp-timeline-dot
+  width: 14px
+  height: 14px
+  margin-top: 18px
+  z-index: 99
+  position: absolute
+  +border-radius(50%)
+
+$list-bubble: purple orange
+$list-bubble-color: $primary $orange
+$bubble-act: zip($list-bubble, $list-bubble-color)
+
+@each $bubble in $bubble-act
+  .cp-dot-#{nth($bubble, 1)}
+    background-color: nth($bubble, 2)

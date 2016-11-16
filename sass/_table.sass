@@ -12,7 +12,6 @@ table.cp-table-list
     tr th
       border: none
       padding-left: 10px
-      text-transform: uppercase
       vertical-align: text-top
       &:nth-child(2)
         padding-left: 0
@@ -25,7 +24,7 @@ table.cp-table-list
       &.cp-thead-small
         width: 75px
       &.cp-thead-normal
-        width: 160px
+        width: 140px
       &.cp-thead-big
         width: 210px
       &.cp-thead-super
@@ -83,7 +82,6 @@ table.cp-table-list
       &.cp-highlight
         color: $red
         span.subtext
-          font-size: rem(10px)
           color: lighten($red, 20%)
       &:hover
         background-color: rgba($hover, 0.05)
@@ -95,8 +93,9 @@ table.cp-table-list
         font-weight: 400
         padding: 10px 0 10px 10px
         span.subtext
-          font-size: rem(10px)
+          font-size: rem(12px)
           color: lighten($primaryText, 25%)
+          font-style: italic
         &:nth-child(2)
           padding-left: 0
         &.online
@@ -136,7 +135,7 @@ table.cp-card-detail
       padding-bottom: 5px
       &:first-child
         @extend .cp-typo-label-detail
-        width: 150px
+        width: 140px
         vertical-align: text-top
       &:nth-child(2)
         @extend .cp-typo-text

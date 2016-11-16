@@ -111,7 +111,7 @@
             <a href='customer-dashboard.html'>Dashboard</a>
           </li>
           <li>
-            <a href='customer-list-customer.html'>List Customer</a>
+            <a href='customer-list-customer.html'>List Customer <span class="cp-bubble cp-bubble-danger">5</span></a>
           </li>
           <li>
             <a href='customer-create-customer.html'>Create Customer</a>
@@ -134,19 +134,16 @@
             <a href='trip-dashboard.html'>Dashboard</a>
           </li>
           <li>
-            <a href='trip-new.html'>New <span class="cp-bubble">25</span></a>
+            <a href='trip-new.html'>New <span class="cp-bubble cp-bubble-success">25</span></a>
           </li>
           <li>
-            <a href='trip-approved.html'>Approved <span class="cp-bubble">12</span></a>
+            <a href='trip-in-progress.html'>In Progress <span class="cp-bubble cp-bubble-success">120</span></a>
           </li>
           <li>
-            <a href='trip-in-progress.html'>In Progress <span class="cp-bubble">120</span></a>
+            <a href='trip-completed.html'>Completed <span class="cp-bubble cp-bubble-success">220</span></a>
           </li>
           <li>
-            <a href='trip-completed.html'>Completed <span class="cp-bubble">420</span></a>
-          </li>
-          <li>
-            <a href='trip-cancelled.html'>Cancelled <span class="cp-bubble">3</span></a>
+            <a href='trip-cancelled.html'>Cancelled <span class="cp-bubble cp-bubble-success">13</span></a>
           </li>
           <li>
             <a href='trip-complete.html'>Complete</a>
@@ -643,7 +640,7 @@
           </tr>
         </thead>
         <tbody class='have-avatar'>
-          <tr>
+          <tr class='cp-highlight'>
             <td class='online'>&nbsp;</td>
             <td>
               <input id='chb-1' type='checkbox'>
@@ -671,7 +668,7 @@
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
-          <tr>
+          <tr class='cp-highlight'>
             <td class='online'>&nbsp;</td>
             <td>
               <input id='chb-2' type='checkbox'>
@@ -685,10 +682,10 @@
             <td>2</td>
             <td>CT88412</td>
             <td>Caleb Ogden</td>
-            <td>0128564245</td>
+            <td>01285642452</td>
             <td>caleb@gmail.com</td>
             <td class='cell-center'>
-              <div class='cp-btn-act cp-customer-ontrip'>On Trip</div>
+              <div class='cp-btn-act cp-customer-available'>Available</div>
             </td>
             <td>Active</td>
             <td>12/09/2016</td>
@@ -698,7 +695,8 @@
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='customer-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
-            <tr></tr>
+          </tr>
+          <tr class='cp-highlight'>
             <td>&nbsp;</td>
             <td>
               <input id='chb-3' type='checkbox'>
@@ -715,7 +713,7 @@
             <td>0975321856</td>
             <td>felipe@gmail.com</td>
             <td class='cell-center'>
-              <div class='cp-btn-act cp-customer-pickup'>Waiting for Cleaner</div>
+              <div class='cp-btn-act cp-customer-available'>Available</div>
             </td>
             <td>Active</td>
             <td>12/09/2016</td>
@@ -853,7 +851,7 @@
             <td>01236588641</td>
             <td>marcos@gmail.com</td>
             <td class='cell-center'>
-              <div class='cp-btn-act cp-customer-available'>Available</div>
+              <div class='cp-btn-act cp-customer-ontrip'>On Trip</div>
             </td>
             <td>Active</td>
             <td>12/09/2016</td>
@@ -878,7 +876,7 @@
             <td>9</td>
             <td>CT57521</td>
             <td>Matt Cheuveront</td>
-            <td>012823142714</td>
+            <td>0128231427</td>
             <td>matt@gmail.com</td>
             <td class='cell-center'>
               <div class='cp-btn-act cp-customer-available'>Available</div>
@@ -905,7 +903,7 @@
             <td>10</td>
             <td>CT65126</td>
             <td>Mike Kamanski</td>
-            <td>01289635422</td>
+            <td>0128963542</td>
             <td>mike@gmail.com</td>
             <td class='cell-center'>
               <div class='cp-btn-act cp-customer-available'>Available</div>
@@ -971,9 +969,19 @@
 <script src='../js/modernizr-custom.js' type='text/javascript'></script>
 <script src='../js/Chart.bundle.min.js' type='text/javascript'></script>
 <script src='../js/cp-chart.js' type='text/javascript'></script>
+<script src='../js/cp-chart-home.js' type='text/javascript'></script>
 <script src='../js/cp-chart-user.js' type='text/javascript'></script>
 <script src='../js/cp-chart-driver.js' type='text/javascript'></script>
 <script src='../js/cp-chart-customer.js' type='text/javascript'></script>
+<script src='../js/cp-chart-trip.js' type='text/javascript'></script>
+<script src='../js/cp-chart-vehicle.js' type='text/javascript'></script>
+<script src='../js/cp-chart-notification.js' type='text/javascript'></script>
+<script src='../js/cp-chart-service.js' type='text/javascript'></script>
+<script src='../js/cp-chart-finance.js' type='text/javascript'></script>
+<script src='../js/cp-chart-business.js' type='text/javascript'></script>
+<script src='../js/cp-chart-payment.js' type='text/javascript'></script>
+<script src='../js/cp-chart-news.js' type='text/javascript'></script>
+<script src='../js/cp-chart-geography.js' type='text/javascript'></script>
 <script src='../js/main.js' type='text/javascript'></script>
 </body>
 </html>

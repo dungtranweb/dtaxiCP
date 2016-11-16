@@ -1,0 +1,172 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item.active Trip Tracking
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / Booking Info
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Trip Info
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Trip Code:
+            %td TRIP254361
+          %tr
+            %td Pickup At:
+            %td 11/10/2016 - 15:32
+          %tr
+            %td Dropoff At:
+            %td 11/10/2016 - 16:02
+          %tr
+            %td Service Type:
+            %td Dtaxi 7 Seats
+
+  / Customer
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Customer
+        .cp-card-summary
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/faces/adelle-charles.png" alt="Customer Avatar" )
+          .cp-detail-summary-info.cp-summary-short
+            .cp-typo-code CT85312
+            .cp-typo-name Adelle Charles
+            .cp-typo-text 01236581245
+
+  / Driver
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Driver
+        .cp-card-summary
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/faces/thang-tran.png" alt="Driver Avatar" )
+          .cp-detail-summary-info.cp-summary-short
+            .cp-typo-code DR1246
+            .cp-typo-name Thang Tran
+            .cp-typo-text 01236585469
+
+  / Timeline
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Timeline
+      %hr
+      .cp-timeline-date.cp-typo-normal-bolder 11/10/2016
+      %hr
+
+      .cp-timeline
+        .cp-timeline-tree
+        %table
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-purple
+            %td.cp-timeline-time
+              .cp-typo-label REQUEST
+              .cp-typo-normal-bolder 10:25
+            %td.cp-timeline-location
+              .cp-typo-normal 126 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-orange
+            %td.cp-timeline-time
+              .cp-typo-label ACCEPT TRIP
+              .cp-typo-normal-bolder 10:27
+            %td.cp-timeline-location
+              .cp-typo-normal 258 Driver Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-purple
+            %td.cp-timeline-time
+              .cp-typo-label PICKUP
+              .cp-typo-normal-bolder 10:32
+            %td.cp-timeline-location
+              .cp-typo-normal 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-orange
+            %td.cp-timeline-time
+              .cp-typo-label IN PROGRESS
+              .cp-typo-normal-bolder 10:35
+            %td.cp-timeline-location
+              .cp-typo-normal 12 In Progress Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-purple
+            %td.cp-timeline-time
+              .cp-typo-label IN PROGRESS
+              .cp-typo-normal-bolder 10:45
+            %td.cp-timeline-location
+              .cp-typo-normal 278 In Progress Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-orange
+            %td.cp-timeline-time
+              .cp-typo-label IN PROGRESS
+              .cp-typo-normal-bolder 10:55
+            %td.cp-timeline-location
+              .cp-typo-normal 587 In Progress Street, Ward 2, District 4, Ho Chi Minh City
+          %tr
+            %td.cp-timeline-dotzone
+              .cp-timeline-dot.cp-dot-purple
+            %td.cp-timeline-time
+              .cp-typo-label COMPLETE & PAYMENT
+              .cp-typo-normal-bolder 11:02
+            %td.cp-timeline-location
+              .cp-typo-normal 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

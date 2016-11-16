@@ -1,0 +1,325 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="trip-dashboard.html") Trip
+  %li.cp-breadcrumb-item.active Cancelled Trip
+/ End Breadcrumb
+
+/ Flexbox Layout
+\<div class="cp-flex">
+.cp-flex-item.cp-flex-1of1
+  .cp-flex-content.cp-card
+    %header
+      .cp-card-title
+        .cp-typo-title Cancelled Trip
+      .cp-card-config
+        .dropdown.export
+          .dropdown-toggle(data-toggle="dropdown") <i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i>
+          .dropdown-menu.dropdown-menu-right
+            %a.dropdown-item(href="#") Excel
+            %a.dropdown-item(href="#") CSV
+        .split
+        .total Total 200 items
+    -#%select
+    -#  %option 10 items
+    -#  %option 20 items
+    -#  %option 50 items
+    -#  %option 100 items
+    -#.split
+    -#%input.cp-card-date(type="text" placeholder="15/10/2016" ) <i class="cp-icn-caret-black"></i>
+
+    .scrollable
+      %table.table.cp-table-list
+        %thead
+          %tr
+            %th &nbsp;
+            %th &nbsp;
+            %th
+              %a(href="#" ) CODE
+            %th.cp-thead-normal
+              %a(href="" ) CUSTOMER
+            %th.cp-thead-normal
+              %a(href="" ) DRIVER
+            %th
+              %a(href="" ) CREATE AT
+            %th
+              %a(href="" ) PICKUP LOCATION
+            %th
+              %a(href="" ) DROPOFF LOCATION
+            %th
+              %a(href="" ) ACTIVITY
+            %th
+              %a(href="" ) CANCELLED BY
+            %th
+              %a(href="" ) ACTION
+          %tr.filter
+            %td
+              %input#chb-all(type="checkbox")
+              %label.checkbox(for="chb-all")
+            %td &nbsp;
+            %td
+              %input.cp-input-s1(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %select.cp-table-select
+                %option All
+                %option On Way
+                %option On Trip
+            %td
+              %select.cp-table-select
+                %option All
+                %option Customer
+                %option Driver
+                %option Admin
+                %option User
+            %td &nbsp;
+        %tbody
+          %tr
+            %td
+              %input#chb-1(type="checkbox")
+              %label.checkbox(for="chb-1")
+            %td 1
+            %td TRIP254361
+            %td Adelle Charles <br><span class="subtext">01236581245</span>
+            %td Hoang Giang <br> <span class="subtext">Toyota Inova <br> 59H1-23.841</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Driver
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-2(type="checkbox")
+              %label.checkbox(for="chb-2")
+            %td 2
+            %td TRIP254361
+            %td Caleb Ogden <br><span class="subtext">01285642452</span>
+            %td Thang Tran <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-56.152</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Customer
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-3(type="checkbox")
+              %label.checkbox(for="chb-3")
+            %td 3
+            %td TRIP254361
+            %td Felipe Bogs <br><span class="subtext">0975321856</span>
+            %td Vu Nguyen <br> <span class="subtext">Mazda3 2015 <br> 51H2-12.154</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Driver
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-4(type="checkbox")
+              %label.checkbox(for="chb-4")
+            %td 4
+            %td TRIP254361
+            %td Jame Anderson <br><span class="subtext">01236581896</span>
+            %td Ty Luu <br> <span class="subtext">Kia Morning 2014 <br> 51H1-58.471</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Customer
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-5(type="checkbox")
+              %label.checkbox(for="chb-5")
+            %td 5
+            %td TRIP254361
+            %td Jarrod Mosen <br><span class="subtext">0123456789</span>
+            %td Thinh Nguyen <br> <span class="subtext">Toyota Vios 2015 <br> 51H1-85.698</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Driver
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-6(type="checkbox")
+              %label.checkbox(for="chb-6")
+            %td 6
+            %td TRIP254361
+            %td Jeremy Goillot <br><span class="subtext">01236896412</span>
+            %td Anh Nguyen <br> <span class="subtext">Toyota Camry 2015 <br> 51K1-56.187</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Admin
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-7(type="checkbox")
+              %label.checkbox(for="chb-7")
+            %td 7
+            %td TRIP254361
+            %td Jina Anne <br><span class="subtext">01239632631</span>
+            %td Thi Huynh <br> <span class="subtext">Honda Civic 2016 <br> 51H1-87.321</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Customer
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-8(type="checkbox")
+              %label.checkbox(for="chb-8")
+            %td 8
+            %td TRIP254361
+            %td Marcos Moralez <br><span class="subtext">01236588641</span>
+            %td David Gay <br> <span class="subtext">Ford EcoSport 2015 <br> 51L8-25.987</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Customer
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-9(type="checkbox")
+              %label.checkbox(for="chb-9")
+            %td 9
+            %td TRIP254361
+            %td Matt Cheuveront <br><span class="subtext">0128231427</span>
+            %td Phuong Mai <br> <span class="subtext">Honda Civic 2016 <br> 51H1-25.251</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Admin
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+          %tr
+            %td
+              %input#chb-10(type="checkbox")
+              %label.checkbox(for="chb-10")
+            %td 10
+            %td TRIP254361
+            %td Mike Kamanski <br><span class="subtext">0128963542</span>
+            %td Toan Nguyen <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-85.14</span>
+            %td 11/10/2016 <br>15:30
+            %td 325 Pickup Street, Ward 2, District 4, Ho Chi Minh City
+            %td 12 Dropoff Street, Ward 13, District 3, Ho Chi Minh City
+            %td.cell-center
+              .cp-btn-act.cp-trip-cancel Cancel
+            %td Customer
+            %td.action-second
+              %a.btn-list#eg(href="trip-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list#eg(href="trip-tracking.html" data-hover="tooltip" data-placement="top" title="Trip tracking" ) <i class="cp-icn-tracking"></i>
+
+      %ul.cp-pagination
+        %li.cp-pagination-item
+          %a.cp-pagination-link.disable(href="#") &laquo;
+        %li.cp-pagination-item
+          %a.cp-pagination-link.active(href="#" ) 1
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 2
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 3
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 4
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 5
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) &raquo;
+\</div>
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

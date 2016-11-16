@@ -1,0 +1,84 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item.active Trip Configuration
+/ End Breadcrumb
+
+/ Real Content
+%form(method="post" )
+  / Column Layout
+  .cp-column
+    / System Information
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Trip Configuration
+
+      .cp-card-content
+        .cp-label customer waiting time for searching taxi (second)
+        %input(type="text" placeholder="second" )
+        .cp-label driver accepting countdown (second)
+        %input(type="text" placeholder="second" )
+        .cp-label max taxi scanning radius (km)
+        %input(type="text" placeholder="km" )
+        .cp-label assign trip method
+        .cp-group-checkbox
+          %div
+            %input#assign-1(type="checkbox" )
+            %label.checkbox(for="assign-1") By radius
+          %div
+            %input#assign-2(type="checkbox" )
+            %label.checkbox(for="assign-2") Auto suggest nearest driver
+        .cp-label search taxi method
+        .cp-group-checkbox
+          %div
+            %input#search-1(type="checkbox" )
+            %label.checkbox(for="search-1") By distance
+          %div
+            %input#search-2(type="checkbox" )
+            %label.checkbox(for="search-2") By first assigned driver
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

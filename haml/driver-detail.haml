@@ -44,9 +44,9 @@
             .cp-image-rec90
               %img(src="../images/faces/thang-tran.png" alt="User Avatar" )
           .cp-detail-summary-info
-            .cp-typo-code CN5246
+            .cp-typo-code DR1246
             .cp-typo-name Thang Tran
-            .cp-typo-text Honda Civic 2016 / 51H1-25.254
+            .cp-typo-text Toyota Innova 2015 / 51H1-56.152
       %hr
       .cp-detail-container
         %table.cp-card-detail
@@ -54,6 +54,9 @@
             %td Email:
             %td
               %a(href="mailto:thang.tran@nexx.vn" ) thang.tran@nexx.vn
+          %tr
+            %td Phone:
+            %td 01236585469
           %tr
             %td Date of Birth:
             %td 15/10/1990
@@ -64,8 +67,8 @@
           %tr
             %td Is Verified:
             %td
-              %i.cp-icn-complete
-              %i.cp-icn-delete
+              %i.cp-icn-yes
+              %i.cp-icn-no
           %tr
             %td Rating:
             %td
@@ -130,19 +133,19 @@
             %tr
               %th &nbsp;
               %th
-              %a(href="" ) ADDRESS
+                %a(href="" ) ADDRESS
               %th
-              %a(href="" ) COUNTRY
+                %a(href="" ) COUNTRY
               %th
-              %a(href="" ) PROVINCE
+                %a(href="" ) PROVINCE
               %th
-              %a(href="" ) DISTRICT
+                %a(href="" ) DISTRICT
               %th
-              %a(href="" ) WARD
+                %a(href="" ) WARD
               %th
-              %a(href="" ) TYPE
+                %a(href="" ) TYPE
               %th
-              %a(href="" ) STATUS
+                %a(href="" ) STATUS
           %tbody
             %tr
               %td
@@ -478,3 +481,5 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
+
+
