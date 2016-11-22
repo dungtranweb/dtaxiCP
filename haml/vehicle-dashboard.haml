@@ -26,64 +26,45 @@
 %ol.cp-breadcrumb
   %li.cp-breadcrumb-item
     %a(href="index.html") Home
-  %li.cp-breadcrumb-item.active Driver Dashboard
+  %li.cp-breadcrumb-item.active Vehicle Dashboard
 / End Breadcrumb
 
 / Flexbox Layout
-.cp-flex.cp-driver-dashboard
-  / Total Driver
+.cp-flex.cp-vehicle-dashboard
+  / Total Vehicle
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Total Driver
+          .cp-typo-title Total Vehicle
 
       .cp-dashboard
-        %i.cp-icn-total-driver
-        .cp-typo-dashboard-count 1725
-        .cp-typo-dashboard-title Driver
+        %i.cp-icn-total-vehicle
+        .cp-typo-dashboard-count 214
+        .cp-typo-dashboard-title Vehicle
 
-  / Driver Status
+  / Vehicle Type
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Driver Status
+          .cp-typo-title Vehicle Type
 
       .cp-dashboard
         .cp-chart-pie
-          %canvas#driver-status(width="200" height="200" )
+          %canvas#vehicle-type(width="200" height="200" )
 
-  / System Status
+  / Vehicle Condition
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title System Status
+          .cp-typo-title Vehicle Condition
 
       .cp-dashboard
-        .cp-chart-doughnut
-          %canvas#driver-system-status(width="200" height="200" )
-          .cp-dashboard-icn-center
-            %i.cp-icn-active-driver
-        .cp-typo-dashboard-subcount 700
-        .cp-typo-code Active Driver
+        .cp-chart-pie
+          %canvas#vehicle-condition(width="200" height="200" )
 
-  // New Driver
-  .cp-flex-item.cp-flex-1of1
-    .cp-flex-content.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title New Driver
-        .cp-card-config
-          .btn-group.cp-btn-group
-            %button.btn.cp-btn-white(type="button" ) Year
-            %button.btn.cp-btn-white(type="button" ) Month
-            %button.btn.cp-btn-white.active(type="button" ) Week
-
-      .cp-dashboard
-        .cp-chart-full
-          %canvas#driver-new-driver(width="1200" height="500" )
 / End Flexbox Layout
 
 \</div>

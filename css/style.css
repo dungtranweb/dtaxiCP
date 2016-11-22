@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* line 7, ../sass/_sprite.sass */
 i {
-  background: url('../images/icons-sf34ead0dca.png') no-repeat;
+  background: url('../images/icons-s76d6f12437.png') no-repeat;
   display: inline-block;
   vertical-align: baseline;
 }
@@ -98,407 +98,414 @@ i {
 }
 
 /* line 13, ../sass/_sprite.sass */
-.cp-icn-check {
+.cp-icn-change-phone {
   background-position: 0 -318px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 13, ../sass/_sprite.sass */
+.cp-icn-check {
+  background-position: 0 -334px;
   height: 14px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-close {
-  background-position: 0 -332px;
+  background-position: 0 -348px;
   height: 15px;
   width: 15px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-complete {
-  background-position: 0 -347px;
+  background-position: 0 -363px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-config-topbar-small {
-  background-position: 0 -363px;
+  background-position: 0 -379px;
   height: 12px;
   width: 12px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-config-topbar {
-  background-position: 0 -375px;
+  background-position: 0 -391px;
   height: 25px;
   width: 26px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-customer {
-  background-position: 0 -400px;
-  height: 16px;
-  width: 16px;
-}
-
-/* line 13, ../sass/_sprite.sass */
-.cp-icn-dashboard {
   background-position: 0 -416px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
-.cp-icn-delete {
+.cp-icn-dashboard {
   background-position: 0 -432px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
-.cp-icn-disable {
+.cp-icn-delete {
   background-position: 0 -448px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
-.cp-icn-discount {
+.cp-icn-disable {
   background-position: 0 -464px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 13, ../sass/_sprite.sass */
+.cp-icn-discount {
+  background-position: 0 -480px;
   height: 17px;
   width: 19px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-driver {
-  background-position: 0 -481px;
+  background-position: 0 -497px;
   height: 18px;
   width: 18px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-edit-profile {
-  background-position: 0 -499px;
+  background-position: 0 -515px;
   height: 19px;
   width: 11px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-edit {
-  background-position: 0 -518px;
+  background-position: 0 -534px;
   height: 17px;
   width: 10px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-en-flag {
-  background-position: 0 -535px;
+  background-position: 0 -551px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-export {
-  background-position: 0 -551px;
+  background-position: 0 -567px;
   height: 27px;
   width: 22px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-fare {
-  background-position: 0 -578px;
+  background-position: 0 -594px;
   height: 18px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-female {
-  background-position: 0 -596px;
+  background-position: 0 -612px;
   height: 14px;
   width: 9px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-finance {
-  background-position: 0 -610px;
+  background-position: 0 -626px;
   height: 17px;
   width: 21px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-fullscreen {
-  background-position: 0 -627px;
+  background-position: 0 -643px;
   height: 15px;
   width: 15px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-geography {
-  background-position: 0 -642px;
+  background-position: 0 -658px;
   height: 23px;
   width: 20px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-level {
-  background-position: 0 -665px;
+  background-position: 0 -681px;
   height: 16px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-magnifier {
-  background-position: 0 -681px;
+  background-position: 0 -697px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-male {
-  background-position: 0 -697px;
+  background-position: 0 -713px;
   height: 14px;
   width: 14px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-modal-success {
-  background-position: 0 -711px;
+  background-position: 0 -727px;
   height: 91px;
   width: 91px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-modal-warning {
-  background-position: 0 -802px;
+  background-position: 0 -818px;
   height: 94px;
   width: 91px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-news {
-  background-position: 0 -896px;
+  background-position: 0 -912px;
   height: 15px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-next {
-  background-position: 0 -911px;
+  background-position: 0 -927px;
   height: 10px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-no {
-  background-position: 0 -921px;
+  background-position: 0 -937px;
   height: 17px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-noti-topbar {
-  background-position: 0 -938px;
+  background-position: 0 -954px;
   height: 27px;
   width: 21px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-notification {
-  background-position: 0 -965px;
+  background-position: 0 -981px;
   height: 19px;
   width: 14px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-online-register {
-  background-position: 0 -984px;
+  background-position: 0 -1000px;
   height: 18px;
   width: 19px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-pass {
-  background-position: 0 -1002px;
+  background-position: 0 -1018px;
   height: 16px;
   width: 8px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-payment {
-  background-position: 0 -1018px;
+  background-position: 0 -1034px;
   height: 14px;
   width: 21px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-prev {
-  background-position: 0 -1032px;
+  background-position: 0 -1048px;
   height: 10px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-profile {
-  background-position: 0 -1042px;
+  background-position: 0 -1058px;
   height: 18px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-search {
-  background-position: 0 -1060px;
+  background-position: 0 -1076px;
   height: 19px;
   width: 19px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-service-manage {
-  background-position: 0 -1079px;
+  background-position: 0 -1095px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-service {
-  background-position: 0 -1095px;
+  background-position: 0 -1111px;
   height: 20px;
   width: 20px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-setting-topbar-small {
-  background-position: 0 -1115px;
+  background-position: 0 -1131px;
   height: 12px;
   width: 12px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-setting-topbar {
-  background-position: 0 -1127px;
+  background-position: 0 -1143px;
   height: 19px;
   width: 26px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-sign-out {
-  background-position: 0 -1146px;
+  background-position: 0 -1162px;
   height: 19px;
   width: 17px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-star {
-  background-position: 0 -1165px;
+  background-position: 0 -1181px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-start {
-  background-position: 0 -1181px;
+  background-position: 0 -1197px;
   height: 18px;
   width: 18px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-toggle-header {
-  background-position: 0 -1199px;
+  background-position: 0 -1215px;
   height: 13px;
   width: 15px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-total-customer {
-  background-position: 0 -1212px;
+  background-position: 0 -1228px;
   height: 148px;
   width: 148px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-total-driver {
-  background-position: 0 -1360px;
+  background-position: 0 -1376px;
   height: 148px;
   width: 148px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-total-trip {
-  background-position: 0 -1508px;
+  background-position: 0 -1524px;
   height: 148px;
   width: 189px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-total-user {
-  background-position: 0 -1656px;
+  background-position: 0 -1672px;
   height: 149px;
   width: 177px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-total-vehicle {
-  background-position: 0 -1805px;
+  background-position: 0 -1821px;
   height: 148px;
   width: 167px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-tracking {
-  background-position: 0 -1953px;
+  background-position: 0 -1969px;
   height: 21px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-trip-status {
-  background-position: 0 -1974px;
+  background-position: 0 -1990px;
   height: 86px;
   width: 96px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-trips {
-  background-position: 0 -2060px;
+  background-position: 0 -2076px;
   height: 18px;
   width: 23px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-user {
-  background-position: 0 -2078px;
+  background-position: 0 -2094px;
   height: 16px;
   width: 19px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-vehicle {
-  background-position: 0 -2094px;
+  background-position: 0 -2110px;
   height: 18px;
   width: 27px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-vi-flag {
-  background-position: 0 -2112px;
+  background-position: 0 -2128px;
   height: 16px;
   width: 16px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-view {
-  background-position: 0 -2128px;
+  background-position: 0 -2144px;
   height: 16px;
   width: 20px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-yes {
-  background-position: 0 -2144px;
+  background-position: 0 -2160px;
   height: 17px;
   width: 24px;
 }
 
 /* line 13, ../sass/_sprite.sass */
 .cp-icn-zoom {
-  background-position: 0 -2161px;
+  background-position: 0 -2177px;
   height: 16px;
   width: 16px;
 }
@@ -1243,11 +1250,6 @@ progress[value]::-moz-progress-bar {
 /* line 83, ../sass/_button.sass */
 .cp-driver-onhold {
   background-color: #fcb040;
-}
-
-/* line 83, ../sass/_button.sass */
-.cp-driver-blocked {
-  background-color: #ee1414;
 }
 
 /* line 91, ../sass/_button.sass */
@@ -2831,61 +2833,67 @@ input:focus {
 }
 
 /* line 251, ../sass/_card.sass */
+.cp-vehicle-dashboard .cp-typo-dashboard-count {
+  color: #76c044;
+  margin-top: 50px;
+}
+
+/* line 256, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-count {
   color: #e85324;
   margin-top: 50px;
 }
-/* line 254, ../sass/_card.sass */
+/* line 259, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount {
   margin-top: 30px;
 }
-/* line 256, ../sass/_card.sass */
+/* line 261, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-down-progress {
   color: #e85324;
 }
-/* line 258, ../sass/_card.sass */
+/* line 263, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-up-progress {
   color: #00d2ff;
 }
-/* line 260, ../sass/_card.sass */
+/* line 265, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-second {
   color: #fcb040;
 }
-/* line 262, ../sass/_card.sass */
+/* line 267, ../sass/_card.sass */
 .cp-trip-dashboard progress[value] {
   color: #00d2ff;
 }
-/* line 264, ../sass/_card.sass */
+/* line 269, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-webkit-progress-bar {
   background-color: #e85324;
 }
-/* line 266, ../sass/_card.sass */
+/* line 271, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-webkit-progress-value {
   background-image: -webkit-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
   background-size: 100% 100%, 100% 100%;
 }
-/* line 269, ../sass/_card.sass */
+/* line 274, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-moz-progress-bar {
   background-image: -moz-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
   background-size: 100% 100%, 100% 100%;
 }
 
-/* line 273, ../sass/_card.sass */
+/* line 278, ../sass/_card.sass */
 .cp-card-count-block {
   overflow: hidden;
   padding: 20px;
   display: inline-block;
 }
-/* line 278, ../sass/_card.sass */
+/* line 283, ../sass/_card.sass */
 .cp-card-count-block div:first-child {
   text-align: left;
 }
-/* line 281, ../sass/_card.sass */
+/* line 286, ../sass/_card.sass */
 .cp-card-count-block div:nth-child(2) {
   text-align: right;
   padding-top: 5px;
 }
-/* line 285, ../sass/_card.sass */
+/* line 290, ../sass/_card.sass */
 .cp-card-count-block div:nth-child(3) {
   text-align: right;
 }
@@ -3172,7 +3180,7 @@ aside#sidebar .sidebar-nav ul li a:hover, aside#sidebar .sidebar-nav ul li a:act
   background-color: rgba(238, 238, 238, 0.15);
 }
 /* line 42, ../sass/_sidebar.sass */
-aside#sidebar .sidebar-nav ul li a span {
+aside#sidebar .sidebar-nav ul li a .menu-item {
   display: inline-block;
   width: 105px;
 }
@@ -3182,56 +3190,63 @@ aside#sidebar .sidebar-nav ul li .active-alone:focus, aside#sidebar .sidebar-nav
 }
 /* line 49, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul ul a {
-  padding-left: 65px;
+  padding-left: 50px;
+  padding-right: 5px;
 }
-/* line 51, ../sass/_sidebar.sass */
+/* line 52, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav ul ul a:hover, aside#sidebar .sidebar-nav ul ul a:active {
   background-color: rgba(238, 238, 238, 0.15);
 }
-/* line 55, ../sass/_sidebar.sass */
+/* line 56, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info {
   padding-top: 70px;
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 59, ../sass/_sidebar.sass */
+/* line 60, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info .cp-avatar-container {
   margin: 0 auto 5px auto;
 }
-/* line 61, ../sass/_sidebar.sass */
+/* line 62, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info #user-name {
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
 }
-/* line 65, ../sass/_sidebar.sass */
+/* line 66, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info #user-name span {
   display: inline-block;
   width: 135px;
 }
-/* line 69, ../sass/_sidebar.sass */
+/* line 70, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info ul#user-menu-item li a {
   padding-left: 20px;
 }
-/* line 71, ../sass/_sidebar.sass */
+/* line 72, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .user-info ul#user-menu-item li a span {
   display: inline-block;
   width: 120px;
 }
-/* line 74, ../sass/_sidebar.sass */
+/* line 75, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .icn-left {
   vertical-align: top;
   padding-right: 30px;
 }
-/* line 77, ../sass/_sidebar.sass */
+/* line 78, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .icn-right {
   float: right;
   margin-top: 10px;
   padding-right: 15px;
 }
-/* line 81, ../sass/_sidebar.sass */
+/* line 82, ../sass/_sidebar.sass */
 aside#sidebar .sidebar-nav .cp-bubble {
   display: inline;
+  float: right;
+}
+/* line 85, ../sass/_sidebar.sass */
+aside#sidebar .sidebar-nav .submenu-item {
+  width: 86px;
+  display: inline-block;
 }
 
 /* line 3, ../sass/_topbar.sass */
