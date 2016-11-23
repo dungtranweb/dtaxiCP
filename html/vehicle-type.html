@@ -517,9 +517,9 @@
     <a href='index.html'>Home</a>
   </li>
   <li class='cp-breadcrumb-item'>
-    <a href='driver-dashboard.html'>Driver</a>
+    <a href='vehicle-dashboard.html'>Vehicle</a>
   </li>
-  <li class='cp-breadcrumb-item active'>List Driver</li>
+  <li class='cp-breadcrumb-item active'>Types</li>
 </ol>
 <!-- End Breadcrumb -->
 <!-- Modal -->
@@ -545,9 +545,10 @@
   <div class='cp-flex-content cp-card'>
     <header>
       <div class='cp-card-title'>
-        <div class='cp-typo-title'>List Driver</div>
+        <div class='cp-typo-title'>Types</div>
       </div>
       <div class='cp-btn-status'>
+        <a class='cp-btn cp-btn-instant' href='vehicle-create-type.html'>Add New Type</a>
         <button class='cp-btn cp-btn-success' type='button'>Active</button>
         <button class='cp-btn cp-btn-deactive' type='button'>Deactive</button>
         <button class='cp-btn cp-btn-danger' type='button'>Block</button>
@@ -572,38 +573,14 @@
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class='cp-thead-small'>
-              <a href=''>CODE</a>
+            <th>
+              <a href='#'>CODE</a>
             </th>
             <th>
-              <a href=''>GROUP</a>
-            </th>
-            <th class='cp-thead-normal'>
               <a href=''>NAME</a>
             </th>
             <th>
-              <a href=''>PHONE</a>
-            </th>
-            <th>
-              <a href=''>RATING</a>
-            </th>
-            <th>
-              <a href=''>SERVICE TYPE</a>
-            </th>
-            <th>
-              <a href=''>ACTIVITY</a>
-            </th>
-            <th>
-              <a href=''>LAST ON DUTY</a>
-            </th>
-            <th>
-              <a href=''>CREATE AT</a>
-            </th>
-            <th>
-              <a href=''>TRIP</a>
-            </th>
-            <th>
-              <a href=''>EARNING</a>
+              <a href=''>SEAT QUANTITY</a>
             </th>
             <th>
               <a href=''>STATUS</a>
@@ -621,50 +598,7 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-              <input type='text'>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Dam Sen</option>
-                <option>Vinasun</option>
-                <option>Mai Linh</option>
-              </select>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>DTaxi</option>
-                <option>DTaxi 4 Seats</option>
-                <option>DTaxi 7 Seats</option>
-                <option>DTaxi Suburban</option>
-              </select>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Available</option>
-                <option>On Way</option>
-                <option>On Trip</option>
-                <option>On Hold</option>
-                <option>Offline</option>
-                <option>Blocked</option>
-              </select>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
+              <input class='cp-input-s1' type='text'>
             </td>
             <td>
               <input type='text'>
@@ -685,35 +619,23 @@
         </thead>
         <tbody class='have-avatar'>
           <tr>
-            <td class='online'>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>
               <input id='chb-1' type='checkbox'>
               <label class='checkbox' for='chb-1'></label>
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/hoang-giang.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>1</td>
-            <td>DR5246</td>
-            <td>Vinasun</td>
-            <td>Hoang Giang <br> <span class="subtext">Toyota Inova 2016 <br> 59H1-23.841</span></td>
-            <td>01236581245</td>
-            <td class='cell-center'>4.5</td>
-            <td>DTaxi 7 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-ontrip'>On Trip</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>28</td>
-            <td>3,180,000</td>
+            <td>SUV</td>
+            <td>Sport Utility Vehicle</td>
+            <td>7</td>
             <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td class='action-second'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
@@ -725,94 +647,58 @@
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/thang-tran.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>2</td>
-            <td>DR1246</td>
-            <td>Dam Sen</td>
-            <td>Thang Tran <br> <span class="subtext">Toyota Innova 2015 <br> 51H1-56.152</span></td>
-            <td>01236585469</td>
-            <td class='cell-center'>3.5</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-available'>Available</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>34</td>
-            <td>4,850,000</td>
+            <td>SEDAN</td>
+            <td>Sedan</td>
+            <td>4</td>
             <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
           <tr>
-            <td class='online'>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>
               <input id='chb-3' type='checkbox'>
               <label class='checkbox' for='chb-3'></label>
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/vu-nguyen.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>3</td>
-            <td>DR5451</td>
-            <td>Dam Sen</td>
-            <td>Vu Nguyen <br> <span class="subtext">Tesla Model 3 2017 <br> 51H2-12.154</span></td>
-            <td>01236585445</td>
-            <td class='cell-center'>3.5</td>
-            <td>DTaxi 4 Seats, DTaxi Suburban</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-onway'>On Way</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>52</td>
-            <td>8,450,000</td>
+            <td>COUPLE</td>
+            <td>Couple</td>
+            <td>2</td>
             <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
           <tr>
-            <td class='online'>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>
               <input id='chb-4' type='checkbox'>
               <label class='checkbox' for='chb-4'></label>
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/ty-luu.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>4</td>
-            <td>DR8451</td>
-            <td>Mai Linh</td>
-            <td>Ty Luu <br> <span class="subtext">Kia Morning 2014 <br> 51H1-58.471</span></td>
-            <td>01236581854</td>
-            <td class='cell-center'>4.5</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-available'>Available</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>27</td>
-            <td>4,000,000</td>
-            <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td>MINI</td>
+            <td>Mini</td>
+            <td>2</td>
+            <td>Deactive</td>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
@@ -824,61 +710,37 @@
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/thinh-nguyen.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>5</td>
-            <td>DR6214</td>
-            <td>Dam Sen</td>
-            <td>Thinh Nguyen <br> <span class="subtext">Toyota Vios 2015 <br> 51H1-85.698</span></td>
-            <td>01239654185</td>
-            <td class='cell-center'>3</td>
-            <td>DTaxi 4 Seats, DTaxi Suburban</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-onhold'>On Hold</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>12</td>
-            <td>2,250,000</td>
+            <td>BUS</td>
+            <td>Bus</td>
+            <td>52</td>
             <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
           <tr>
-            <td class='online'>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>
               <input id='chb-6' type='checkbox'>
               <label class='checkbox' for='chb-6'></label>
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/placeholder.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>6</td>
-            <td>DR2541</td>
-            <td>Dam Sen</td>
-            <td>Anh Nguyen <br> <span class="subtext">Toyota Camry 2015 <br> 51K1-56.187</span></td>
-            <td>01236875964</td>
-            <td class='cell-center'>4.2</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-offline'>Offline</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>0</td>
-            <td>0</td>
-            <td>Deactive</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td>TRUCK</td>
+            <td>Truck</td>
+            <td>2</td>
+            <td>Active</td>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
@@ -890,127 +752,37 @@
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/placeholder.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>7</td>
-            <td>DR6512</td>
-            <td>Vinasun</td>
-            <td>Thi Huynh <br> <span class="subtext">Honda Civic 2016 <br> 51H1-87.321</span></td>
-            <td>01236625312</td>
-            <td class='cell-center'>3.2</td>
-            <td>DTaxi 4 Seats, DTaxi Suburban</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-available'>Available</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>14</td>
-            <td>1,850,000</td>
-            <td>Blocked</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td>MOTOR</td>
+            <td>Motor</td>
+            <td>2</td>
+            <td>Active</td>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>
           <tr>
-            <td class='online'>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>
               <input id='chb-8' type='checkbox'>
               <label class='checkbox' for='chb-8'></label>
             </td>
             <td>
               <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/male-models.png'>
+                <img alt='Type' src='../images/placeholder.png'>
               </div>
             </td>
             <td>8</td>
-            <td>DR1124</td>
-            <td>Dam Sen</td>
-            <td>David Gay <br> <span class="subtext">Ford EcoSport 2015 <br> 51L8-25.987</span></td>
-            <td>01236545124</td>
-            <td class='cell-center'>4.7</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-onway'>On Way</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>18</td>
-            <td>2.450,000</td>
+            <td>HYBRID</td>
+            <td>Hybrid</td>
+            <td>2</td>
             <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-9' type='checkbox'>
-              <label class='checkbox' for='chb-9'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/phuong-mai.png'>
-              </div>
-            </td>
-            <td>9</td>
-            <td>DR8541</td>
-            <td>Dam Sen</td>
-            <td>Phuong Mai <br> <span class="subtext">Honda Civic 2016 <br> 51H1-25.251</span></td>
-            <td>01563211245</td>
-            <td class='cell-center'>3.2</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-available'>Available</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>9</td>
-            <td>850,000</td>
-            <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-10' type='checkbox'>
-              <label class='checkbox' for='chb-10'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Avatar' src='../images/faces/placeholder.png'>
-              </div>
-            </td>
-            <td>10</td>
-            <td>DR5246</td>
-            <td>Dam Sen</td>
-            <td>Toan Nguyen <br> <span class="subtext">Toyota Vios 2016 <br> 51H1-85.14</span></td>
-            <td>01236558465</td>
-            <td class='cell-center'>3.7</td>
-            <td>DTaxi 4 Seats</td>
-            <td class='cell-center'>
-              <div class='cp-btn-act cp-driver-offline'>Offline</div>
-            </td>
-            <td>11/11/2016 <br>13:22</td>
-            <td>02/11/2016 <br>10:14</td>
-            <td class='cell-center'>0</td>
-            <td>0</td>
-            <td>Active</td>
-            <td class='action-third'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='driver-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='driver-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
+            <td class='action'>
+              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-type.html' title='Edit'><i class="cp-icn-edit"></i></a>
               <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
             </td>
           </tr>

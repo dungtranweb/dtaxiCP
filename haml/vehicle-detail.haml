@@ -1,0 +1,192 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-dashboard.html") Vehicle
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-list-vehicle.html") List Vehicle
+  %li.cp-breadcrumb-item.active Vehicle Detail
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / General Information
+  .cp-flex-item.cp-flex-equal.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-summary
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/vehicle/brand/tesla.png" alt="Brand logo" )
+          .cp-detail-summary-info
+            .cp-typo-code TESLA
+            .cp-typo-name Tesla Motor
+      %hr
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Model:
+            %td Model 3
+          %tr
+            %td Type:
+            %td Sedan
+          %tr
+            %td Serial Year:
+            %td 2017
+          %tr
+            %td Seat Quantity:
+            %td 4
+          %tr
+            %td Condition:
+            %td
+              .cp-btn-act.cp-condition-normal Normal
+          %tr
+            %td Join At:
+            %td 11/11/2016 - 13:22
+          %tr
+            %td Create At:
+            %td 02/11/2016 - 10:14
+          %tr
+            %td Status:
+            %td Active
+
+  / Document
+  .cp-flex-item.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Document
+        .cp-detail-container
+          .cp-detail-flex
+            %table.cp-card-detail
+              %tr
+                %td(colspan="2" )
+                  .cp-label insurance
+              %tr
+                %td Insurance No.:
+                %td 5693578451346
+              %tr
+                %td Insurance Type:
+                %td Auto Insurance
+              %tr
+                %td Issue Date:
+                %td 11/09/2016
+              %tr
+                %td Expire Date:
+                %td 11/09/2018
+              %tr
+                %td Issue By:
+                %td Bao Viet Insurance
+            .cp-document-image
+              .cp-image-item
+                .cp-label Insurance Front Image
+                %img(src="../images/placeholder-document.png" alt="Insurance front" )
+              .cp-image-item
+                .cp-label Insurance Back Image
+                %img(src="../images/placeholder-document.png" alt="Insurance back" )
+  / Vehicle
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Vehicle
+      .scrollable
+        .cp-detail-container
+          .cp-flex-inner
+            .cp-detail-flex.cp-flex-2of3
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label vehicle vehicle
+                %tr
+                  %td Color:
+                  %td Silver
+                %tr
+                  %td Cylinder Capacity:
+                  %td 1998cc
+                %tr
+                  %td Engine No.:
+                  %td OTA8000020
+                %tr
+                  %td Chassis No.:
+                  %td OBH088005N
+              .cp-document-image.cp-flex-center
+                .cp-image-item
+                  .cp-label Vehicle Front Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle front" )
+                .cp-image-item
+                  .cp-label Vehicle Back Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle back" )
+                .cp-image-item
+                  .cp-label Vehicle Left Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle front" )
+                .cp-image-item
+                  .cp-label Vehicle Right Image
+                  %img(src="../images/placeholder-document.png" alt="Vehicle back" )
+
+            .cp-detail-flex.cp-flex-1of3
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label Registration Certificate
+                %tr
+                  %td RC No.:
+                  %td 65454518489461
+                %tr
+                  %td License Plate:
+                  %td 59H1-23.841
+                %tr
+                  %td Issue Date:
+                  %td 25/09/2016
+                %tr
+                  %td Issued By:
+                  %td HPD
+              .cp-document-image
+                .cp-image-item
+                  .cp-label RC Front Image
+                  %img(src="../images/placeholder-document.png" alt="Registration Certificate front" )
+                .cp-image-item
+                  .cp-label RC Back Image
+                  %img(src="../images/placeholder-document.png" alt="Registration Certificate back" )
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

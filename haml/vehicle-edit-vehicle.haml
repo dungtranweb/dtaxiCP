@@ -1,0 +1,301 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-dashboard.html") Vehicle
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-list-vehicle.html") List Vehicle
+  %li.cp-breadcrumb-item.active Edit Vehicle
+/ End Breadcrumb
+
+/ Real Content
+%form(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Edit Vehicle
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Edit Vehicle
+
+      .cp-card-content
+        .cp-label model
+        %select
+          %option(selected disabled) Select one
+          %option Honda Civic 2016
+          %option Toyota Vios 2015
+          %option Toyota Inova 2015
+          %option Toyota Camry 2016
+          %option Mazda3 2016
+          %option Kia Morning 2015
+          %option Ford EcoSport 2015
+        .cp-label color
+        %input(type="text" placeholder="Enter color" )
+        .cp-label cylinder capacity
+        %input(type="text" placeholder="Enter cylinder capacity" )
+        .cp-label engine number
+        %input(type="text" placeholder="Enter engine number" )
+        .cp-label chasis number
+        %input(type="text" placeholder="Enter chasis number" )
+        .cp-label condition
+        %select
+          %option(selected disabled) Select one
+          %option Normal
+          %option Fixing
+          %option Damage
+          %option Inactive
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-back" type="file" )
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label left
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-left" type="file" )
+          .cp-upload-item
+            .cp-label right
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-right" type="file" )
+
+    / Fake Column Item
+    .cp-column-item-fake.cp-fake-margin-1
+
+    / Registration Certificate
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Registration Certificate
+
+      .cp-card-content
+        .cp-label registration number
+        %input(type="text" placeholder="Enter registration number" )
+        .cp-label issued by
+        %input(type="text" placeholder="Enter issued by" )
+        .cp-label issue date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997Float Container
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-label license plate
+        %input(type="text" placeholder="Enter license plate" )
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-identity-back" type="file" )
+
+    / Insurance
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Insurance
+
+      .cp-card-content
+        .cp-label insurance number
+        %input(type="text" placeholder="Enter insurance number" )
+        .cp-label insurance type
+        %input(type="text" placeholder="Enter insurance type" )
+        .cp-label issued by
+        %input(type="text" placeholder="Enter issued by" )
+        .cp-label issue date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-label expire date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-insurance-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="vehicle-insurance-back" type="file" )
+
+  / End Column Layout
+
+  / Column Layout
+  .cp-column
+    / Action
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Action
+
+      .cp-card-content
+        .cp-label status
+        %select
+          %option Active
+          %option Deactive
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render

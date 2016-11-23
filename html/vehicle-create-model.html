@@ -519,303 +519,79 @@
   <li class='cp-breadcrumb-item'>
     <a href='vehicle-dashboard.html'>Vehicle</a>
   </li>
-  <li class='cp-breadcrumb-item active'>Brands</li>
+  <li class='cp-breadcrumb-item'>
+    <a href='vehicle-model.html'>Models</a>
+  </li>
+  <li class='cp-breadcrumb-item active'>Create Model</li>
 </ol>
 <!-- End Breadcrumb -->
-<!-- Modal -->
-<div class='modal fade' id='cp-modal-delete' role='dialog' tabindex='-1'>
-  <div class='modal-dialog' role='document'>
-    <div class='cp-modal-content'>
-      <div class='cp-modal-header'>
-        <i class='cp-icn-modal-warning'></i>
-        <div class='cp-modal-title'>Are you sure?</div>
-        <div class='cp-modal-subtitle'>You will not able to recover this item!</div>
-      </div>
-      <div class='cp-modal-footer'>
-        <button class='cp-btn cp-btn-danger' type='button'>Yes</button>
-        <button class='cp-btn cp-btn-success' data-dismiss='modal' type='button'>No</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Modal -->
-<!-- Flexbox Layout -->
-<div class="cp-flex">
-<div class='cp-flex-item cp-flex-1of1'>
-  <div class='cp-flex-content cp-card'>
-    <header>
-      <div class='cp-card-title'>
-        <div class='cp-typo-title'>Brands</div>
-      </div>
-      <div class='cp-btn-status'>
-        <a class='cp-btn cp-btn-instant' href='vehicle-create-brand.html'>Add New Brand</a>
-        <button class='cp-btn cp-btn-success' type='button'>Active</button>
-        <button class='cp-btn cp-btn-deactive' type='button'>Deactive</button>
-        <button class='cp-btn cp-btn-danger' type='button'>Block</button>
-      </div>
-      <div class='cp-card-config'>
-        <div class='dropdown export'>
-          <div class='dropdown-toggle' data-toggle='dropdown'><i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i></div>
-          <div class='dropdown-menu dropdown-menu-right'>
-            <a class='dropdown-item' href='#'>Excel</a>
-            <a class='dropdown-item' href='#'>CSV</a>
-          </div>
+<!-- Float Container -->
+<form enctype='multipart/form-data' method='post'>
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Create Model -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Create Model</div>
         </div>
-        <div class='split'></div>
-        <div class='total'>Total 200 items</div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>model logo</div>
+        <div class='kv-avatar'>
+          <input class='cp-upimage file-loading' name='model-logo' type='file'>
+        </div>
+        <div class='cp-label'>model name</div>
+        <input placeholder='Enter model name' type='text'>
+        <div class='cp-label'>brand name</div>
+        <select>
+          <option>BMW</option>
+          <option>HONDA</option>
+          <option>KIA</option>
+          <option>SUBARU</option>
+          <option>TESLA</option>
+          <option>TOYOTA</option>
+          <option>VOLKSWAGEN</option>
+          <option>VOLVO</option>
+        </select>
+        <div class='cp-label'>VEHICLE TYPE</div>
+        <select>
+          <option>SUV</option>
+          <option>Sedan</option>
+          <option>Couple</option>
+          <option>Mini</option>
+          <option>Bus</option>
+          <option>Truck</option>
+          <option>Motor</option>
+          <option>Hybrid</option>
+        </select>
+        <div class='cp-label'>serial year</div>
+        <input placeholder='Enter serial year' type='text'>
       </div>
-    </header>
-    <div class='scrollable'>
-      <table class='table cp-table-list'>
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>
-              <a href='#'>CODE</a>
-            </th>
-            <th>
-              <a href=''>NAME</a>
-            </th>
-            <th>
-              <a href=''>COUNTRY</a>
-            </th>
-            <th>
-              <a href=''>STATUS</a>
-            </th>
-            <th>
-              <a href=''>ACTION</a>
-            </th>
-          </tr>
-          <tr class='filter'>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-all' type='checkbox'>
-              <label class='checkbox' for='chb-all'></label>
-            </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>
-              <input class='cp-input-s1' type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Active</option>
-                <option>Deactive</option>
-                <option>Blocked</option>
-              </select>
-            </td>
-            <td>&nbsp;</td>
-          </tr>
-        </thead>
-        <tbody class='have-avatar'>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-1' type='checkbox'>
-              <label class='checkbox' for='chb-1'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/bmw.png'>
-              </div>
-            </td>
-            <td>1</td>
-            <td>BMW</td>
-            <td>Bayerische Motoren Werke AG</td>
-            <td>German</td>
-            <td>Active</td>
-            <td class='action-second'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-2' type='checkbox'>
-              <label class='checkbox' for='chb-2'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/honda.png'>
-              </div>
-            </td>
-            <td>2</td>
-            <td>HONDA</td>
-            <td>Honda Motor</td>
-            <td>Japan</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-3' type='checkbox'>
-              <label class='checkbox' for='chb-3'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/kia.png'>
-              </div>
-            </td>
-            <td>3</td>
-            <td>KIA</td>
-            <td>Kia Motor</td>
-            <td>Korea</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-4' type='checkbox'>
-              <label class='checkbox' for='chb-4'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/subaru.png'>
-              </div>
-            </td>
-            <td>4</td>
-            <td>SUBARU</td>
-            <td>Subaru Motor</td>
-            <td>Japan</td>
-            <td>Deactive</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-5' type='checkbox'>
-              <label class='checkbox' for='chb-5'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/tesla.png'>
-              </div>
-            </td>
-            <td>5</td>
-            <td>TESLA</td>
-            <td>Tesla Motor</td>
-            <td>United State</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-6' type='checkbox'>
-              <label class='checkbox' for='chb-6'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/toyota.png'>
-              </div>
-            </td>
-            <td>6</td>
-            <td>TOYOTA</td>
-            <td>Toyota Motor</td>
-            <td>Japan</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-7' type='checkbox'>
-              <label class='checkbox' for='chb-7'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/volkswagen.png'>
-              </div>
-            </td>
-            <td>7</td>
-            <td>VOLKSWAGEN</td>
-            <td>Volkswagen</td>
-            <td>German</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-8' type='checkbox'>
-              <label class='checkbox' for='chb-8'></label>
-            </td>
-            <td>
-              <div class='cp-image-rec56'>
-                <img alt='Brand' src='../images/vehicle/brand/volvo.png'>
-              </div>
-            </td>
-            <td>8</td>
-            <td>VOLVO</td>
-            <td>Aktiebolaget Volvo</td>
-            <td>Sweden</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='vehicle-edit-brand.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <ul class='cp-pagination'>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link disable' href='#'>&laquo;</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link active' href='#'>1</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>2</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>3</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>4</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>5</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>&raquo;</a>
-        </li>
-      </ul>
     </div>
   </div>
-</div>
-</div>
-<!-- End Flexbox Layout -->
+  <!-- End Column Layout -->
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Action -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Action</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>status</div>
+        <select>
+          <option>Active</option>
+          <option>Deactive</option>
+        </select>
+        <button class='cp-btn cp-btn-success' type='submit'>Create</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Column Layout -->
+</form>
 </div>
 <!-- End Content -->
 <!-- Foobar -->

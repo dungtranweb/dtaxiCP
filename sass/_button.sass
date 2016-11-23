@@ -19,8 +19,10 @@ $btn-style-list: zip($list-btn, $list-btn-color)
   line-height: rem(16px)
   +border-radius(3px)
   +box-shadow(none)
+  &:hover,
   &:focus,
   &:active
+    text-decoration: none
     outline: none
     +box-shadow(none)
 
@@ -97,6 +99,14 @@ $btn-trip-act: zip($list-trip-act, $list-trip-color)
 
 @each $btn in $btn-trip-act
   .cp-trip-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+
+$list-condition-act: normal fixing damage inactive
+$list-condition-color: $blue $orange $red $primaryText
+$btn-condition-act: zip($list-condition-act, $list-condition-color)
+
+@each $btn in $btn-condition-act
+  .cp-condition-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
 // Bubble

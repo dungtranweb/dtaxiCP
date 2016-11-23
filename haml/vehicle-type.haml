@@ -28,7 +28,7 @@
     %a(href="index.html") Home
   %li.cp-breadcrumb-item
     %a(href="vehicle-dashboard.html") Vehicle
-  %li.cp-breadcrumb-item.active Brands
+  %li.cp-breadcrumb-item.active Types
 / End Breadcrumb
 
 / Modal
@@ -50,9 +50,9 @@
   .cp-flex-content.cp-card
     %header
       .cp-card-title
-        .cp-typo-title Brands
+        .cp-typo-title Types
       .cp-btn-status
-        %a.cp-btn.cp-btn-instant(href="vehicle-create-brand.html" ) Add New Brand
+        %a.cp-btn.cp-btn-instant(href="vehicle-create-type.html" ) Add New Type
         %button.cp-btn.cp-btn-success(type="button" ) Active
         %button.cp-btn.cp-btn-deactive(type="button" ) Deactive
         %button.cp-btn.cp-btn-danger(type="button" ) Block
@@ -85,7 +85,7 @@
             %th
               %a(href="" ) NAME
             %th
-              %a(href="" ) COUNTRY
+              %a(href="" ) SEAT QUANTITY
             %th
               %a(href="" ) STATUS
             %th
@@ -118,14 +118,14 @@
               %label.checkbox(for="chb-1")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/bmw.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 1
-            %td BMW
-            %td Bayerische Motoren Werke AG
-            %td German
+            %td SUV
+            %td Sport Utility Vehicle
+            %td 7
             %td Active
             %td.action-second
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -134,14 +134,14 @@
               %label.checkbox(for="chb-2")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/honda.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 2
-            %td HONDA
-            %td Honda Motor
-            %td Japan
+            %td SEDAN
+            %td Sedan
+            %td 4
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -150,14 +150,14 @@
               %label.checkbox(for="chb-3")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/kia.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 3
-            %td KIA
-            %td Kia Motor
-            %td Korea
+            %td COUPLE
+            %td Couple
+            %td 2
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -166,14 +166,14 @@
               %label.checkbox(for="chb-4")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/subaru.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 4
-            %td SUBARU
-            %td Subaru Motor
-            %td Japan
+            %td MINI
+            %td Mini
+            %td 2
             %td Deactive
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -182,14 +182,14 @@
               %label.checkbox(for="chb-5")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/tesla.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 5
-            %td TESLA
-            %td Tesla Motor
-            %td United State
+            %td BUS
+            %td Bus
+            %td 52
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -198,14 +198,14 @@
               %label.checkbox(for="chb-6")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/toyota.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 6
-            %td TOYOTA
-            %td Toyota Motor
-            %td Japan
+            %td TRUCK
+            %td Truck
+            %td 2
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -214,14 +214,14 @@
               %label.checkbox(for="chb-7")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/volkswagen.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 7
-            %td VOLKSWAGEN
-            %td Volkswagen
-            %td German
+            %td MOTOR
+            %td Motor
+            %td 2
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
           %tr
             %td &nbsp;
@@ -230,14 +230,14 @@
               %label.checkbox(for="chb-8")
             %td
               .cp-image-rec56
-                %img(src="../images/vehicle/brand/volvo.png" alt="Brand" )
+                %img(src="../images/placeholder.png" alt="Type" )
             %td 8
-            %td VOLVO
-            %td Aktiebolaget Volvo
-            %td Sweden
+            %td HYBRID
+            %td Hybrid
+            %td 2
             %td Active
             %td.action
-              %a.btn-list(href="vehicle-edit-brand.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+              %a.btn-list(href="vehicle-edit-type.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
               %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
 
       %ul.cp-pagination

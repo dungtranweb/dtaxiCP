@@ -1,0 +1,107 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-dashboard.html") Vehicle
+  %li.cp-breadcrumb-item
+    %a(href="vehicle-model.html") Models
+  %li.cp-breadcrumb-item.active Edit Model
+/ End Breadcrumb
+
+/ Float Container
+%form(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Edit Model
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Edit Model
+
+      .cp-card-content
+        .cp-label model logo
+        .kv-avatar
+          %input.cp-upimage.file-loading(name="model-logo" type="file" )
+        .cp-label model name
+        %input(type="text" placeholder="Enter model name" )
+        .cp-label brand name
+        %select
+          %option BMW
+          %option HONDA
+          %option KIA
+          %option SUBARU
+          %option TESLA
+          %option TOYOTA
+          %option VOLKSWAGEN
+          %option VOLVO
+        .cp-label VEHICLE TYPE
+        %select
+          %option SUV
+          %option Sedan
+          %option Couple
+          %option Mini
+          %option Bus
+          %option Truck
+          %option Motor
+          %option Hybrid
+        .cp-label serial year
+        %input(type="text" placeholder="Enter serial year" )
+
+  / End Column Layout
+
+  / Column Layout
+  .cp-column
+    / Action
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Action
+
+      .cp-card-content
+        .cp-label status
+        %select
+          %option Active
+          %option Deactive
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
