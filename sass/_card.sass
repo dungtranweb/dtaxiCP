@@ -228,6 +228,26 @@
     width: 95%
     margin: 0 auto
 
+.cp-home-dashboard
+  .cp-typo-dashboard-subcount
+    margin-top: 30px
+    &.cp-down-progress
+      color: $lightRed
+    &.cp-up-progress
+      color: $blue
+    &.cp-second
+      color: $orange
+  progress[value]
+    color: $blue
+    &::-webkit-progress-bar
+      background-color: $lightRed
+    &::-webkit-progress-value
+      background-image: -webkit-linear-gradient(left, rgb(0,210,255) 0%, rgb(0,210,255) 100%)
+      background-size: 100% 100%, 100% 100%
+    &::-moz-progress-bar
+      background-image: -moz-linear-gradient(left, rgb(0,210,255) 0%, rgb(0,210,255) 100%)
+      background-size: 100% 100%, 100% 100%
+
 .cp-driver-dashboard
   .cp-typo-dashboard-count
     color: $primary
@@ -291,6 +311,9 @@
   overflow: hidden
   padding: 20px
   display: inline-block
+  &.cp-count-home
+    padding: 0 20px 0 0
+    height: 129px
 .cp-count-note
   text-align: left
   @extend .cp-typo-count-1
@@ -301,3 +324,17 @@
 .cp-count-title
   text-align: right
   @extend .cp-typo-count-3
+.cp-count-icon
+  width: 129px
+  height: 129px
+  float: left
+  +border-left-radius(7px)
+  +display-flex(flex)
+  +justify-content(center)
+  +align-items(center)
+  &.cp-count-driver
+    background-color: $primary
+  &.cp-count-customer
+    background-color: $orange
+  &.cp-count-trip
+    background-color: $lightRed

@@ -11,7 +11,7 @@ var customerStatusData= {
     ],
     datasets: [
         {
-            data: [1118, 102, 204],
+            data: [92618, 4642, 1754],
             backgroundColor: [
                 "#76c044",
                 "#00d2ff",
@@ -50,7 +50,7 @@ var customerSystemStatusData= {
     ],
     datasets: [
         {
-            data: [987, 330, 148],
+            data: [98687, 42330, 3848],
             backgroundColor: [
                 "#262262",
                 "#666666",
@@ -89,7 +89,7 @@ var customerNewCustomerData= {
     ],
     datasets: [
         {
-            data: [75, 47, 63, 102, 32, 28, 15],
+            data: [715, 417, 613, 1012, 312, 218, 115],
             label: "New Customer",
             fill: false,
             lineTension: 0.1,

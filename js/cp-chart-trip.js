@@ -59,7 +59,7 @@ var tripBarTripData= {
     datasets: [
         {
             label: "Complete",
-            data: [75, 47, 63, 102, 32, 28, 45],
+            data: [715, 417, 623, 1032, 322, 218, 435],
             backgroundColor: [
                 '#76c044',
                 '#76c044',
@@ -72,7 +72,7 @@ var tripBarTripData= {
         },
         {
             label: "Cancel",
-            data: [34, 52, 92, 34, 64, 28, 72],
+            data: [344, 542, 952, 334, 641, 528, 712],
             backgroundColor: [
                 '#666666',
                 '#666666',

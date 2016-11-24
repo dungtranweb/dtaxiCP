@@ -517,30 +517,133 @@
 </ol>
 <!-- End Breadcrumb -->
 <!-- Flexbox Layout -->
-<div class='cp-flex'>
-  <!-- Summary -->
+<div class='cp-flex cp-home-dashboard'>
+  <!-- Counting Total Data -->
   <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
-    <div class='cp-flex-content cp-card-count-block'>
-      <div class='cp-count-icon'>
+    <div class='cp-flex-content cp-card-count-block cp-count-home clearfix'>
+      <div class='cp-count-icon cp-count-driver'>
         <i class='cp-icn-total-driver-home'></i>
       </div>
-      <div class='cp-count-note'>&nbsp;</div>
-      <div class='cp-count-number'>345</div>
-      <div class='cp-count-title'>Total Trip</div>
+      <div class='cp-count-data'>
+        <div class='cp-count-note'>&nbsp;</div>
+        <div class='cp-count-number'>1725</div>
+        <div class='cp-count-title'>Drivers</div>
+      </div>
     </div>
   </div>
   <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
-    <div class='cp-flex-content cp-card-count-block'>
-      <div class='cp-count-note'>&nbsp;</div>
-      <div class='cp-count-number'>325</div>
-      <div class='cp-count-title'>Completed Trip</div>
+    <div class='cp-flex-content cp-card-count-block cp-count-home clearfix'>
+      <div class='cp-count-icon cp-count-customer'>
+        <i class='cp-icn-total-customer-home'></i>
+      </div>
+      <div class='cp-count-data'>
+        <div class='cp-count-note'>&nbsp;</div>
+        <div class='cp-count-number'>144,865</div>
+        <div class='cp-count-title'>Customers</div>
+      </div>
     </div>
   </div>
   <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
-    <div class='cp-flex-content cp-card-count-block'>
-      <div class='cp-count-note'>&nbsp;</div>
-      <div class='cp-count-number'>20</div>
-      <div class='cp-count-title'>Cancelled Trip</div>
+    <div class='cp-flex-content cp-card-count-block cp-count-home clearfix'>
+      <div class='cp-count-icon cp-count-trip'>
+        <i class='cp-icn-total-trip-home'></i>
+      </div>
+      <div class='cp-count-data'>
+        <div class='cp-count-note'>&nbsp;</div>
+        <div class='cp-count-number'>788,245</div>
+        <div class='cp-count-title'>Trips</div>
+      </div>
+    </div>
+  </div>
+  <!-- Driver Status -->
+  <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Driver Status</div>
+        </div>
+      </header>
+      <div class='cp-dashboard'>
+        <div class='cp-chart-pie'>
+          <canvas height='200' id='driver-status' width='200'></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Customer Status -->
+  <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Customer Status</div>
+        </div>
+      </header>
+      <div class='cp-dashboard'>
+        <div class='cp-chart-pie'>
+          <canvas height='200' id='customer-status' width='200'></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- In Progress Trip -->
+  <div class='cp-flex-item cp-flex-equal cp-flex-1of3'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>In Progress Trip</div>
+        </div>
+      </header>
+      <div class='cp-dashboard'>
+        <div class='cp-typo-dashboard-subcount cp-up-progress'>2330</div>
+        <div class='cp-typo-code'>On Trip</div>
+        <progress class='cp-progress' max='3798' value='2330'></progress>
+        <div class='cp-typo-dashboard-subcount cp-down-progress'>1468</div>
+        <div class='cp-typo-code'>On Way</div>
+      </div>
+    </div>
+  </div>
+  <!-- New Customer -->
+  <div class='cp-flex-item cp-flex-1of2'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>New Member</div>
+        </div>
+        <div class='cp-card-config'>
+          <div class='btn-group cp-btn-group'>
+            <button class='btn cp-btn-white' type='button'>Year</button>
+            <button class='btn cp-btn-white' type='button'>Month</button>
+            <button class='btn cp-btn-white active' type='button'>Week</button>
+          </div>
+        </div>
+      </header>
+      <div class='cp-dashboard'>
+        <div class='cp-chart-full'>
+          <canvas height='200' id='new-member' width='200'></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Completed & Cancelled -->
+  <div class='cp-flex-item cp-flex-1of2'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Trip Status</div>
+        </div>
+        <div class='cp-card-config'>
+          <div class='btn-group cp-btn-group'>
+            <button class='btn cp-btn-white' type='button'>Year</button>
+            <button class='btn cp-btn-white' type='button'>Month</button>
+            <button class='btn cp-btn-white active' type='button'>Week</button>
+          </div>
+        </div>
+      </header>
+      <div class='cp-dashboard'>
+        <div class='cp-chart-full'>
+          <canvas height='200' id='trip-bar-trip' width='200'></canvas>
+        </div>
+      </div>
     </div>
   </div>
 </div>

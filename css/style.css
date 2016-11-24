@@ -2946,115 +2946,186 @@ input:focus {
 }
 
 /* line 232, ../sass/_card.sass */
+.cp-home-dashboard .cp-typo-dashboard-subcount {
+  margin-top: 30px;
+}
+/* line 234, ../sass/_card.sass */
+.cp-home-dashboard .cp-typo-dashboard-subcount.cp-down-progress {
+  color: #e85324;
+}
+/* line 236, ../sass/_card.sass */
+.cp-home-dashboard .cp-typo-dashboard-subcount.cp-up-progress {
+  color: #00d2ff;
+}
+/* line 238, ../sass/_card.sass */
+.cp-home-dashboard .cp-typo-dashboard-subcount.cp-second {
+  color: #fcb040;
+}
+/* line 240, ../sass/_card.sass */
+.cp-home-dashboard progress[value] {
+  color: #00d2ff;
+}
+/* line 242, ../sass/_card.sass */
+.cp-home-dashboard progress[value]::-webkit-progress-bar {
+  background-color: #e85324;
+}
+/* line 244, ../sass/_card.sass */
+.cp-home-dashboard progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
+  background-size: 100% 100%, 100% 100%;
+}
+/* line 247, ../sass/_card.sass */
+.cp-home-dashboard progress[value]::-moz-progress-bar {
+  background-image: -moz-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
+  background-size: 100% 100%, 100% 100%;
+}
+
+/* line 252, ../sass/_card.sass */
 .cp-driver-dashboard .cp-typo-dashboard-count {
   color: #262262;
   margin-top: 50px;
 }
-/* line 235, ../sass/_card.sass */
+/* line 255, ../sass/_card.sass */
 .cp-driver-dashboard .cp-typo-dashboard-subcount {
   color: #262262;
   margin-top: 30px;
 }
 
-/* line 240, ../sass/_card.sass */
+/* line 260, ../sass/_card.sass */
 .cp-user-dashboard .cp-typo-dashboard-count {
   color: #00d2ff;
   margin-top: 50px;
 }
-/* line 243, ../sass/_card.sass */
+/* line 263, ../sass/_card.sass */
 .cp-user-dashboard .cp-typo-dashboard-subcount {
   color: #262262;
   margin-top: 30px;
 }
 
-/* line 248, ../sass/_card.sass */
+/* line 268, ../sass/_card.sass */
 .cp-customer-dashboard .cp-typo-dashboard-count {
   color: #fcb040;
   margin-top: 50px;
 }
-/* line 251, ../sass/_card.sass */
+/* line 271, ../sass/_card.sass */
 .cp-customer-dashboard .cp-typo-dashboard-subcount {
   color: #262262;
   margin-top: 30px;
 }
-/* line 254, ../sass/_card.sass */
+/* line 274, ../sass/_card.sass */
 .cp-customer-dashboard .cp-typo-dashboard-subcount.cp-down-progress {
   color: #fcb040;
 }
 
-/* line 258, ../sass/_card.sass */
+/* line 278, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-count {
   color: #e85324;
   margin-top: 50px;
 }
-/* line 261, ../sass/_card.sass */
+/* line 281, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount {
   margin-top: 30px;
 }
-/* line 263, ../sass/_card.sass */
+/* line 283, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-down-progress {
   color: #e85324;
 }
-/* line 265, ../sass/_card.sass */
+/* line 285, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-up-progress {
   color: #00d2ff;
 }
-/* line 267, ../sass/_card.sass */
+/* line 287, ../sass/_card.sass */
 .cp-trip-dashboard .cp-typo-dashboard-subcount.cp-second {
   color: #fcb040;
 }
-/* line 269, ../sass/_card.sass */
+/* line 289, ../sass/_card.sass */
 .cp-trip-dashboard progress[value] {
   color: #00d2ff;
 }
-/* line 271, ../sass/_card.sass */
+/* line 291, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-webkit-progress-bar {
   background-color: #e85324;
 }
-/* line 273, ../sass/_card.sass */
+/* line 293, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-webkit-progress-value {
   background-image: -webkit-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
   background-size: 100% 100%, 100% 100%;
 }
-/* line 276, ../sass/_card.sass */
+/* line 296, ../sass/_card.sass */
 .cp-trip-dashboard progress[value]::-moz-progress-bar {
   background-image: -moz-linear-gradient(left, #00d2ff 0%, #00d2ff 100%);
   background-size: 100% 100%, 100% 100%;
 }
 
-/* line 281, ../sass/_card.sass */
+/* line 301, ../sass/_card.sass */
 .cp-vehicle-dashboard .cp-typo-dashboard-count {
   color: #76c044;
   margin-top: 50px;
 }
 
-/* line 286, ../sass/_card.sass */
+/* line 306, ../sass/_card.sass */
 .cp-finance-dashboard .cp-typo-dashboard-count {
   color: #ee1414;
   margin-top: 50px;
 }
 
-/* line 290, ../sass/_card.sass */
+/* line 310, ../sass/_card.sass */
 .cp-card-count-block {
   overflow: hidden;
   padding: 20px;
   display: inline-block;
 }
+/* line 314, ../sass/_card.sass */
+.cp-card-count-block.cp-count-home {
+  padding: 0 20px 0 0;
+  height: 129px;
+}
 
-/* line 294, ../sass/_card.sass */
+/* line 317, ../sass/_card.sass */
 .cp-count-note {
   text-align: left;
 }
 
-/* line 297, ../sass/_card.sass */
+/* line 320, ../sass/_card.sass */
 .cp-count-number {
   text-align: right;
   padding-top: 5px;
 }
 
-/* line 301, ../sass/_card.sass */
+/* line 324, ../sass/_card.sass */
 .cp-count-title {
   text-align: right;
+}
+
+/* line 327, ../sass/_card.sass */
+.cp-count-icon {
+  width: 129px;
+  height: 129px;
+  float: left;
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 335, ../sass/_card.sass */
+.cp-count-icon.cp-count-driver {
+  background-color: #262262;
+}
+/* line 337, ../sass/_card.sass */
+.cp-count-icon.cp-count-customer {
+  background-color: #fcb040;
+}
+/* line 339, ../sass/_card.sass */
+.cp-count-icon.cp-count-trip {
+  background-color: #e85324;
 }
 
 /* Login

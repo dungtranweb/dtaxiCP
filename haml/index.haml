@@ -28,27 +28,102 @@
 / End Breadcrumb
 
 / Flexbox Layout
-.cp-flex
-  / Summary
+.cp-flex.cp-home-dashboard
+  / Counting Total Data
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
-    .cp-flex-content.cp-card-count-block
-      .cp-count-icon
+    .cp-flex-content.cp-card-count-block.cp-count-home.clearfix
+      .cp-count-icon.cp-count-driver
         %i.cp-icn-total-driver-home
-      .cp-count-note &nbsp;
-      .cp-count-number 345
-      .cp-count-title Total Trip
+      .cp-count-data
+        .cp-count-note &nbsp;
+        .cp-count-number 1725
+        .cp-count-title Drivers
 
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
-    .cp-flex-content.cp-card-count-block
-      .cp-count-note &nbsp;
-      .cp-count-number 325
-      .cp-count-title Completed Trip
+    .cp-flex-content.cp-card-count-block.cp-count-home.clearfix
+      .cp-count-icon.cp-count-customer
+        %i.cp-icn-total-customer-home
+      .cp-count-data
+        .cp-count-note &nbsp;
+        .cp-count-number 144,865
+        .cp-count-title Customers
 
   .cp-flex-item.cp-flex-equal.cp-flex-1of3
-    .cp-flex-content.cp-card-count-block
-      .cp-count-note &nbsp;
-      .cp-count-number 20
-      .cp-count-title Cancelled Trip
+    .cp-flex-content.cp-card-count-block.cp-count-home.clearfix
+      .cp-count-icon.cp-count-trip
+        %i.cp-icn-total-trip-home
+      .cp-count-data
+        .cp-count-note &nbsp;
+        .cp-count-number 788,245
+        .cp-count-title Trips
+
+  / Driver Status
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Driver Status
+
+      .cp-dashboard
+        .cp-chart-pie
+          %canvas#driver-status(width="200" height="200" )
+
+  / Customer Status
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Customer Status
+
+      .cp-dashboard
+        .cp-chart-pie
+          %canvas#customer-status(width="200" height="200" )
+
+  / In Progress Trip
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title In Progress Trip
+
+      .cp-dashboard
+        .cp-typo-dashboard-subcount.cp-up-progress 2330
+        .cp-typo-code On Trip
+        %progress.cp-progress(max="3798" value="2330" )
+        .cp-typo-dashboard-subcount.cp-down-progress 1468
+        .cp-typo-code On Way
+
+  / New Customer
+  .cp-flex-item.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title New Member
+        .cp-card-config
+          .btn-group.cp-btn-group
+            %button.btn.cp-btn-white(type="button" ) Year
+            %button.btn.cp-btn-white(type="button" ) Month
+            %button.btn.cp-btn-white.active(type="button" ) Week
+
+      .cp-dashboard
+        .cp-chart-full
+          %canvas#new-member(width="200" height="200" )
+
+  // Completed & Cancelled
+  .cp-flex-item.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Trip Status
+        .cp-card-config
+          .btn-group.cp-btn-group
+            %button.btn.cp-btn-white(type="button" ) Year
+            %button.btn.cp-btn-white(type="button" ) Month
+            %button.btn.cp-btn-white.active(type="button" ) Week
+
+      .cp-dashboard
+        .cp-chart-full
+          %canvas#trip-bar-trip(width="200" height="200" )
 
 / End Flexbox Layout
 
@@ -67,4 +142,3 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-

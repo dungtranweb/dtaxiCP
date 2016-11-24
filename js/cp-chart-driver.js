@@ -9,19 +9,17 @@ var driverStatusData= {
         "Available",
         "On Trip",
         "On Way",
-        "On Hold",
-        "Blocked"
+        "On Hold"
     ],
     datasets: [
         {
-            data: [20, 450, 105, 94, 162, 15],
+            data: [20, 450, 105, 94, 162],
             backgroundColor: [
                 "#666666",
                 "#76c044",
                 "#00d2ff",
                 "#e85324",
-                "#fcb040",
-                "#ee1414"
+                "#fcb040"
             ]
         }
     ]
@@ -95,7 +93,7 @@ var driverNewDriverData= {
     ],
     datasets: [
         {
-            data: [5, 7, 12, 2, 3, 8, 5],
+            data: [51, 71, 112, 21, 31, 81, 51],
             label: "New Driver",
             fill: false,
             lineTension: 0.1,
