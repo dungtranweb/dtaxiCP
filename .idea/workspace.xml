@@ -2,24 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73cd2120-2d95-450f-95ab-b2b8600d2366" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/vehicle-brand.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_button.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_button.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_card.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_card.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_form.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_form.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_modal.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_modal.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_table.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_table.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-change-pass.haml" afterPath="$PROJECT_DIR$/haml/customer-change-pass.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-create-customer.haml" afterPath="$PROJECT_DIR$/haml/customer-create-customer.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-dashboard.haml" afterPath="$PROJECT_DIR$/haml/customer-dashboard.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-detail.haml" afterPath="$PROJECT_DIR$/haml/customer-detail.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-edit.haml" afterPath="$PROJECT_DIR$/haml/customer-edit.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-list-customer.haml" afterPath="$PROJECT_DIR$/haml/customer-list-customer.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-change-pass.haml" afterPath="$PROJECT_DIR$/haml/driver-change-pass.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-create-driver.haml" afterPath="$PROJECT_DIR$/haml/driver-create-driver.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-dashboard.haml" afterPath="$PROJECT_DIR$/haml/driver-dashboard.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-detail.haml" afterPath="$PROJECT_DIR$/haml/driver-detail.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-edit.haml" afterPath="$PROJECT_DIR$/haml/driver-edit.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-list-driver.haml" afterPath="$PROJECT_DIR$/haml/driver-list-driver.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/footer.haml" afterPath="$PROJECT_DIR$/haml/footer.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/sidebar.haml" afterPath="$PROJECT_DIR$/haml/sidebar.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-assign-driver.haml" afterPath="$PROJECT_DIR$/haml/trip-assign-driver.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-cancel.haml" afterPath="$PROJECT_DIR$/haml/trip-cancel.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-cancelled.haml" afterPath="$PROJECT_DIR$/haml/trip-cancelled.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-complete.haml" afterPath="$PROJECT_DIR$/haml/trip-complete.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-completed.haml" afterPath="$PROJECT_DIR$/haml/trip-completed.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-configuration.haml" afterPath="$PROJECT_DIR$/haml/trip-configuration.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-dashboard.haml" afterPath="$PROJECT_DIR$/haml/trip-dashboard.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-detail.haml" afterPath="$PROJECT_DIR$/haml/trip-detail.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-in-progress.haml" afterPath="$PROJECT_DIR$/haml/trip-in-progress.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-new.haml" afterPath="$PROJECT_DIR$/haml/trip-new.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/trip-tracking.haml" afterPath="$PROJECT_DIR$/haml/trip-tracking.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-change-pass.haml" afterPath="$PROJECT_DIR$/haml/user-change-pass.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-create-user.haml" afterPath="$PROJECT_DIR$/haml/user-create-user.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-dashboard.haml" afterPath="$PROJECT_DIR$/haml/user-dashboard.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-detail.haml" afterPath="$PROJECT_DIR$/haml/user-detail.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-edit.haml" afterPath="$PROJECT_DIR$/haml/user-edit.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-list-user.haml" afterPath="$PROJECT_DIR$/haml/user-list-user.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-brand.haml" afterPath="$PROJECT_DIR$/haml/vehicle-brand.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-create-brand.haml" afterPath="$PROJECT_DIR$/haml/vehicle-create-brand.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-create-model.haml" afterPath="$PROJECT_DIR$/haml/vehicle-create-model.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-create-type.haml" afterPath="$PROJECT_DIR$/haml/vehicle-create-type.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-create-vehicle.haml" afterPath="$PROJECT_DIR$/haml/vehicle-create-vehicle.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-dashboard.haml" afterPath="$PROJECT_DIR$/haml/vehicle-dashboard.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-detail.haml" afterPath="$PROJECT_DIR$/haml/vehicle-detail.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-edit-brand.haml" afterPath="$PROJECT_DIR$/haml/vehicle-edit-brand.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-edit-model.haml" afterPath="$PROJECT_DIR$/haml/vehicle-edit-model.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-edit-type.haml" afterPath="$PROJECT_DIR$/haml/vehicle-edit-type.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml" afterPath="$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-list-vehicle.haml" afterPath="$PROJECT_DIR$/haml/vehicle-list-vehicle.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-model.haml" afterPath="$PROJECT_DIR$/haml/vehicle-model.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/vehicle-type.haml" afterPath="$PROJECT_DIR$/haml/vehicle-type.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-change-pass.html" afterPath="$PROJECT_DIR$/html/customer-change-pass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-create-customer.html" afterPath="$PROJECT_DIR$/html/customer-create-customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-dashboard.html" afterPath="$PROJECT_DIR$/html/customer-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-detail.html" afterPath="$PROJECT_DIR$/html/customer-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-edit.html" afterPath="$PROJECT_DIR$/html/customer-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-list-customer.html" afterPath="$PROJECT_DIR$/html/customer-list-customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-change-pass.html" afterPath="$PROJECT_DIR$/html/driver-change-pass.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-create-driver.html" afterPath="$PROJECT_DIR$/html/driver-create-driver.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-dashboard.html" afterPath="$PROJECT_DIR$/html/driver-dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-detail.html" afterPath="$PROJECT_DIR$/html/driver-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-edit.html" afterPath="$PROJECT_DIR$/html/driver-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-list-driver.html" afterPath="$PROJECT_DIR$/html/driver-list-driver.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/sidebar.html" afterPath="$PROJECT_DIR$/html/sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-assign-driver.html" afterPath="$PROJECT_DIR$/html/trip-assign-driver.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-cancel.html" afterPath="$PROJECT_DIR$/html/trip-cancel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-cancelled.html" afterPath="$PROJECT_DIR$/html/trip-cancelled.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-complete.html" afterPath="$PROJECT_DIR$/html/trip-complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-completed.html" afterPath="$PROJECT_DIR$/html/trip-completed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-configuration.html" afterPath="$PROJECT_DIR$/html/trip-configuration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-dashboard.html" afterPath="$PROJECT_DIR$/html/trip-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-detail.html" afterPath="$PROJECT_DIR$/html/trip-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-in-progress.html" afterPath="$PROJECT_DIR$/html/trip-in-progress.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-new.html" afterPath="$PROJECT_DIR$/html/trip-new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/trip-tracking.html" afterPath="$PROJECT_DIR$/html/trip-tracking.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-change-pass.html" afterPath="$PROJECT_DIR$/html/user-change-pass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-create-user.html" afterPath="$PROJECT_DIR$/html/user-create-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-dashboard.html" afterPath="$PROJECT_DIR$/html/user-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-detail.html" afterPath="$PROJECT_DIR$/html/user-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-edit.html" afterPath="$PROJECT_DIR$/html/user-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-list-user.html" afterPath="$PROJECT_DIR$/html/user-list-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-brand.html" afterPath="$PROJECT_DIR$/html/vehicle-brand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-create-brand.html" afterPath="$PROJECT_DIR$/html/vehicle-create-brand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-create-model.html" afterPath="$PROJECT_DIR$/html/vehicle-create-model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-create-type.html" afterPath="$PROJECT_DIR$/html/vehicle-create-type.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-create-vehicle.html" afterPath="$PROJECT_DIR$/html/vehicle-create-vehicle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-dashboard.html" afterPath="$PROJECT_DIR$/html/vehicle-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-detail.html" afterPath="$PROJECT_DIR$/html/vehicle-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-edit-brand.html" afterPath="$PROJECT_DIR$/html/vehicle-edit-brand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-edit-model.html" afterPath="$PROJECT_DIR$/html/vehicle-edit-model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-edit-type.html" afterPath="$PROJECT_DIR$/html/vehicle-edit-type.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-edit-vehicle.html" afterPath="$PROJECT_DIR$/html/vehicle-edit-vehicle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-list-vehicle.html" afterPath="$PROJECT_DIR$/html/vehicle-list-vehicle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-model.html" afterPath="$PROJECT_DIR$/html/vehicle-model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vehicle-type.html" afterPath="$PROJECT_DIR$/html/vehicle-type.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/cp-chart-finance.js" afterPath="$PROJECT_DIR$/js/cp-chart-finance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/cp-chart-trip.js" afterPath="$PROJECT_DIR$/js/cp-chart-trip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_button.sass" afterPath="$PROJECT_DIR$/sass/_button.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_card.sass" afterPath="$PROJECT_DIR$/sass/_card.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_form.sass" afterPath="$PROJECT_DIR$/sass/_form.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_modal.sass" afterPath="$PROJECT_DIR$/sass/_modal.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_table.sass" afterPath="$PROJECT_DIR$/sass/_table.sass" />
     </list>
     <ignored path="dtaxiCP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,103 +127,72 @@
     <favorites_list name="dtaxiCP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vehicle-detail.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haml/vehicle-detail.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="158" column="36" lean-forward="true" selection-start-line="158" selection-start-column="36" selection-end-line="164" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="driver-detail.haml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/haml/driver-detail.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vehicle-list-vehicle.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haml/vehicle-list-vehicle.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="179" column="24" lean-forward="false" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Status</find>
-      <find>SystemType</find>
-      <find>customer</find>
-      <find>Customer</find>
-      <find>images/faces</find>
-      <find>Avatar</find>
-      <find>.cp-highlight</find>
-      <find>brand-edit</find>
-      <find>status</find>
-      <find>User</find>
-      <find>vehicle/model/</find>
-      <find>placeholder</find>
-      <find>Brand</find>
-      <find>brand</find>
-      <find>vehicle/type/</find>
+      <find>vehicle</find>
+      <find>Vehicle</find>
+      <find>VH</find>
+      <find>condition</find>
+      <find>condition-fixing Fixing</find>
+      <find>edit-finance</find>
+      <find>driver-transaction</find>
+      <find>detail</find>
+      <find>-detail</find>
+      <find>-detail-transaction</find>
+      <find>Transaction Detail</find>
+      <find>disable</find>
       <find>fake</find>
-      <find>Create</find>
-      <find>trip</find>
-      <find>vehicle-ontrip</find>
-      <find>On Trip</find>
-      <find>vehicle-edit</find>
-      <find>DR</find>
-      <find>vehicle-available Available</find>
-      <find>vehicle-onway On Way</find>
+      <find>inform</find>
+      <find>hr</find>
+      <find>hr.cp-s</find>
+      <find>Deposit</find>
+      <find>deposit</find>
+      <find>Withdraw</find>
+      <find>withdraw</find>
+      <find>action-third</find>
+      <find>finance-edit</find>
+      <find>finance-detail</find>
       <find>.online</find>
-      <find>vehicle-onhold On Hold</find>
-      <find>vehicle-offline Offline</find>
+      <find>Driver Transaction</find>
       <find>driver</find>
+      <find>financeStatus</find>
+      <find>cp-date</find>
+      <find>list-finance</find>
       <find>Driver</find>
-      <find>doc</find>
     </findStrings>
     <replaceStrings>
-      <replace>Complete</replace>
-      <replace>modal-complete</replace>
-      <replace>icn-complete</replace>
-      <replace>cp-bubble cp-bubble-success</replace>
-      <replace>Active</replace>
-      <replace>.action-second</replace>
-      <replace>.cp-typo-normal-bolder</replace>
-      <replace>rgb(0,210,255)</replace>
-      <replace>available Available</replace>
-      <replace>Condition</replace>
-      <replace>images/vehicle/brand</replace>
-      <replace>brand-edit</replace>
-      <replace>vehicle-edit-brand</replace>
-      <replace>Brand</replace>
-      <replace>Model</replace>
-      <replace>model</replace>
-      <replace>vehicle/model/</replace>
-      <replace>Type</replace>
-      <replace>type</replace>
-      <replace>Edit</replace>
-      <replace>condition</replace>
-      <replace>condition-fixing</replace>
-      <replace>Fixing</replace>
-      <replace>vehicle-edit-vehicle</replace>
-      <replace>VH</replace>
-      <replace>condition-inactive Inactive</replace>
       <replace>condition-damage Damage</replace>
       <replace>condition-normal Normal</replace>
       <replace>vehicle</replace>
       <replace>Vehicle</replace>
+      <replace>Transaction</replace>
+      <replace>total-transaction</replace>
+      <replace>totalTransaction</replace>
+      <replace>financeStatus</replace>
+      <replace>Driver</replace>
+      <replace>TS</replace>
+      <replace>transaction-deposit Deposit</replace>
+      <replace>edit-driver-transaction</replace>
+      <replace>transaction</replace>
+      <replace>detail-transaction</replace>
+      <replace>-detail-transaction</replace>
+      <replace>-transaction-detail</replace>
+      <replace>Edit Transaction</replace>
+      <replace>Withdraw</replace>
+      <replace>Bonus</replace>
+      <replace>bonus</replace>
+      <replace>Pay Fines</replace>
+      <replace>pay fines</replace>
+      <replace>action-second</replace>
+      <replace>finance-edit-driver-rate</replace>
+      <replace>finance-income-balance-detail</replace>
+      <replace>Income &amp; Balance</replace>
+      <replace>finance</replace>
+      <replace>totalIncome</replace>
+      <replace>income-balance</replace>
+      <replace>Finance</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -146,19 +201,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sass/_sidebar.sass" />
-        <option value="$PROJECT_DIR$/haml/user-change-pass.haml" />
-        <option value="$PROJECT_DIR$/haml/user-dashboard.haml" />
-        <option value="$PROJECT_DIR$/haml/user-detail.haml" />
-        <option value="$PROJECT_DIR$/haml/user-edit.haml" />
+        <option value="$PROJECT_DIR$/haml/driver-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/driver-edit.haml" />
+        <option value="$PROJECT_DIR$/haml/driver-list-driver.haml" />
         <option value="$PROJECT_DIR$/haml/customer-change-pass.haml" />
         <option value="$PROJECT_DIR$/haml/customer-create-customer.haml" />
         <option value="$PROJECT_DIR$/haml/customer-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/customer-detail.haml" />
         <option value="$PROJECT_DIR$/haml/customer-edit.haml" />
-        <option value="$PROJECT_DIR$/haml/driver-change-pass.haml" />
-        <option value="$PROJECT_DIR$/haml/driver-dashboard.haml" />
-        <option value="$PROJECT_DIR$/haml/driver-edit.haml" />
+        <option value="$PROJECT_DIR$/haml/customer-list-customer.haml" />
         <option value="$PROJECT_DIR$/haml/trip-assign-driver.haml" />
         <option value="$PROJECT_DIR$/haml/trip-cancel.haml" />
         <option value="$PROJECT_DIR$/haml/trip-cancelled.haml" />
@@ -166,37 +217,41 @@
         <option value="$PROJECT_DIR$/haml/trip-completed.haml" />
         <option value="$PROJECT_DIR$/haml/trip-configuration.haml" />
         <option value="$PROJECT_DIR$/haml/trip-dashboard.haml" />
-        <option value="$PROJECT_DIR$/haml/trip-detail.haml" />
         <option value="$PROJECT_DIR$/haml/trip-in-progress.haml" />
         <option value="$PROJECT_DIR$/haml/trip-new.haml" />
         <option value="$PROJECT_DIR$/haml/trip-tracking.haml" />
-        <option value="$PROJECT_DIR$/haml/layout.haml" />
-        <option value="$PROJECT_DIR$/haml/index.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-dashboard.haml" />
-        <option value="$PROJECT_DIR$/js/cp-chart-vehicle.js" />
-        <option value="$PROJECT_DIR$/haml/customer-list-customer.haml" />
-        <option value="$PROJECT_DIR$/haml/user-list-user.haml" />
-        <option value="$PROJECT_DIR$/sass/_card.sass" />
-        <option value="$PROJECT_DIR$/haml/user-create-user.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-list-brand.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-create-brand.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-brand.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-create-brand.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-create-model.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-edit-model.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-edit-brand.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-model.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-create-type.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-edit-type.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-type.haml" />
-        <option value="$PROJECT_DIR$/html/vehicle-model.html" />
-        <option value="$PROJECT_DIR$/haml/driver-create-driver.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-create-vehicle.haml" />
-        <option value="$PROJECT_DIR$/sass/_button.sass" />
-        <option value="$PROJECT_DIR$/haml/driver-list-driver.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-list-vehicle.haml" />
-        <option value="$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-detail.haml" />
-        <option value="$PROJECT_DIR$/haml/driver-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-edit-brand.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-edit-model.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-edit-type.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-list-vehicle.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-model.haml" />
+        <option value="$PROJECT_DIR$/haml/vehicle-type.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-driver-transaction.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-transaction-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-income-balance.haml" />
+        <option value="$PROJECT_DIR$/haml/trip-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-dashboard.haml" />
+        <option value="$PROJECT_DIR$/haml/footer.haml" />
+        <option value="$PROJECT_DIR$/js/cp-chart-finance.js" />
+        <option value="$PROJECT_DIR$/js/cp-chart-total-income.js" />
+        <option value="$PROJECT_DIR$/html/finance-configuration.html" />
+        <option value="$PROJECT_DIR$/sass/_form.sass" />
+        <option value="$PROJECT_DIR$/haml/finance-income-balance-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-edit-driver-rate.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-configuration.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-withdraw.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-pay-fines.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-deposit.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-bonus.haml" />
+        <option value="$PROJECT_DIR$/haml/finance-edit-transaction.haml" />
       </list>
     </option>
   </component>
@@ -358,18 +413,20 @@
       <workItem from="1479383335301" duration="738000" />
       <workItem from="1479436331939" duration="3319000" />
       <workItem from="1479786747494" duration="6759000" />
-      <workItem from="1479870229681" duration="10328000" />
+      <workItem from="1479870229681" duration="22514000" />
+      <workItem from="1479955294964" duration="11000" />
+      <workItem from="1479955324693" duration="7854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136009000" />
+    <option name="totallyTimeSpent" value="156060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1547" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21011162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21011162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -427,354 +484,223 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/haml/driver-dashboard.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/driver-edit.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="732" column="0" lean-forward="false" selection-start-line="732" selection-start-column="0" selection-end-line="732" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/trip-configuration.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/trip-detail.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/trip-tracking.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/layout.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/trip-dashboard.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/cp-chart-vehicle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/cp-chart-customer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-dashboard.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_color.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-brand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haml/customer-list-customer.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2884">
-          <caret line="238" column="10" lean-forward="false" selection-start-line="238" selection-start-column="10" selection-end-line="238" selection-end-column="10" />
+        <state relative-caret-position="603">
+          <caret line="384" column="0" lean-forward="true" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/user-list-user.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2016">
-          <caret line="200" column="10" lean-forward="false" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/customer-dashboard.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3644">
-          <caret line="289" column="21" lean-forward="true" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
-          <folding>
-            <marker date="1479810460142" expanded="true" signature="8675:8727" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-assign-driver.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4990">
-          <caret line="363" column="0" lean-forward="true" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-cancel.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4030">
-          <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-cancelled.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4524">
-          <caret line="324" column="0" lean-forward="true" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-complete.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3790">
-          <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="305" column="0" lean-forward="false" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-completed.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6444">
-          <caret line="381" column="0" lean-forward="true" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="382" column="0" lean-forward="false" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/trip-configuration.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/trip-dashboard.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-in-progress.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4584">
-          <caret line="305" column="0" lean-forward="false" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/trip-new.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4704">
-          <caret line="287" column="0" lean-forward="false" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/user-create-user.haml">
+    <entry file="file://$PROJECT_DIR$/haml/trip-tracking.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="617">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding>
+            <marker date="1479957564432" expanded="true" signature="4852:4904" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/sidebar.haml">
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-brand.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="74" column="131" lean-forward="false" selection-start-line="74" selection-start-column="131" selection-end-line="74" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-brand.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="69" column="58" lean-forward="false" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-model.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="89" column="58" lean-forward="false" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+        <state relative-caret-position="603">
+          <caret line="276" column="0" lean-forward="true" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/vehicle-create-brand.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/driver-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-type.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="69" column="58" lean-forward="false" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-model.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="128" column="56" lean-forward="false" selection-start-line="128" selection-start-column="56" selection-end-line="128" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-model.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-type.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-brand.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="218" column="26" lean-forward="false" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-create-vehicle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/driver-create-driver.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="637" column="60" lean-forward="false" selection-start-line="637" selection-start-column="54" selection-end-line="637" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-create-vehicle.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="281" column="60" lean-forward="false" selection-start-line="281" selection-start-column="60" selection-end-line="281" selection-end-column="60" />
-          <folding>
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#3;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#3;n#div#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_button.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-type.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3061">
-          <caret line="235" column="18" lean-forward="false" selection-start-line="235" selection-start-column="18" selection-end-line="235" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-create-type.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-create-model.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="617">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/vehicle-create-model.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="617">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/driver-list-driver.haml">
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-create-type.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="423" column="71" lean-forward="false" selection-start-line="423" selection-start-column="55" selection-end-line="423" selection-end-column="71" />
+        <state relative-caret-position="617">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-list-vehicle.html">
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-create-vehicle.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-dashboard.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <marker date="1479957594437" expanded="true" signature="1612:1665" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-detail.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-brand.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <marker date="1479957600438" expanded="true" signature="1728:1780" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-model.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-type.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="302" column="0" lean-forward="true" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding>
+            <marker date="1479957610442" expanded="true" signature="7906:7958" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-list-vehicle.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-model.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="282" column="0" lean-forward="false" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/vehicle-type.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/sidebar.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2640">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/finance-income-balance.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -782,43 +708,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-edit-vehicle.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
-          <folding>
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#3;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#3;n#div#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_card.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="200" column="11" lean-forward="false" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-list-vehicle.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="179" column="24" lean-forward="false" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/vehicle-detail.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="158" column="36" lean-forward="true" selection-start-line="158" selection-start-column="36" selection-end-line="164" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vehicle-detail.html">
+    <entry file="file://$PROJECT_DIR$/haml/driver-list-driver.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -828,9 +718,201 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/driver-detail.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+        <state relative-caret-position="610">
+          <caret line="485" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="485" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/trip-detail.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cp-chart-driver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cp-chart-customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/finance-income-balance-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cp-chart-finance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1176">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/footer.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cp-chart-total-income.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_color.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/finance-configuration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1479963145963" expanded="true" signature="20445:20531" ph="..." />
+            <marker date="1479963145963" expanded="true" signature="20945:21031" ph="..." />
+            <marker date="1479963145963" expanded="true" signature="20597:20707" ph="..." />
+            <marker date="1479963145963" expanded="true" signature="20613:20619" ph="©" />
+            <marker date="1479963145963" expanded="true" signature="20679:20687" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_form.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="185" column="16" lean-forward="false" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-edit-driver-rate.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-configuration.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-withdraw.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-pay-fines.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-deposit.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-bonus.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-dashboard.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-driver-transaction.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6970">
+          <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-edit-transaction.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-income-balance.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2264">
+          <caret line="130" column="27" lean-forward="false" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-income-balance-detail.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/finance-transaction-detail.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2540">
+          <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <marker date="1479957658464" expanded="true" signature="2696:2748" ph="= Haml::Engine.new(File.read('footer.haml')).render" />
+          </folding>
         </state>
       </provider>
     </entry>

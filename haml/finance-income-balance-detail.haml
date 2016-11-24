@@ -1,0 +1,152 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item
+    %a(href="finance-income-balance.html") Income & Balance
+  %li.cp-breadcrumb-item.active Income & Balance Detail
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / General Information
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-summary
+          .cp-detail-avatar
+            .cp-image-rec90
+              %img(src="../images/faces/thang-tran.png" alt="Finance Avatar" )
+          .cp-detail-summary-info.cp-summary-short
+            .cp-typo-code DR1246
+            .cp-typo-name Thang Tran
+      %hr
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Email:
+            %td thang.tran@nexx.vn
+          %tr
+            %td Phone:
+            %td 01236585469
+          %tr
+            %td Balance:
+            %td 7,400,000
+          %tr
+            %td Rating:
+            %td
+              3.5
+              %i.cp-icn-star
+          %tr
+            %td Finance Rate:
+            %td 5 %
+
+  / Finance
+  .cp-flex-item.cp-flex-equal.cp-flex-2of3
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Total Income
+        .cp-card-config
+          .btn-group.cp-btn-group
+            %button.btn.cp-btn-white(type="button" ) Year
+            %button.btn.cp-btn-white(type="button" ) Month
+            %button.btn.cp-btn-white.active(type="button" ) Week
+
+      .cp-dashboard
+        .cp-chart-full
+          %canvas#total-income(width="400" height="200" )
+
+  / Address
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Finance Rate History
+      .scrollable
+        %table.table.cp-table-list
+          %thead
+            %tr
+              %th &nbsp;
+              %th &nbsp;
+              %th
+                %a(href="" ) DATE
+              %th
+                %a(href="" ) DRIVER RATE
+              %th
+                %a(href="" ) NOTE
+          %tbody
+            %tr
+              %td &nbsp;
+              %td 1
+              %td 02/11/2016 <br>10:14
+              %td 5
+              %td This is a note for changing driver rate. It is wrote by Admin.
+            %tr
+              %td &nbsp;
+              %td 2
+              %td 02/11/2016 <br>10:14
+              %td 10
+              %td This is a note for changing driver rate. It is wrote by Admin.
+            %tr
+              %td &nbsp;
+              %td 3
+              %td 02/11/2016 <br>10:14
+              %td 7
+              %td This is a note for changing driver rate. It is wrote by Admin.
+            %tr
+              %td &nbsp;
+              %td 4
+              %td 02/11/2016 <br>10:14
+              %td 10
+              %td This is a note for changing driver rate. It is wrote by Admin.
+            %tr
+              %td &nbsp;
+              %td 5
+              %td 02/11/2016 <br>10:14
+              %td 5
+              %td This is a note for changing driver rate. It is wrote by Admin.
+
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

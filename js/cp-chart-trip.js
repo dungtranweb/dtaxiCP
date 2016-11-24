@@ -68,17 +68,7 @@ var tripBarTripData= {
                 '#76c044',
                 '#76c044',
                 '#76c044'
-            ],
-            borderColor: [
-                '#c1e3ab',
-                '#c1e3ab',
-                '#c1e3ab',
-                '#c1e3ab',
-                '#c1e3ab',
-                '#c1e3ab',
-                '#c1e3ab'
-            ],
-            borderWidth: 3
+            ]
         },
         {
             label: "Cancel",
@@ -91,17 +81,7 @@ var tripBarTripData= {
                 '#666666',
                 '#666666',
                 '#666666'
-            ],
-            borderColor: [
-                '#d2d2d2',
-                '#d2d2d2',
-                '#d2d2d2',
-                '#d2d2d2',
-                '#d2d2d2',
-                '#d2d2d2',
-                '#d2d2d2'
-            ],
-            borderWidth: 3
+            ]
         }
     ]
 };

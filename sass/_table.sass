@@ -133,13 +133,24 @@ table.cp-card-detail
       padding-bottom: 0
     td
       padding-bottom: 5px
+      vertical-align: text-top
       &:first-child
         @extend .cp-typo-label-detail
         width: 140px
-        vertical-align: text-top
-      &:nth-child(2)
+      &:last-child
         @extend .cp-typo-text
         text-align: right
       .cp-label
         padding-bottom: 6px
-
+        text-align: left
+  &.cp-rank
+    td
+      &:first-child
+        @extend  .cp-typo-text
+        color: $green
+        width: 30px
+      &:nth-child(2)
+        @extend .cp-typo-label-detail
+        width: 140px
+  &.cp-table-inform
+    margin-top: 20px

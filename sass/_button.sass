@@ -109,6 +109,14 @@ $btn-condition-act: zip($list-condition-act, $list-condition-color)
   .cp-condition-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
+$list-transaction-act: deposit withdraw service-fee trip-income bonus pay-fines commission voucher
+$list-transaction-color: $primary $orange $blue $brandText $green $lightRed $primaryText $red
+$btn-transaction-act: zip($list-transaction-act, $list-transaction-color)
+
+@each $btn in $btn-transaction-act
+  .cp-transaction-#{nth($btn, 1)}
+    background-color: nth($btn, 2)
+
 // Bubble
 // ======
 .cp-bubble

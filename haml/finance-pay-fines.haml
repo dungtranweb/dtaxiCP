@@ -1,0 +1,150 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item.active Pay Fines
+/ End Breadcrumb
+
+/ Modal
+#cp-modal-success.modal.fade(tabindex="-1" role="dialog" )
+  .modal-dialog(role="document")
+    .cp-modal-content
+      .cp-modal-header
+        %i.cp-icn-modal-success
+        .cp-modal-title Successful!
+        .cp-modal-subtitle Here is your transaction detail
+      .cp-modal-body
+        %table.cp-card-detail
+          %tr
+            %td Transaction Code:
+            %td TS5246
+          %tr
+            %td Type:
+            %td Pay Fines
+          %tr
+            %td Amount:
+            %td -1,000,000
+          %tr
+            %td Note:
+            %td This is a pay fines for this driver
+        %hr.cp-space-detail
+        %table.cp-card-detail
+          %tr
+            %td Driver Code:
+            %td DR1246
+          %tr
+            %td Driver Name:
+            %td Thang Tran
+        %hr.cp-space-detail
+        %table.cp-card-detail
+          %tr
+            %td Form:
+            %td Transfer
+          %tr
+            %td Bank Name:
+            %td ACB
+          %tr
+            %td Account Name:
+            %td Tuong Thi
+          %tr
+            %td Account Nummber:
+            %td 534125615642154
+          %tr
+            %td Date of Transfer:
+            %td 03/11/2016 - 10:14
+      .cp-modal-footer
+        %button.cp-btn.cp-btn-success(type="button" data-dismiss="modal" ) OK
+/ End Modal
+
+/ Float Container
+%form.cp-float-container.clearfix(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Create Pay Fines
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Create Pay Fines
+
+      .cp-card-content
+        .cp-label driver code
+        %input(type="text" placeholder="Enter driver code" )
+        %table.cp-card-detail.cp-table-inform
+          %tr
+            %td Name:
+            %td Thang Tran
+          %tr
+            %td Email:
+            %td thang.tran@nexx.vn
+          %tr
+            %td Phone:
+            %td 01236585469
+          %tr
+            %td Date of Birth:
+            %td 15/10/1990
+        .cp-label amount
+        %input(type="text" placeholder="Enter amount" )
+        .cp-label note
+        %textarea(placeholder="Enter note" )
+        .cp-label form
+        %select
+          %option Transfer
+          %option Cash
+        .cp-label bank name
+        %input(type="text" placeholder="Enter bank name" )
+        .cp-label account name
+        %input(type="text" placeholder="Enter account name" )
+        .cp-label account number
+        %input(type="text" placeholder="Enter account number" )
+        .cp-label transaction code
+        .fake-input
+          %span TS5246
+          %i.cp-icn-disable
+        .cp-label date of transfer
+        %input(type="text" placeholder="Enter date of transfer" )
+        %button.cp-btn.cp-btn-success(type="button" data-toggle="modal" data-target="#cp-modal-success" ) Create
+
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

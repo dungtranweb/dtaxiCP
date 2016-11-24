@@ -1,0 +1,91 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item.active Configuration
+/ End Breadcrumb
+
+/ Float Container
+%form.cp-float-container.clearfix(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Create Deposit
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Configuration
+
+      .cp-card-content
+        .cp-label minimum balance (VND)
+        %input(type="text" placeholder="Enter minimum balance (VND)" )
+        .cp-label driver rate range
+        .cp-range
+          %input(type="text" placeholder="Min" )
+          %input(type="text" placeholder="Max" )
+        .cp-label deposit
+        .cp-range
+          %input(type="text" placeholder="Min" )
+          %input(type="text" placeholder="Max" )
+        %input.cp-form-alone(type="text" placeholder="Times in a day" )
+        .cp-label withdraw
+        .cp-range
+          %input(type="text" placeholder="Min" )
+          %input(type="text" placeholder="Max" )
+        %input.cp-form-alone(type="text" placeholder="Times in a day" )
+        .cp-label bonus
+        .cp-range
+          %input(type="text" placeholder="Min" )
+          %input(type="text" placeholder="Max" )
+        %input.cp-form-alone(type="text" placeholder="Times in a day" )
+        .cp-label pay fines
+        .cp-range
+          %input(type="text" placeholder="Min" )
+          %input(type="text" placeholder="Max" )
+        %input.cp-form-alone(type="text" placeholder="Times in a day" )
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+

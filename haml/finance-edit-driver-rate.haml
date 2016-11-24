@@ -1,0 +1,70 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item
+    %a(href="finance-income-balance.html") Income & Balance
+  %li.cp-breadcrumb-item.active Edit Driver Rate
+/ End Breadcrumb
+
+/ Float Container
+%form.cp-float-container.clearfix(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Edit Driver Rate
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Edit Driver Rate
+
+      .cp-card-content
+        .cp-label driver rate
+        %input(type="text" placeholder="Enter driver rate" )
+        .cp-label note
+        %textarea(placeholder="Enter note" )
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

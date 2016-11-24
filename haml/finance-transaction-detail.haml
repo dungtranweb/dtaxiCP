@@ -1,0 +1,130 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item
+    %a(href="finance-driver-transaction.html") Driver Transaction
+  %li.cp-breadcrumb-item.active Transaction Detail
+/ End Breadcrumb
+
+/ Flexbox Layout
+.cp-flex
+  / Transaction Detail
+  .cp-flex-item.cp-flex-equal.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Transaction Detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Code:
+            %td TS5246
+          %tr
+            %td Type:
+            %td Deposit
+          %tr
+            %td Amount:
+            %td +1,000,000
+          %tr
+            %td Note:
+            %td This is a deposit for this driver
+          %tr
+            %td Subject ID:
+            %td TRIP58654254
+          %tr
+            %td Status:
+            %td Active
+      %hr.cp-space-detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Driver Code:
+            %td DR5246
+          %tr
+            %td Driver Name:
+            %td Hoang Giang
+
+  / Meta Data
+  .cp-flex-item.cp-flex-equal.cp-flex-1of2
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Meta Data
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Form:
+            %td Transfer
+          %tr
+            %td Bank Name:
+            %td ACB
+          %tr
+            %td Account Name:
+            %td Tuong Thi
+          %tr
+            %td Account Nummber:
+            %td 534125615642154
+          %tr
+            %td Date of Transfer:
+            %td 03/11/2016 - 10:14
+      %hr.cp-space-detail
+      .cp-detail-container
+        %table.cp-card-detail
+          %tr
+            %td Create At:
+            %td 02/11/2016 - 10:14
+          %tr
+            %td Create By:
+            %td Admin
+          %tr
+            %td Update At:
+            %td 02/11/2016 - 11:11
+          %tr
+            %td Update By:
+            %td Admin
+
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

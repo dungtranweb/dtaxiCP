@@ -118,9 +118,8 @@
         .cp-label email
         %input(type="email" placeholder="Enter email" )
         .cp-label password
-        %input(type="password" placeholder="Enter password" )
-        .cp-label retype password
-        %input(type="password" placeholder="Retype password" )
+        .fake-input
+          %a(href="driver-change-pass.html" ) Change password
         .cp-label phone
         %input(type="text" placeholder="Enter phone number" )
         .cp-label Gender
@@ -414,9 +413,6 @@
             .cp-label back
             .kv-avatar
               %input.cp-upimage.file-loading(name="driver-insurance-back" type="file" )
-
-    / Fake Column Item
-    .cp-column-item-.cp-fake-margin-2
 
     / System Information
     .cp-column-item.cp-card
@@ -729,4 +725,5 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
+
 

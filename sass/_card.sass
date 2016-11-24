@@ -211,6 +211,14 @@
         img
           width: 100%
 
+  .cp-card-rank
+    .cp-flex-1of3
+      padding-right: 50px
+      &:last-child
+        padding-right: 0
+      @media (max-width: 1100px)
+        padding-right: 0
+
 .cp-dashboard
   margin: 30px auto 0 auto
   text-align: center
@@ -257,11 +265,6 @@
     &.cp-down-progress
       color: $orange
 
-.cp-vehicle-dashboard
-  .cp-typo-dashboard-count
-    color: $green
-    margin-top: 50px
-
 .cp-trip-dashboard
   .cp-typo-dashboard-count
     color: $lightRed
@@ -285,6 +288,16 @@
       background-image: -moz-linear-gradient(left, rgb(0,210,255) 0%, rgb(0,210,255) 100%)
       background-size: 100% 100%, 100% 100%
 
+.cp-vehicle-dashboard
+  .cp-typo-dashboard-count
+    color: $green
+    margin-top: 50px
+
+.cp-finance-dashboard
+  .cp-typo-dashboard-count
+    color: $red
+    margin-top: 50px
+
 .cp-card-count-block
   overflow: hidden
   padding: 20px
@@ -300,4 +313,3 @@
     &:nth-child(3)
       text-align: right
       @extend .cp-typo-count-3
-

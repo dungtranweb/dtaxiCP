@@ -1,0 +1,351 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="finance-dashboard.html") Finance
+  %li.cp-breadcrumb-item.active Income & Balance
+/ End Breadcrumb
+
+/ Modal
+#cp-modal-delete.modal.fade(tabindex="-1" role="dialog" )
+  .modal-dialog(role="document")
+    .cp-modal-content
+      .cp-modal-header
+        %i.cp-icn-modal-warning
+        .cp-modal-title Are you sure?
+        .cp-modal-subtitle You will not able to recover this item!
+      .cp-modal-footer
+        %button.cp-btn.cp-btn-danger(type="button" ) Yes
+        %button.cp-btn.cp-btn-success(type="button" data-dismiss="modal" ) No
+/ End Modal
+
+/ Flexbox Layout
+\<div class="cp-flex">
+.cp-flex-item.cp-flex-1of1
+  .cp-flex-content.cp-card
+    %header
+      .cp-card-title
+        .cp-typo-title Income & Balance
+      .cp-card-config
+        .dropdown.export
+          .dropdown-toggle(data-toggle="dropdown") <i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i>
+          .dropdown-menu.dropdown-menu-right
+            %a.dropdown-item(href="#") Excel
+            %a.dropdown-item(href="#") CSV
+        .split
+        .total Total 200 items
+        -#%select
+        -#  %option 10 items
+        -#  %option 20 items
+        -#  %option 50 items
+        -#  %option 100 items
+        -#.split
+        -#%input.cp-card-date(type="text" placeholder="15/10/2016" ) <i class="cp-icn-caret-black"></i>
+
+    .scrollable
+      %table.table.cp-table-list
+        %thead
+          %tr
+            %th &nbsp;
+            %th &nbsp;
+            %th &nbsp;
+            %th &nbsp;
+            %th.cp-thead-small
+              %a(href="" ) CODE
+            %th
+              %a(href="" ) NAME
+            %th
+              %a(href="" ) EMAIL
+            %th
+              %a(href="" ) BALANCE <br>(VND)
+            %th
+              %a(href="" ) INCOME <br>(VND)
+            %th
+              %a(href="" ) DRIVER RATE <br>(%)
+            %th
+              %a(href="" ) LAST UPDATE AT
+            %th
+              %a(href="" ) ACTION
+          %tr.filter
+            %td &nbsp;
+            %td
+              %input#chb-all(type="checkbox")
+              %label.checkbox(for="chb-all")
+            %td &nbsp;
+            %td &nbsp;
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td &nbsp;
+        %tbody.have-avatar
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-1(type="checkbox")
+              %label.checkbox(for="chb-1")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/hoang-giang.png" alt="Avatar" )
+            %td 1
+            %td DR5246
+            %td Hoang Giang <br> <span class="subtext">01236581245</span>
+            %td giang.hoang@nexx.vn
+            %td 5,200,000
+            %td 54,000,000
+            %td.cell-center 10
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-2(type="checkbox")
+              %label.checkbox(for="chb-2")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/thang-tran.png" alt="Avatar" )
+            %td 2
+            %td DR1246
+            %td Thang Tran <br> <span class="subtext">01236585469</span>
+            %td thang.tran@nexx.vn
+            %td 7,400,000
+            %td 33,500,000
+            %td.cell-center 5
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-3(type="checkbox")
+              %label.checkbox(for="chb-3")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/vu-nguyen.png" alt="Avatar" )
+            %td 3
+            %td DR5451
+            %td Vu Nguyen <br> <span class="subtext">01236585445</span>
+            %td vu.nguyen@nexx.vn
+            %td 3,520,000
+            %td 43,250,000
+            %td.cell-center 10
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-4(type="checkbox")
+              %label.checkbox(for="chb-4")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/ty-luu.png" alt="Avatar" )
+            %td 4
+            %td DR8451
+            %td Ty Luu <br> <span class="subtext">01236581854</span>
+            %td ty.luu@nexx.vn
+            %td 1,240,000
+            %td 27,230,000
+            %td.cell-center 2
+            %td 11/11/2016 <br>13:22
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-5(type="checkbox")
+              %label.checkbox(for="chb-5")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/thinh-nguyen.png" alt="Avatar" )
+            %td 5
+            %td DR6214
+            %td Thinh Nguyen <br> <span class="subtext">01239654185</span>
+            %td thinh.nguyen@nexx.vn
+            %td 2,540,000
+            %td 14,100,000
+            %td.cell-center 3
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-6(type="checkbox")
+              %label.checkbox(for="chb-6")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/placeholder.png" alt="Avatar" )
+            %td 6
+            %td DR2541
+            %td Anh Nguyen <br> <span class="subtext">01236875964</span>
+            %td anh.nguyen@nexx.vn
+            %td 5,710,000
+            %td 45,210,000
+            %td.cell-center 8
+            %td 11/11/2016 <br>13:22
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-7(type="checkbox")
+              %label.checkbox(for="chb-7")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/placeholder.png" alt="Avatar" )
+            %td 7
+            %td DR6512
+            %td Thi Huynh <br> <span class="subtext">01236625312</span>
+            %td thi.huynh@nexx.vn
+            %td 7,580,000
+            %td 89,150,000
+            %td.cell-center 10
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-8(type="checkbox")
+              %label.checkbox(for="chb-8")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/male-models.png" alt="Avatar" )
+            %td 8
+            %td DR1124
+            %td David Gay <br> <span class="subtext">01236545124</span>
+            %td david.gay@nexx.vn
+            %td 6,450,000
+            %td 25,240,000
+            %td.cell-center 5
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-9(type="checkbox")
+              %label.checkbox(for="chb-9")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/phuong-mai.png" alt="Avatar" )
+            %td 9
+            %td DR8541
+            %td Phuong Mai <br> <span class="subtext">01563211245</span>
+            %td phuong.mai@nexx.vn
+            %td 4,250,000
+            %td 21,230,000
+            %td.cell-center 5
+            %td 02/11/2016 <br>10:14
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+          %tr
+            %td &nbsp;
+            %td
+              %input#chb-10(type="checkbox")
+              %label.checkbox(for="chb-10")
+            %td
+              .cp-image-rec56
+                %img(src="../images/faces/placeholder.png" alt="Avatar" )
+            %td 10
+            %td DR5246
+            %td Toan Nguyen <br> <span class="subtext">01236558465</span>
+            %td toan.nguyen@nexx.vn
+            %td 2,630,000
+            %td 19,280,000
+            %td.cell-center 10
+            %td 11/11/2016 <br>13:22
+            %td.action-second
+              %a.btn-list(href="finance-income-balance-detail.html" data-hover="tooltip" data-placement="top" title="View detail" ) <i class="cp-icn-view"></i>
+              %a.btn-list(href="finance-edit-driver-rate.html" data-hover="tooltip" data-placement="bottom" title="Edit" ) <i class="cp-icn-edit"></i>
+
+      %ul.cp-pagination
+        %li.cp-pagination-item
+          %a.cp-pagination-link.disable(href="#") &laquo;
+        %li.cp-pagination-item
+          %a.cp-pagination-link.active(href="#" ) 1
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 2
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 3
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 4
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 5
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) &raquo;
+\</div>
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+
