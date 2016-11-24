@@ -24,20 +24,33 @@
 
 / Breadcrumb
 %ol.cp-breadcrumb
-  %li.cp-breadcrumb-item
-    %a(href="index.html") Home
-  %li.cp-breadcrumb-item
-    %a(href="user-dashboard.html") User
-  %li.cp-breadcrumb-item.active List User
+  %li.cp-breadcrumb-item.active Home Dashboard
 / End Breadcrumb
 
-/ Float Container
-\<div class="cp-float-container">
+/ Flexbox Layout
+.cp-flex
+  / Summary
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card-count-block
+      .cp-count-icon
+        %i.cp-icn-total-driver-home
+      .cp-count-note &nbsp;
+      .cp-count-number 345
+      .cp-count-title Total Trip
 
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card-count-block
+      .cp-count-note &nbsp;
+      .cp-count-number 325
+      .cp-count-title Completed Trip
 
+  .cp-flex-item.cp-flex-equal.cp-flex-1of3
+    .cp-flex-content.cp-card-count-block
+      .cp-count-note &nbsp;
+      .cp-count-number 20
+      .cp-count-title Cancelled Trip
 
-\</div>
-/ End Float Container
+/ End Flexbox Layout
 
 \</div>
 / End Content

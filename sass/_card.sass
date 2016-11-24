@@ -172,17 +172,6 @@
       overflow: hidden
       border: 1px solid $line
       +border-radius(7px)
-      div
-        &:first-child
-          text-align: left
-          @extend .cp-typo-count-1
-        &:nth-child(2)
-          text-align: right
-          padding-top: 5px
-          @extend .cp-typo-count-2
-        &:nth-child(3)
-          text-align: right
-          @extend .cp-typo-count-3
     .cp-comment
       padding: 10px 0 0 20px
       color: $primaryText
@@ -302,14 +291,13 @@
   overflow: hidden
   padding: 20px
   display: inline-block
-  div
-    &:first-child
-      text-align: left
-      @extend .cp-typo-count-1
-    &:nth-child(2)
-      text-align: right
-      padding-top: 5px
-      @extend .cp-typo-count-2
-    &:nth-child(3)
-      text-align: right
-      @extend .cp-typo-count-3
+.cp-count-note
+  text-align: left
+  @extend .cp-typo-count-1
+.cp-count-number
+  text-align: right
+  padding-top: 5px
+  @extend .cp-typo-count-2
+.cp-count-title
+  text-align: right
+  @extend .cp-typo-count-3
