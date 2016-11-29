@@ -1,0 +1,208 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="user-dashboard.html") User
+  %li.cp-breadcrumb-item
+    %a(href="user-role.html") User Role
+  %li.cp-breadcrumb-item.active Permission
+/ End Breadcrumb
+
+/ Float Container
+%form(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Base Permissions
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Base Permissions
+          .cp-typo-subtitle Admin
+
+      .cp-card-content
+        .cp-label Check All
+        .cp-is
+          %input#check-all-1(type="checkbox"  )
+          %label.checkbox(for="check-all-1")
+        .cp-label customer
+        .cp-group-checkbox
+          %div
+            %input#dashboard-customer(type="checkbox" )
+            %label.checkbox(for="dashboard-customer") View Dashboard
+          %div
+            %input#index-customer(type="checkbox" )
+            %label.checkbox(for="index-customer") Index
+          %div
+            %input#view-customer(type="checkbox" )
+            %label.checkbox(for="view-customer") View
+          %div
+            %input#create-customer(type="checkbox" )
+            %label.checkbox(for="create-customer") Create
+          %div
+            %input#edit-customer(type="checkbox" )
+            %label.checkbox(for="edit-customer") Edit
+          %div
+            %input#delete-customer(type="checkbox" )
+            %label.checkbox(for="delete-customer") Delete
+          %div
+            %input#change-pass-customer(type="checkbox" )
+            %label.checkbox(for="change-pass-customer") Change Password
+          %div
+            %input#config-customer(type="checkbox" )
+            %label.checkbox(for="config-customer") Manage Config
+        .cp-label driver
+        .cp-group-checkbox
+          %div
+            %input#dashboard-driver(type="checkbox" )
+            %label.checkbox(for="dashboard-driver") View Dashboard
+          %div
+            %input#index-driver(type="checkbox" )
+            %label.checkbox(for="index-driver") Index
+          %div
+            %input#view-driver(type="checkbox" )
+            %label.checkbox(for="view-driver") View
+          %div
+            %input#create-driver(type="checkbox" )
+            %label.checkbox(for="create-driver") Create
+          %div
+            %input#edit-driver(type="checkbox" )
+            %label.checkbox(for="edit-driver") Edit
+          %div
+            %input#delete-driver(type="checkbox" )
+            %label.checkbox(for="delete-driver") Delete
+          %div
+            %input#change-pass-driver(type="checkbox" )
+            %label.checkbox(for="change-pass-driver") Change Password
+          %div
+            %input#config-driver(type="checkbox" )
+            %label.checkbox(for="config-driver") Manage Config
+
+    / Module Admin User
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Admin User
+          .cp-typo-subtitle Module
+
+      .cp-card-content
+        .cp-label Check All
+        .cp-is
+          %input#check-all-2(type="checkbox"  )
+          %label.checkbox(for="check-all-2")
+        .cp-label role
+        .cp-group-checkbox
+          %div
+            %input#index-admin(type="checkbox" )
+            %label.checkbox(for="index-admin") Index
+          %div
+            %input#view-admin(type="checkbox" )
+            %label.checkbox(for="view-admin") View
+          %div
+            %input#create-admin(type="checkbox" )
+            %label.checkbox(for="create-admin") Create
+          %div
+            %input#edit-admin(type="checkbox" )
+            %label.checkbox(for="edit-admin") Edit
+          %div
+            %input#delete-admin(type="checkbox" )
+            %label.checkbox(for="delete-admin") Delete
+        .cp-label role right
+        .cp-group-checkbox
+          %div
+            %input#index-admin-right(type="checkbox" )
+            %label.checkbox(for="index-admin-right") Index
+          %div
+            %input#generate-admin-right(type="checkbox" )
+            %label.checkbox(for="generate-admin-right") Generate
+
+
+    / Module Bank
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Bank
+          .cp-typo-subtitle Module
+
+      .cp-card-content
+        .cp-label Check All
+        .cp-is
+          %input#check-all-3(type="checkbox"  )
+          %label.checkbox(for="check-all-3")
+        .cp-label default
+        .cp-group-checkbox
+          %div
+            %input#index-bank(type="checkbox" )
+            %label.checkbox(for="index-bank") Index
+          %div
+            %input#view-bank(type="checkbox" )
+            %label.checkbox(for="view-bank") View
+          %div
+            %input#create-bank(type="checkbox" )
+            %label.checkbox(for="create-bank") Create
+          %div
+            %input#edit-bank(type="checkbox" )
+            %label.checkbox(for="edit-bank") Edit
+          %div
+            %input#delete-bank(type="checkbox" )
+            %label.checkbox(for="delete-bank") Delete
+
+  / End Column Layout
+
+  / Column Layout
+  .cp-column
+    / Action
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Action
+
+      .cp-card-content
+        .cp-label status
+        %select
+          %option Active
+          %option Deactive
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

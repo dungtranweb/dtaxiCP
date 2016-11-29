@@ -525,369 +525,214 @@
   <li class='cp-breadcrumb-item'>
     <a href='user-dashboard.html'>User</a>
   </li>
-  <li class='cp-breadcrumb-item active'>List User</li>
+  <li class='cp-breadcrumb-item'>
+    <a href='user-role.html'>User Role</a>
+  </li>
+  <li class='cp-breadcrumb-item active'>Permission</li>
 </ol>
-<!-- Modal -->
-<div class='modal fade' id='cp-modal-delete' role='dialog' tabindex='-1'>
-  <div class='modal-dialog' role='document'>
-    <div class='cp-modal-content'>
-      <div class='cp-modal-header'>
-        <i class='cp-icn-modal-warning'></i>
-        <div class='cp-modal-title'>Are you sure?</div>
-        <div class='cp-modal-subtitle'>You will not able to recover this item!</div>
-      </div>
-      <div class='cp-modal-footer'>
-        <button class='cp-btn cp-btn-danger' type='button'>Yes</button>
-        <button class='cp-btn cp-btn-success' data-dismiss='modal' type='button'>No</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Modal -->
+<!-- End Breadcrumb -->
 <!-- Float Container -->
-<div class="cp-flex">
-<div class='cp-flex-item cp-flex-1of1'>
-  <div class='cp-flex-content cp-card'>
-    <header>
-      <div class='cp-card-title'>
-        <div class='cp-typo-title'>List User</div>
-      </div>
-      <div class='cp-btn-status'>
-        <button class='cp-btn cp-btn-success' type='button'>Active</button>
-        <button class='cp-btn cp-btn-deactive' type='button'>Deactive</button>
-        <button class='cp-btn cp-btn-danger' type='button'>Block</button>
-      </div>
-      <div class='cp-card-config'>
-        <div class='dropdown export'>
-          <div class='dropdown-toggle' data-toggle='dropdown'><i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i></div>
-          <div class='dropdown-menu dropdown-menu-right'>
-            <a class='dropdown-item' href='#'>Excel</a>
-            <a class='dropdown-item' href='#'>CSV</a>
+<form enctype='multipart/form-data' method='post'>
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Base Permissions -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Base Permissions</div>
+          <div class='cp-typo-subtitle'>Admin</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>Check All</div>
+        <div class='cp-is'>
+          <input id='check-all-1' type='checkbox'>
+          <label class='checkbox' for='check-all-1'></label>
+        </div>
+        <div class='cp-label'>customer</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='dashboard-customer' type='checkbox'>
+            <label class='checkbox' for='dashboard-customer'>View Dashboard</label>
+          </div>
+          <div>
+            <input id='index-customer' type='checkbox'>
+            <label class='checkbox' for='index-customer'>Index</label>
+          </div>
+          <div>
+            <input id='view-customer' type='checkbox'>
+            <label class='checkbox' for='view-customer'>View</label>
+          </div>
+          <div>
+            <input id='create-customer' type='checkbox'>
+            <label class='checkbox' for='create-customer'>Create</label>
+          </div>
+          <div>
+            <input id='edit-customer' type='checkbox'>
+            <label class='checkbox' for='edit-customer'>Edit</label>
+          </div>
+          <div>
+            <input id='delete-customer' type='checkbox'>
+            <label class='checkbox' for='delete-customer'>Delete</label>
+          </div>
+          <div>
+            <input id='change-pass-customer' type='checkbox'>
+            <label class='checkbox' for='change-pass-customer'>Change Password</label>
+          </div>
+          <div>
+            <input id='config-customer' type='checkbox'>
+            <label class='checkbox' for='config-customer'>Manage Config</label>
           </div>
         </div>
-        <div class='split'></div>
-        <div class='total'>Total 200 items</div>
+        <div class='cp-label'>driver</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='dashboard-driver' type='checkbox'>
+            <label class='checkbox' for='dashboard-driver'>View Dashboard</label>
+          </div>
+          <div>
+            <input id='index-driver' type='checkbox'>
+            <label class='checkbox' for='index-driver'>Index</label>
+          </div>
+          <div>
+            <input id='view-driver' type='checkbox'>
+            <label class='checkbox' for='view-driver'>View</label>
+          </div>
+          <div>
+            <input id='create-driver' type='checkbox'>
+            <label class='checkbox' for='create-driver'>Create</label>
+          </div>
+          <div>
+            <input id='edit-driver' type='checkbox'>
+            <label class='checkbox' for='edit-driver'>Edit</label>
+          </div>
+          <div>
+            <input id='delete-driver' type='checkbox'>
+            <label class='checkbox' for='delete-driver'>Delete</label>
+          </div>
+          <div>
+            <input id='change-pass-driver' type='checkbox'>
+            <label class='checkbox' for='change-pass-driver'>Change Password</label>
+          </div>
+          <div>
+            <input id='config-driver' type='checkbox'>
+            <label class='checkbox' for='config-driver'>Manage Config</label>
+          </div>
+        </div>
       </div>
-    </header>
-    <div class='scrollable'>
-      <table class='table cp-table-list'>
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th class='cp-thead-small'>
-              <a href=''>CODE</a>
-            </th>
-            <th>
-              <a href=''>NAME</a>
-            </th>
-            <th>
-              <a href=''>EMAIL</a>
-            </th>
-            <th>
-              <a href=''>DATE OF BIRTH</a>
-            </th>
-            <th>
-              <a href=''>ROLE</a>
-            </th>
-            <th>
-              <a href=''>POSITION</a>
-            </th>
-            <th>
-              <a href=''>STATUS</a>
-            </th>
-            <th>
-              <a href=''>ACTION</a>
-            </th>
-          </tr>
-          <tr class='filter'>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-all' type='checkbox'>
-              <label class='checkbox' for='chb-all'></label>
-            </td>
-            <td>&nbsp;</td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <input type='text'>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Admin</option>
-                <option>Moderator</option>
-                <option>Member</option>
-              </select>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Boss</option>
-                <option>Tech Manager</option>
-                <option>Tech Guy</option>
-                <option>Marketer</option>
-              </select>
-            </td>
-            <td>
-              <select class='cp-table-select'>
-                <option>All</option>
-                <option>Active</option>
-                <option>Deactive</option>
-              </select>
-            </td>
-            <td>&nbsp;</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class='online'>&nbsp;</td>
-            <td>
-              <input id='chb-1' type='checkbox'>
-              <label class='checkbox' for='chb-1'></label>
-            </td>
-            <td>1</td>
-            <td>NV2516</td>
-            <td>Toan Nguyen</td>
-            <td>toan.nguyen@nexx.vn</td>
-            <td>12/12/1990</td>
-            <td>Moderator</td>
-            <td>Tech Guy</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-2' type='checkbox'>
-              <label class='checkbox' for='chb-2'></label>
-            </td>
-            <td>2</td>
-            <td>NV2512</td>
-            <td>Anh Nguyen</td>
-            <td>anh.nguyen@nexx.vn</td>
-            <td>06/10/1990</td>
-            <td>Moderator</td>
-            <td>Tech Guy</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-3' type='checkbox'>
-              <label class='checkbox' for='chb-3'></label>
-            </td>
-            <td>3</td>
-            <td>NV2587</td>
-            <td>Thi Huynh</td>
-            <td>thi.huynh@nexx.vn</td>
-            <td>25/07/1990</td>
-            <td>Admin</td>
-            <td>Tech Manager</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td class='online'>&nbsp;</td>
-            <td>
-              <input id='chb-4' type='checkbox'>
-              <label class='checkbox' for='chb-4'></label>
-            </td>
-            <td>4</td>
-            <td>NV2587</td>
-            <td>Andy Nguyen</td>
-            <td>andy.nguyen@nexx.vn</td>
-            <td>22/02/1984</td>
-            <td>Admin</td>
-            <td>CEO</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td class='online'>&nbsp;</td>
-            <td>
-              <input id='chb-5' type='checkbox'>
-              <label class='checkbox' for='chb-5'></label>
-            </td>
-            <td>5</td>
-            <td>NV2516</td>
-            <td>Toan Nguyen</td>
-            <td>toan.nguyen@nexx.vn</td>
-            <td>12/12/1990</td>
-            <td>Moderator</td>
-            <td>Tech Guy</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-6' type='checkbox'>
-              <label class='checkbox' for='chb-6'></label>
-            </td>
-            <td>6</td>
-            <td>NV2512</td>
-            <td>Anh Nguyen</td>
-            <td>anh.nguyen@nexx.vn</td>
-            <td>06/10/1990</td>
-            <td>Moderator</td>
-            <td>Tech Guy</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-7' type='checkbox'>
-              <label class='checkbox' for='chb-7'></label>
-            </td>
-            <td>7</td>
-            <td>NV2587</td>
-            <td>Thi Huynh</td>
-            <td>thi.huynh@nexx.vn</td>
-            <td>25/07/1990</td>
-            <td>Admin</td>
-            <td>Tech Manager</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td class='online'>&nbsp;</td>
-            <td>
-              <input id='chb-8' type='checkbox'>
-              <label class='checkbox' for='chb-8'></label>
-            </td>
-            <td>8</td>
-            <td>NV2587</td>
-            <td>Andy Nguyen</td>
-            <td>andy.nguyen@nexx.vn</td>
-            <td>22/02/1984</td>
-            <td>Admin</td>
-            <td>CEO</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <input id='chb-9' type='checkbox'>
-              <label class='checkbox' for='chb-9'></label>
-            </td>
-            <td>9</td>
-            <td>NV2587</td>
-            <td>Thi Huynh</td>
-            <td>thi.huynh@nexx.vn</td>
-            <td>25/07/1990</td>
-            <td>Admin</td>
-            <td>Tech Manager</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td class='online'>&nbsp;</td>
-            <td>
-              <input id='chb-10' type='checkbox'>
-              <label class='checkbox' for='chb-10'></label>
-            </td>
-            <td>10</td>
-            <td>NV2587</td>
-            <td>Andy Nguyen</td>
-            <td>andy.nguyen@nexx.vn</td>
-            <td>22/02/1984</td>
-            <td>Admin</td>
-            <td>CEO</td>
-            <td>Active</td>
-            <td class='action'>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-detail.html' title='View detail'><i class="cp-icn-view"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='top' href='user-change-pass.html' title='Change password'><i class="cp-icn-pass"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' href='user-edit.html' title='Edit'><i class="cp-icn-edit"></i></a>
-              <a class='btn-list' data-hover='tooltip' data-placement='bottom' data-target='#cp-modal-delete' data-toggle='modal' href='#' title='Delete'><i class="cp-icn-delete"></i></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <ul class='cp-pagination'>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link disable' href='#'>&laquo;</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link active' href='#'>1</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>2</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>3</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>4</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>5</a>
-        </li>
-        <li class='cp-pagination-item'>
-          <a class='cp-pagination-link' href='#'>&raquo;</a>
-        </li>
-      </ul>
+    </div>
+    <!-- Module Admin User -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Admin User</div>
+          <div class='cp-typo-subtitle'>Module</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>Check All</div>
+        <div class='cp-is'>
+          <input id='check-all-2' type='checkbox'>
+          <label class='checkbox' for='check-all-2'></label>
+        </div>
+        <div class='cp-label'>role</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='index-admin' type='checkbox'>
+            <label class='checkbox' for='index-admin'>Index</label>
+          </div>
+          <div>
+            <input id='view-admin' type='checkbox'>
+            <label class='checkbox' for='view-admin'>View</label>
+          </div>
+          <div>
+            <input id='create-admin' type='checkbox'>
+            <label class='checkbox' for='create-admin'>Create</label>
+          </div>
+          <div>
+            <input id='edit-admin' type='checkbox'>
+            <label class='checkbox' for='edit-admin'>Edit</label>
+          </div>
+          <div>
+            <input id='delete-admin' type='checkbox'>
+            <label class='checkbox' for='delete-admin'>Delete</label>
+          </div>
+        </div>
+        <div class='cp-label'>role right</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='index-admin-right' type='checkbox'>
+            <label class='checkbox' for='index-admin-right'>Index</label>
+          </div>
+          <div>
+            <input id='generate-admin-right' type='checkbox'>
+            <label class='checkbox' for='generate-admin-right'>Generate</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Module Bank -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Bank</div>
+          <div class='cp-typo-subtitle'>Module</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>Check All</div>
+        <div class='cp-is'>
+          <input id='check-all-3' type='checkbox'>
+          <label class='checkbox' for='check-all-3'></label>
+        </div>
+        <div class='cp-label'>default</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='index-bank' type='checkbox'>
+            <label class='checkbox' for='index-bank'>Index</label>
+          </div>
+          <div>
+            <input id='view-bank' type='checkbox'>
+            <label class='checkbox' for='view-bank'>View</label>
+          </div>
+          <div>
+            <input id='create-bank' type='checkbox'>
+            <label class='checkbox' for='create-bank'>Create</label>
+          </div>
+          <div>
+            <input id='edit-bank' type='checkbox'>
+            <label class='checkbox' for='edit-bank'>Edit</label>
+          </div>
+          <div>
+            <input id='delete-bank' type='checkbox'>
+            <label class='checkbox' for='delete-bank'>Delete</label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<!-- End Float Container -->
+  <!-- End Column Layout -->
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Action -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Action</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>status</div>
+        <select>
+          <option>Active</option>
+          <option>Deactive</option>
+        </select>
+        <button class='cp-btn cp-btn-success' type='submit'>Save</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Column Layout -->
+</form>
 </div>
 <!-- End Content -->
 <!-- Foobar -->

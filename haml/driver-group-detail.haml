@@ -27,10 +27,10 @@
   %li.cp-breadcrumb-item
     %a(href="index.html") Home
   %li.cp-breadcrumb-item
-    %a(href="user-dashboard.html") User
+    %a(href="driver-dashboard.html") Driver
   %li.cp-breadcrumb-item
-    %a(href="user-list-user.html") List User
-  %li.cp-breadcrumb-item.active User Detail
+    %a(href="driver-group.html") Driver Group
+  %li.cp-breadcrumb-item.active Driver Group Detail
 / End Breadcrumb
 
 / Float Container
@@ -38,44 +38,31 @@
 
 .cp-float-item-13.cp-card.cp-left
   %header
-    .cp-card-summary.online
+    .cp-card-summary
       .cp-detail-avatar
         .cp-image-rec90
-          %img(src="../images/faces/lady-killer.png" alt="User Avatar" )
+          %img(src="../images/damsen.png" alt="Logo" )
       .cp-detail-summary-info
-        .cp-typo-code NV2516
-        .cp-typo-name Lady Killer
-        .cp-typo-text Admincheck-all
+        .cp-typo-code DAMSEN
+        .cp-typo-name Dam Sen Water Park Taxi
+  %hr
   .cp-detail-container
     %table.cp-card-detail
-      %tr
-        %td Email:
-        %td lady_killer@nexx.vn
-      %tr
-        %td Date of Birth:
-        %td 15/10/1991
-      %tr
-        %td Gender:
-        %td
-          %i.cp-icn-female
-      %tr
-        %td Address:
-        %td 123 Heaven Valley, Earth, Galaxy
-      %tr
-        %td Phone:
-        %td 01234567890
-      %tr
-        %td Position:
-        %td Boss
       %tr
         %td Status:
         %td Active
       %tr
-        %td Create:
-        %td 11/10/2016
+        %td Create At:
+        %td 15/10/1991, 10:30
       %tr
-        %td Description:
-        %td I'm your boss, I'm the best and I like SM
+        %td Last Updated At:
+        %td 15/10/1991, 10:30
+      %tr
+        %td Create By:
+        %td Admin
+      %tr
+        %td Last Updated By:
+        %td Admin
 \</div>
 / End Float Container
 
@@ -94,5 +81,4 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-
 

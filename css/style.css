@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* line 7, ../sass/_sprite.sass */
 i {
-  background: url('../images/icons-s85ae8ec74b.png') no-repeat;
+  background: url('../images/icons-scdfabae6ec.png') no-repeat;
   display: inline-block;
   vertical-align: baseline;
 }
@@ -192,7 +192,7 @@ i {
 .cp-icn-edit {
   background-position: 0 -534px;
   height: 17px;
-  width: 16px;
+  width: 13px;
 }
 
 /* line 13, ../sass/_sprite.sass */
@@ -339,7 +339,7 @@ i {
 .cp-icn-permission {
   background-position: 0 -1049px;
   height: 19px;
-  width: 14px;
+  width: 15px;
 }
 
 /* line 13, ../sass/_sprite.sass */
@@ -827,7 +827,7 @@ i {
 .cp-typo-name {
   font-size: 2.4rem;
   font-weight: 400;
-  line-height: 3.6rem;
+  line-height: 3.2rem;
 }
 
 /* line 8, ../sass/_typography.sass */
@@ -2396,7 +2396,7 @@ table.cp-table-list tbody tr td.online {
 /* line 104, ../sass/_table.sass */
 table.cp-table-list tbody tr td.action {
   width: 90px;
-  padding-right: 30px;
+  padding-right: 26px;
 }
 /* line 107, ../sass/_table.sass */
 table.cp-table-list tbody tr td.action-second {

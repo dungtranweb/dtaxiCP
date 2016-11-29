@@ -1,0 +1,85 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="user-dashboard.html") User
+  %li.cp-breadcrumb-item
+    %a(href="user-role.html") User Roles
+  %li.cp-breadcrumb-item.active Edit User Role
+/ End Breadcrumb
+
+/ Float Container
+%form(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Edit User
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Edit User Role
+
+      .cp-card-content
+        .cp-label name
+        %input(type="text" placeholder="Enter name" )
+
+  / End Column Layout
+
+  / Column Layout
+  .cp-column
+    / Action
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Action
+
+      .cp-card-content
+        .cp-label status
+        %select
+          %option Active
+          %option Deactive
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+
