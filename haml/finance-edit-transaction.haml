@@ -88,6 +88,8 @@
         .fake-input
           %span TS5246
           %i.cp-icn-disable
+        .cp-label transaction code
+        %input(type="text" value="TS5246" disabled )
         .cp-label date of transfer
         %input(type="text" placeholder="Enter date of transfer" )
 
@@ -108,4 +110,3 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-

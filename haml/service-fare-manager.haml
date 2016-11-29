@@ -1,0 +1,277 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="service-dashboard.html") Fare & Service
+  %li.cp-breadcrumb-item.active Location & Fare
+/ End Breadcrumb
+
+/ Modal
+#cp-modal-delete.modal.fade(tabindex="-1" role="dialog" )
+  .modal-dialog(role="document")
+    .cp-modal-content
+      .cp-modal-header
+        %i.cp-icn-modal-warning
+        .cp-modal-title Are you sure?
+        .cp-modal-subtitle You will not able to recover this item!
+      .cp-modal-footer
+        %button.cp-btn.cp-btn-danger(type="button" ) Yes
+        %button.cp-btn.cp-btn-success(type="button" data-dismiss="modal" ) No
+/ End Modal
+
+/ Flexbox Layout
+\<div class="cp-flex">
+.cp-flex-item.cp-flex-1of1
+  .cp-flex-content.cp-card
+    %header
+      .cp-card-title
+        .cp-typo-title Fare
+        .cp-typo-subtitle All downtown districts
+      .cp-card-config
+        .dropdown.export
+          .dropdown-toggle(data-toggle="dropdown") <i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i>
+          .dropdown-menu.dropdown-menu-right
+            %a.dropdown-item(href="#") Excel
+            %a.dropdown-item(href="#") CSV
+        .split
+        .total Total 200 items
+        .split
+        .cp-chechbox
+          %input#is-special-date(type="checkbox" checked )
+          %label.checkbox(for="is-special-date") Is Special Date
+        .split
+        %select
+          %option(selected) DTaxi
+          %option DTaxi 4 Seats
+          %option DTaxi 7 Seats
+          %option DTaxi Suburban
+
+    %form.cp-form-edit-inline(method="post" )
+      .scrollable
+        %table.table.cp-table-list
+          %thead
+            %tr
+              %th
+                %a(href="#" ) FROM
+              %th
+                %a(href="" ) TO
+              %th
+                %a(href="" ) RATE
+              %th
+                %a(href="" ) PRICE
+              %th
+                %a(href="" ) DESCRIPTION
+              %th
+                %a(href="" ) PRIORITY
+              %th
+                %a(href="" ) STATUS
+              %th
+                %a(href="" ) ACTION
+          %tbody
+            %tr
+              %td
+                .cp-time.cp-time-margin
+                  %select
+                    %option(disabled) Hour
+                    %option 01
+                    %option 02
+                    %option 03
+                    %option 04
+                    %option 05
+                    %option 06
+                    %option 07
+                    %option 08
+                    %option 09
+                    %option(selected) 10
+                    %option 11
+                    %option 12
+                  .cp-colon :
+                  %select
+                    %option(disabled) Minute
+                    %option 01
+                    %option 02
+                    %option 03
+                    %option 04
+                    %option(selected) 05
+                    %option 06
+                    %option 07
+                    %option 08
+                    %option 09
+                    %option 10
+                    %option 11
+                    %option 12
+              %td
+                .cp-time
+                  %select
+                    %option(disabled) Hour
+                    %option 01
+                    %option 02
+                    %option 03
+                    %option 04
+                    %option 05
+                    %option(selected) 06
+                    %option 07
+                    %option 08
+                    %option 09
+                    %option 10
+                    %option 11
+                    %option 12
+                  .cp-colon :
+                  %select
+                    %option(disabled) Minute
+                    %option 01
+                    %option 02
+                    %option 03
+                    %option 04
+                    %option 05
+                    %option 06
+                    %option 07
+                    %option 08
+                    %option 09
+                    %option(selected) 10
+                    %option 11
+                    %option 12
+              %td
+                %input(type="text" value="1" )
+              %td
+                %input(type="text" value="11000" disabled )
+              %td
+                %input(type="text" value="From dawn to dark" )
+              %td
+                %input(type="text" value="1" disabled )
+              %td
+                %select.cp-status
+                  %option(disabled selected) Active
+                  %option Deactive
+                  %option Block
+              %td.action-fourth
+                %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+      .cp-btn-bottom
+        %button#add-new-line.cp-btn.cp-btn-instant(type="button" ) Add New Line
+        %button.cp-btn.cp-btn-success(type="submit" ) Submit
+
+      %script#new-line-template(type="text/x-custom-template" )
+        %tr
+          %td
+            .cp-time.cp-time-margin
+              %select
+                %option(disabled selected) Hour
+                %option 01
+                %option 02
+                %option 03
+                %option 04
+                %option 05
+                %option 06
+                %option 07
+                %option 08
+                %option 09
+                %option 10
+                %option 11
+                %option 12
+              .cp-colon :
+              %select
+                %option(disabled selected) Minute
+                %option 01
+                %option 02
+                %option 03
+                %option 04
+                %option 05
+                %option 06
+                %option 07
+                %option 08
+                %option 09
+                %option 10
+                %option 11
+                %option 12
+          %td
+            .cp-time
+              %select
+                %option(disabled selected) Hour
+                %option 01
+                %option 02
+                %option 03
+                %option 04
+                %option 05
+                %option 06
+                %option 07
+                %option 08
+                %option 09
+                %option 10
+                %option 11
+                %option 12
+              .cp-colon :
+              %select
+                %option(disabled selected) Minute
+                %option 01
+                %option 02
+                %option 03
+                %option 04
+                %option 05
+                %option 06
+                %option 07
+                %option 08
+                %option 09
+                %option 10
+                %option 11
+                %option 12
+          %td
+            %input(type="text" placeholder="Rate" )
+          %td
+            %input(type="text" value="11000" disabled )
+          %td
+            %input(type="text" placeholder="Discription" )
+          %td
+            %input(type="text" value="2" disabled )
+          %td
+            %select.cp-status
+              %option(disabled selected) Active
+              %option Deactive
+              %option Block
+          %td.action-fourth
+            %a.btn-list(href="#" data-hover="tooltip" data-toggle="modal" data-target="#cp-modal-delete" data-placement="bottom" title="Delete" ) <i class="cp-icn-delete"></i>
+
+\</div>
+/ End Flexbox Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+

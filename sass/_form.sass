@@ -123,6 +123,17 @@ select
       left: 0
       border: none
 
+// Select Searchable in Plugin Select2
+// ===================================
+.form-control:focus
+  color: $primaryText
+  outline: none
+  border: 1px solid rgba($primary, 0.3)
+  +border-radius(3px)
+  +box-shadow(inset 0 1px 1px rgba($primary, 0.075), 0 0 8px rgba($primary, 0.3))
+.select2-container--focus
+  outline: none
+
 // Other Input & Textarea
 input[type="color"],
 input[type="date"],
@@ -203,6 +214,8 @@ form
     background-color: $background
     background-image: image_url("icons/disable.png")
     background-position-y: 12px
+  input[type="text"]:disabled
+    background: $background url("../images/icons/disable.png") no-repeat 96% 12px
   .fake-input
     position: relative
     display: table
@@ -232,6 +245,29 @@ form
       padding-left: 30px
       @media (max-width: 1100px)
         padding-left: 20px
+  &.cp-form-edit-inline
+    select,
+    input[type="text"]
+      padding-left: 10px
+    .cp-time
+      display: inline-block
+      white-space: nowrap
+      &.cp-time-margin
+        margin-right: 10px
+      .cp-colon
+        margin: 0 5px
+        vertical-align: middle
+        display: inline
+      select
+        width: 80px
+    .cp-status
+      width: 130px
+    .cp-btn-bottom
+      margin: 20px 30px 0 30px
+      button
+        margin-right: 10px
+      .cp-btn-success
+        margin-top: 0
 
 
 // Style Upload Form

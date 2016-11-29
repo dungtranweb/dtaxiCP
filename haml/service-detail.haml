@@ -1,0 +1,86 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="service-dashboard.html") Fare & Service
+  %li.cp-breadcrumb-item
+    %a(href="service-service-type.html") List Service Type
+  %li.cp-breadcrumb-item.active Service Type Detail
+/ End Breadcrumb
+
+/ Float Container
+\<div class="cp-float-container clearfix">
+
+.cp-float-item-13.cp-card.cp-left
+  %header
+    .cp-card-summary
+      .cp-detail-avatar
+        .cp-image-rec90
+          %img(src="../images/placeholder.png" alt="Service Type Logo" )
+      .cp-detail-summary-info
+        .cp-typo-code DTAXI
+        .cp-typo-name DTaxi
+        .cp-typo-text DTaxi 4 Seats, DTaxi 7 Seats
+  %hr
+  .cp-detail-container
+    %table.cp-card-detail
+      %tr
+        %td Create At:
+        %td 15/10/1991, 10:30
+      %tr
+        %td Last Updated At:
+        %td 15/10/1991, 10:30
+      %tr
+        %td Create By:
+        %td Admin
+      %tr
+        %td Last Updated By:
+        %td Admin
+      %tr
+        %td Description:
+        %td Contain of DTaxi 4 Seats and DTaxi 7 Seats
+\</div>
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+
