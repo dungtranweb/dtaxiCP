@@ -55,13 +55,13 @@
           %select(disabled)
             %option Viet Nam
           .cp-label province
-          %select
+          %select.cp-select2
             %option Ho Chi Minh
             %option Binh Duong
             %option Long An
             %option Dong Nai
           .cp-label district
-          %select
+          %select.cp-select2
             %option(disabled selected) Select one
             %option 1
             %option 2
@@ -76,7 +76,7 @@
             %option 11
             %option 12
           .cp-label ward
-          %select
+          %select.cp-select2
             %option(disabled selected) Select one
             %option 1
             %option 2
@@ -128,7 +128,7 @@
           %option Female
         .cp-label date of birth
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -142,7 +142,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -156,7 +156,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -187,7 +187,10 @@
           .cp-address-detail Him Lam Cho Lon, Ward 11, District 6, Ho Chi Minh City
           %a(href="#" ) <i class="cp-icn-delete"></i>
           %a#edit-address(href="" data-toggle="modal" data-target="#cp-modal-edit-address"  ) <i class="cp-icn-edit"></i>
-        %button#add-new-address.cp-btn.cp-btn-instant(type="button") Add New Address
+        .cp-label Create New Address
+        .cp-is
+          %input#create-new-address(type="checkbox" )
+          %label.checkbox(for="create-new-address")
         #cp-old-address
           %hr
           .cp-label is default?
@@ -202,13 +205,13 @@
           %select(disabled)
             %option Viet Nam
           .cp-label province
-          %select
+          %select.cp-select2
             %option Ho Chi Minh
             %option Binh Duong
             %option Long An
             %option Dong Nai
           .cp-label district
-          %select
+          %select.cp-select2
             %option(disabled selected) Select one
             %option 1
             %option 2
@@ -223,7 +226,7 @@
             %option 11
             %option 12
           .cp-label ward
-          %select
+          %select.cp-select2
             %option(disabled selected) Select one
             %option 1
             %option 2
@@ -249,7 +252,7 @@
         %input(type="text" placeholder="Enter identity number" )
         .cp-label issue date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -263,7 +266,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -277,7 +280,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -355,7 +358,7 @@
         %input(type="text" placeholder="Enter driver license type" )
         .cp-label issue date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -369,7 +372,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -383,7 +386,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -398,7 +401,7 @@
             %option 2000
         .cp-label expire date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -412,7 +415,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -426,7 +429,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -534,7 +537,7 @@
         %input(type="text" placeholder="Enter issued by" )
         .cp-label issue date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -548,7 +551,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -562,7 +565,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -602,7 +605,7 @@
         %input(type="text" placeholder="Enter issued by" )
         .cp-label issue date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -616,7 +619,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -630,7 +633,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991
@@ -645,7 +648,7 @@
             %option 2000
         .cp-label expire date
         .cp-date
-          %select
+          %select.cp-select2
             %option(disabled selected) Day
             %option 1
             %option 2
@@ -659,7 +662,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Month
             %option 1
             %option 2
@@ -673,7 +676,7 @@
             %option 10
             %option 11
             %option 12
-          %select
+          %select.cp-select2
             %option(disabled selected) Year
             %option 1990
             %option 1991

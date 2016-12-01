@@ -2,32 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73cd2120-2d95-450f-95ab-b2b8600d2366" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/notification-send-sms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/icons-scdfabae6ec.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/haml/notification-send-sms.haml" afterPath="$PROJECT_DIR$/haml/noti-send-sms.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_button.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_button.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_form.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_form.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_layout.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_layout.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_sprite.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_sprite.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/customer-change-pass.haml" afterPath="$PROJECT_DIR$/haml/customer-change-pass.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-create-driver.haml" afterPath="$PROJECT_DIR$/haml/driver-create-driver.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-edit.haml" afterPath="$PROJECT_DIR$/haml/driver-edit.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/footer.haml" afterPath="$PROJECT_DIR$/haml/footer.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/layout.haml" afterPath="$PROJECT_DIR$/haml/layout.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/service-fare-manager.haml" afterPath="$PROJECT_DIR$/haml/service-fare-manager.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/customer-change-pass.html" afterPath="$PROJECT_DIR$/html/customer-change-pass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/header.haml" afterPath="$PROJECT_DIR$/haml/header.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-create-driver.html" afterPath="$PROJECT_DIR$/html/driver-create-driver.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-edit.html" afterPath="$PROJECT_DIR$/html/driver-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/layout.html" afterPath="$PROJECT_DIR$/html/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/service-fare-manager.html" afterPath="$PROJECT_DIR$/html/service-fare-manager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.html" afterPath="$PROJECT_DIR$/html/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_button.sass" afterPath="$PROJECT_DIR$/sass/_button.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_form.sass" afterPath="$PROJECT_DIR$/sass/_form.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_layout.sass" afterPath="$PROJECT_DIR$/sass/_layout.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_sprite.sass" afterPath="$PROJECT_DIR$/sass/_sprite.sass" />
     </list>
     <ignored path="dtaxiCP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,21 +37,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="driver-edit.haml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="driver-edit.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/haml/driver-edit.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="178" column="32" lean-forward="false" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+            <state relative-caret-position="-99">
+              <caret line="213" column="28" lean-forward="false" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
               <folding>
-                <element signature="n#select#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
-                <element signature="n#select#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
-                <element signature="n#select#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
                 <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#select#2;n#div#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#select#3;n#div#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#7;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
@@ -73,21 +56,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driver-create-driver.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_form.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_form.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="driver-create-driver.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haml/driver-create-driver.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+            <state relative-caret-position="9918">
+              <caret line="612" column="28" lean-forward="false" selection-start-line="612" selection-start-column="28" selection-end-line="612" selection-end-column="28" />
               <folding>
                 <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#select#2;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#select#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#4;n#div#1;n#form#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#4;n#div#1;n#form#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -96,21 +81,31 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="172" column="12" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="172" selection-end-column="12" />
+            <state relative-caret-position="269">
+              <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
               <folding>
-                <marker date="1480575475596" expanded="true" signature="1518:1534" ph="..." />
-                <marker date="1480575475596" expanded="true" signature="2102:2114" ph="..." />
+                <marker date="1480581520025" expanded="true" signature="1518:1534" ph="..." />
+                <marker date="1480581520025" expanded="true" signature="2102:2114" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_layout.sass">
+      <file leaf-file-name="header.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haml/header.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haml/footer.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -120,11 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>conf</find>
-      <find>group</find>
-      <find>(selected)</find>
-      <find>List User</find>
-      <find>user-detail.html</find>
       <find>user-edit.html</find>
       <find>veri</find>
       <find>customer</find>
@@ -150,6 +140,11 @@
       <find>cp-is</find>
       <find>fake</find>
       <find>.cp-vehicle-info</find>
+      <find>Syst</find>
+      <find>System</find>
+      <find>select2</find>
+      <find>range</find>
+      <find>new</find>
     </findStrings>
     <replaceStrings>
       <replace>Finance</replace>
@@ -161,7 +156,6 @@
       <replace>Customer</replace>
       <replace>notifiaction</replace>
       <replace>service-edit-service</replace>
-      <replace>Service</replace>
       <replace>service</replace>
       <replace>location</replace>
       <replace>.action-second</replace>
@@ -182,6 +176,7 @@
       <replace>DRIVER</replace>
       <replace>noti</replace>
       <replace>Notification</replace>
+      <replace>Service</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -190,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/haml/vehicle-model.haml" />
         <option value="$PROJECT_DIR$/haml/vehicle-type.haml" />
         <option value="$PROJECT_DIR$/haml/finance-bonus.haml" />
         <option value="$PROJECT_DIR$/haml/finance-configuration.haml" />
@@ -221,7 +215,6 @@
         <option value="$PROJECT_DIR$/haml/user-role.haml" />
         <option value="$PROJECT_DIR$/haml/user-permission.haml" />
         <option value="$PROJECT_DIR$/haml/user-role-edit.haml" />
-        <option value="$PROJECT_DIR$/haml/footer.haml" />
         <option value="$PROJECT_DIR$/haml/service-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/layout.haml" />
         <option value="$PROJECT_DIR$/haml/noti-dashboard.haml" />
@@ -234,13 +227,15 @@
         <option value="$PROJECT_DIR$/haml/noti-customer-devices.haml" />
         <option value="$PROJECT_DIR$/haml/noti-driver-devices.haml" />
         <option value="$PROJECT_DIR$/haml/noti-configuration.haml" />
-        <option value="$PROJECT_DIR$/sass/_form.sass" />
         <option value="$PROJECT_DIR$/sass/_layout.sass" />
         <option value="$PROJECT_DIR$/sass/_button.sass" />
         <option value="$PROJECT_DIR$/haml/customer-change-pass.haml" />
+        <option value="$PROJECT_DIR$/haml/header.haml" />
+        <option value="$PROJECT_DIR$/haml/footer.haml" />
+        <option value="$PROJECT_DIR$/haml/driver-create-driver.haml" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/haml/driver-edit.haml" />
-        <option value="$PROJECT_DIR$/haml/driver-create-driver.haml" />
+        <option value="$PROJECT_DIR$/sass/_form.sass" />
       </list>
     </option>
   </component>
@@ -411,12 +406,12 @@
       <workItem from="1480475601651" duration="18799000" />
       <workItem from="1480562288389" duration="3863000" />
       <workItem from="1480569782262" duration="90000" />
-      <workItem from="1480571196162" duration="3750000" />
+      <workItem from="1480571196162" duration="9684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227166000" />
+    <option name="totallyTimeSpent" value="233100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1547" height="876" extended-state="6" />
@@ -480,13 +475,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/haml/service-detail.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/user-role.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -596,13 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/footer.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -768,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_form.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="202" column="13" lean-forward="true" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_table.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -788,14 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="136" column="28" lean-forward="true" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_layout.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -816,17 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="172" column="12" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="172" selection-end-column="12" />
-          <folding>
-            <marker date="1480575475596" expanded="true" signature="1518:1534" ph="..." />
-            <marker date="1480575475596" expanded="true" signature="2102:2114" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/driver-create-driver.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -835,41 +789,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/driver-edit.haml">
+    <entry file="file://$PROJECT_DIR$/haml/header.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="178" column="32" lean-forward="false" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_layout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/footer.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
           <folding>
-            <element signature="n#select#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
-            <element signature="n#select#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
-            <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#div#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#select#3;n#div#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <marker date="1480581520025" expanded="true" signature="1518:1534" ph="..." />
+            <marker date="1480581520025" expanded="true" signature="2102:2114" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_form.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/driver-create-driver.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+        <state relative-caret-position="9918">
+          <caret line="612" column="28" lean-forward="false" selection-start-line="612" selection-start-column="28" selection-end-line="612" selection-end-column="28" />
           <folding>
             <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#select#3;n#div#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/driver-edit.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="213" column="28" lean-forward="false" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#4;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#4;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

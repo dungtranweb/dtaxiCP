@@ -96,11 +96,20 @@ $(document).ready(function () {
 		$('aside#sidebar').css('overflow', 'auto');
 	}
 
-// Trigger button "Add New Address"
+// Trigger "Add New Address"
 // ================================
-	$("#add-new-address").on('click', function () {
-		$("#cp-old-address").css("display", "block");
-		$("#cp-old-address").addClass("animated fadeIn");
+	$("#create-new-address").change(function () {
+		var newAddress = $(this).prop('checked');
+		if(newAddress) {
+         $("#cp-old-address").css("display", "block");
+         $("#cp-old-address").removeClass("animated fadeOut");
+         $("#cp-old-address").addClass("animated fadeIn");
+		} else{
+         $("#cp-old-address").css("display", "none");
+         $("#cp-old-address").removeClass("animated fadeIn");
+         $("#cp-old-address").addClass("animated fadeOut");
+		}
+
 	});
 
 // Set position of foobar
@@ -161,17 +170,21 @@ $(document).ready(function () {
       $('tbody').append(newLine);
 	});
 
+// Select2
+// =======
+	$('.cp-select2').select2();
+
 // Create Vehicle
-// ============
+// ==============
    $('#create-vehicle').change(function () {
       var createVehicle = $(this).prop('checked');
-      console.log('createVehicle: ' + createVehicle);
+      // console.log('createVehicle: ' + createVehicle);
       if (createVehicle) {
          $('.cp-vehicle-info').css('display', 'inline-block');
-         console.log('show vehicle info');
+         // console.log('show vehicle info');
       } else {
          $('.cp-vehicle-info').css('display', 'none');
-         console.log('hide vehicle info');
+         // console.log('hide vehicle info');
       }
    });
 
