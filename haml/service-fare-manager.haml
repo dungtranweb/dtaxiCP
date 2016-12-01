@@ -166,7 +166,7 @@
                 %input(type="text" value="1" disabled )
               %td
                 %select.cp-status
-                  %option(disabled selected) Active
+                  %option(selected) Active
                   %option Deactive
                   %option Block
               %td.action-fourth
@@ -176,7 +176,7 @@
         %button#add-new-line.cp-btn.cp-btn-instant(type="button" ) Add New Line
         %button.cp-btn.cp-btn-success(type="submit" ) Submit
 
-      %script#new-line-template(type="text/x-custom-template" )
+      %script#new-line-template.cp-hidden(type="text/x-custom-template" )
         %tr
           %td
             .cp-time.cp-time-margin
@@ -247,7 +247,7 @@
           %td
             %input(type="text" placeholder="Discription" )
           %td
-            %input(type="text" value="2" disabled )
+            %input(type="text" value="0" disabled )
           %td
             %select.cp-status
               %option(disabled selected) Active
@@ -274,4 +274,3 @@
 / End Container
 
 = Haml::Engine.new(File.read('footer.haml')).render
-

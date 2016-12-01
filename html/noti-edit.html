@@ -523,46 +523,72 @@
     <a href='index.html'>Home</a>
   </li>
   <li class='cp-breadcrumb-item'>
-    <a href='customer-dashboard.html'>Customer</a>
+    <a href='noti-dashboard.html'>Notification</a>
   </li>
   <li class='cp-breadcrumb-item'>
-    <a href='customer-list-customer.html'>List Customer</a>
+    <a href='noti-list.html'>List Notification</a>
   </li>
-  <li class='cp-breadcrumb-item active'>Change Password</li>
+  <li class='cp-breadcrumb-item active'>Edit Notification</li>
 </ol>
 <!-- End Breadcrumb -->
 <!-- Float Container -->
-<form class='cp-float-container clearfix' method='post'>
-  <div class='cp-float-item-13 cp-card cp-left'>
-    <header>
-      <div class='cp-card-title'>
-        <div class='cp-typo-title'>Change Password</div>
+<form enctype='multipart/form-data' method='post'>
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Edit Notification -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Edit Notification</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>target</div>
+        <select>
+          <option>Customer</option>
+          <option>Driver</option>
+        </select>
+        <div class='cp-label'>category</div>
+        <select>
+          <option>News - Raw</option>
+          <option>News - Article</option>
+        </select>
+        <div class='cp-label'>form</div>
+        <select id='form-send'>
+          <option selected value='0'>Send all</option>
+          <option value='1'>Send list</option>
+        </select>
+        <div class='cp-label'>send list</div>
+        <textarea disabled id='send-list' placeholder='Enter list of target by phone number or code separated by comas (,)'></textarea>
+        <div class='cp-label'>title</div>
+        <input placeholder='Enter title' type='text'>
+        <div class='cp-label'>content</div>
+        <textarea id='noti-editor' placeholder='Enter content'></textarea>
       </div>
-    </header>
-    <div class='cp-card-content'>
-      <table class='cp-card-detail'>
-        <tr>
-          <td>Name:</td>
-          <td>Thang Tran</td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td>thang.tran@nexx.vn</td>
-        </tr>
-        <tr>
-          <td>Phone:</td>
-          <td>01234567890</td>
-        </tr>
-      </table>
-      <div class='cp-label'>password</div>
-      <input placeholder='Enter password' type='password'>
-      <div class='cp-label'>retype password</div>
-      <input placeholder='Retype password' type='password'>
-      <button class='cp-btn cp-btn-success' type='submit'>Save</button>
     </div>
   </div>
+  <!-- End Column Layout -->
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Action -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Action</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>status</div>
+        <select>
+          <option>Send now</option>
+          <option>Save and send later</option>
+        </select>
+        <button class='cp-btn cp-btn-success' type='submit'>Save</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Column Layout -->
 </form>
-<!-- End Float Container -->
 </div>
 <!-- End Content -->
 <!-- Foobar -->

@@ -1,0 +1,156 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="noti-dashboard.html") Notification
+  %li.cp-breadcrumb-item.active Driver Devices
+
+/ Modal
+#cp-modal-delete.modal.fade(tabindex="-1" role="dialog" )
+  .modal-dialog(role="document")
+    .cp-modal-content
+      .cp-modal-header
+        %i.cp-icn-modal-warning
+        .cp-modal-title Are you sure?
+        .cp-modal-subtitle You will not able to recover this item!
+      .cp-modal-footer
+        %button.cp-btn.cp-btn-danger(type="button" ) Yes
+        %button.cp-btn.cp-btn-success(type="button" data-dismiss="modal" ) No
+/ End Modal
+
+/ Float Container
+\<div class="cp-flex">
+.cp-flex-item.cp-flex-1of1
+  .cp-flex-content.cp-card
+    %header
+      .cp-card-title
+        .cp-typo-title Driver Devices
+      .cp-card-config
+        .dropdown.export
+          .dropdown-toggle(data-toggle="dropdown") <i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i>
+          .dropdown-menu.dropdown-menu-right
+            %a.dropdown-item(href="#") Excel
+            %a.dropdown-item(href="#") CSV
+        .split
+        .total Total 200 items
+
+    .scrollable
+      %table.table.cp-table-list
+        %thead
+          %tr
+            %th &nbsp;
+            %th &nbsp;
+            %th.cp-thead-small
+              %a(href="" ) DRIVER CODE
+            %th
+              %a(href="" ) DRIVER NAME
+            %th
+              %a(href="" ) DRIVER PHONE
+            %th
+              %a(href="" ) DEVICE TOKEN
+            %th
+              %a(href="" ) DEVICE PLATFORM
+            %th
+              %a(href="" ) DEVICE OS
+            %th
+              %a(href="" ) APP VERSION
+          %tr.filter
+            %td &nbsp;
+            %td &nbsp;
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+            %td
+              %input(type="text")
+        %tbody
+          %tr
+            %td.online &nbsp;
+            %td 1
+            %td CT85312
+            %td Adelle Charles
+            %td 01236581245
+            %td da858-45af3-143cd
+            %td Android
+            %td 6.0
+            %td 1.0
+          %tr
+            %td &nbsp;
+            %td 2
+            %td CT88412
+            %td Caleb Ogden
+            %td 01285642452
+            %td da858-45af3-143cd
+            %td iOS
+            %td 10.0.2
+            %td 1.0
+
+      %ul.cp-pagination
+        %li.cp-pagination-item
+          %a.cp-pagination-link.disable(href="#") &laquo;
+        %li.cp-pagination-item
+          %a.cp-pagination-link.active(href="#" ) 1
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 2
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 3
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 4
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) 5
+        %li.cp-pagination-item
+          %a.cp-pagination-link(href="#" ) &raquo;
+
+\</div>
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+

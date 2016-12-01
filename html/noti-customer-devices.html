@@ -523,45 +523,153 @@
     <a href='index.html'>Home</a>
   </li>
   <li class='cp-breadcrumb-item'>
-    <a href='customer-dashboard.html'>Customer</a>
+    <a href='noti-dashboard.html'>Notification</a>
   </li>
-  <li class='cp-breadcrumb-item'>
-    <a href='customer-list-customer.html'>List Customer</a>
-  </li>
-  <li class='cp-breadcrumb-item active'>Change Password</li>
+  <li class='cp-breadcrumb-item active'>Customer Devices</li>
 </ol>
-<!-- End Breadcrumb -->
-<!-- Float Container -->
-<form class='cp-float-container clearfix' method='post'>
-  <div class='cp-float-item-13 cp-card cp-left'>
-    <header>
-      <div class='cp-card-title'>
-        <div class='cp-typo-title'>Change Password</div>
+<!-- Modal -->
+<div class='modal fade' id='cp-modal-delete' role='dialog' tabindex='-1'>
+  <div class='modal-dialog' role='document'>
+    <div class='cp-modal-content'>
+      <div class='cp-modal-header'>
+        <i class='cp-icn-modal-warning'></i>
+        <div class='cp-modal-title'>Are you sure?</div>
+        <div class='cp-modal-subtitle'>You will not able to recover this item!</div>
       </div>
-    </header>
-    <div class='cp-card-content'>
-      <table class='cp-card-detail'>
-        <tr>
-          <td>Name:</td>
-          <td>Thang Tran</td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td>thang.tran@nexx.vn</td>
-        </tr>
-        <tr>
-          <td>Phone:</td>
-          <td>01234567890</td>
-        </tr>
-      </table>
-      <div class='cp-label'>password</div>
-      <input placeholder='Enter password' type='password'>
-      <div class='cp-label'>retype password</div>
-      <input placeholder='Retype password' type='password'>
-      <button class='cp-btn cp-btn-success' type='submit'>Save</button>
+      <div class='cp-modal-footer'>
+        <button class='cp-btn cp-btn-danger' type='button'>Yes</button>
+        <button class='cp-btn cp-btn-success' data-dismiss='modal' type='button'>No</button>
+      </div>
     </div>
   </div>
-</form>
+</div>
+<!-- End Modal -->
+<!-- Float Container -->
+<div class="cp-flex">
+<div class='cp-flex-item cp-flex-1of1'>
+  <div class='cp-flex-content cp-card'>
+    <header>
+      <div class='cp-card-title'>
+        <div class='cp-typo-title'>Customer Devices</div>
+      </div>
+      <div class='cp-card-config'>
+        <div class='dropdown export'>
+          <div class='dropdown-toggle' data-toggle='dropdown'><i class="cp-icn-export"></i> &nbsp;&nbsp;<i class="cp-icn-caret-black"></i></div>
+          <div class='dropdown-menu dropdown-menu-right'>
+            <a class='dropdown-item' href='#'>Excel</a>
+            <a class='dropdown-item' href='#'>CSV</a>
+          </div>
+        </div>
+        <div class='split'></div>
+        <div class='total'>Total 200 items</div>
+      </div>
+    </header>
+    <div class='scrollable'>
+      <table class='table cp-table-list'>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th class='cp-thead-small'>
+              <a href=''>CUSTOMER CODE</a>
+            </th>
+            <th>
+              <a href=''>CUSTOMER NAME</a>
+            </th>
+            <th>
+              <a href=''>CUSTOMER PHONE</a>
+            </th>
+            <th>
+              <a href=''>DEVICE TOKEN</a>
+            </th>
+            <th>
+              <a href=''>DEVICE PLATFORM</a>
+            </th>
+            <th>
+              <a href=''>DEVICE OS</a>
+            </th>
+            <th>
+              <a href=''>APP VERSION</a>
+            </th>
+          </tr>
+          <tr class='filter'>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+            <td>
+              <input type='text'>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='online'>&nbsp;</td>
+            <td>1</td>
+            <td>CT85312</td>
+            <td>Adelle Charles</td>
+            <td>01236581245</td>
+            <td>da858-45af3-143cd</td>
+            <td>Android</td>
+            <td>6.0</td>
+            <td>1.0</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>2</td>
+            <td>CT88412</td>
+            <td>Caleb Ogden</td>
+            <td>01285642452</td>
+            <td>da858-45af3-143cd</td>
+            <td>iOS</td>
+            <td>10.0.2</td>
+            <td>1.0</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class='cp-pagination'>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link disable' href='#'>&laquo;</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link active' href='#'>1</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link' href='#'>2</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link' href='#'>3</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link' href='#'>4</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link' href='#'>5</a>
+        </li>
+        <li class='cp-pagination-item'>
+          <a class='cp-pagination-link' href='#'>&raquo;</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
 <!-- End Float Container -->
 </div>
 <!-- End Content -->

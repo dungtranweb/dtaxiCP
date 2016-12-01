@@ -173,11 +173,10 @@
         %textarea(placeholder="Enter description" )
 
     / Address
-
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Address
+          .cp-typo-title Driver Address
 
       .cp-card-content
         .cp-label Home
@@ -243,7 +242,7 @@
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Identity
+          .cp-typo-title Driver Identity
 
       .cp-card-content
         .cp-label identity number
@@ -302,6 +301,42 @@
             .cp-label back
             .kv-avatar
               %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
+
+    / Service Information
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Service Information
+
+      .cp-card-content
+        .cp-label is verified?
+        .cp-is
+          %input#is-verify-driver(type="checkbox" checked )
+          %label.checkbox(for="is-verify-driver")
+        .cp-label driver rate (%)
+        %input(type="text" placeholder="Enter driver rate" )
+        .cp-label driver group
+        %select
+          %option(selected disabled) Select one
+          %option Dam Sen
+          %option Vinasun
+          %option Mai Linh
+        .cp-label service location
+        %select
+          %option(selected disabled) Select one
+          %option HCM1 include District 1, District 3, District 11, District 5, District 10
+          %option HCM2 include District 2, District 9, District 12, District 4, District 8
+        .cp-label service type
+        .cp-group-checkbox
+          %div
+            %input#dtaxi-4-seats(type="checkbox" )
+            %label.checkbox(for="dtaxi-4-seats") DTaxi 4 Seats
+          %div
+            %input#dtaxi-7-seats(type="checkbox" )
+            %label.checkbox(for="dtaxi-7-seats") DTaxi 7 Seats
+          %div
+            %input#dtaxi-suburban(type="checkbox" )
+            %label.checkbox(for="dtaxi-suburban") DTaxi Suburban
 
     / Driver License
     .cp-column-item.cp-card
@@ -414,47 +449,29 @@
             .kv-avatar
               %input.cp-upimage.file-loading(name="driver-insurance-back" type="file" )
 
-    / System Information
+    / Banking Information
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title System Information
+          .cp-typo-title Driver Banking Information
 
       .cp-card-content
-        .cp-label is verified?
-        .cp-is
-          %input#is-verify-driver(type="checkbox" checked )
-          %label.checkbox(for="is-verify-driver")
-        .cp-label driver rate (%)
-        %input(type="text" placeholder="Enter driver rate" )
-        .cp-label driver group
-        %select
-          %option(selected disabled) Select one
-          %option Dam Sen
-          %option Vinasun
-          %option Mai Linh
-        .cp-label service location
-        %select
-          %option(selected disabled) Select one
-          %option HCM1 include District 1, District 3, District 11, District 5, District 10
-          %option HCM2 include District 2, District 9, District 12, District 4, District 8
-        .cp-label service type
-        .cp-group-checkbox
-          %div
-            %input#dtaxi-4-seats(type="checkbox" )
-            %label.checkbox(for="dtaxi-4-seats") DTaxi 4 Seats
-          %div
-            %input#dtaxi-7-seats(type="checkbox" )
-            %label.checkbox(for="dtaxi-7-seats") DTaxi 7 Seats
-          %div
-            %input#dtaxi-suburban(type="checkbox" )
-            %label.checkbox(for="dtaxi-suburban") DTaxi Suburban
+        .cp-label bank name
+        %input(type="text" placeholder="Enter bank name" )
+        .cp-label bank branch
+        %input(type="text" placeholder="Enter bank branch" )
+        .cp-label account number
+        %input(type="text" placeholder="Enter account number" )
+        .cp-label account name
+        %input(type="text" placeholder="Enter account name" )
 
-    / Vehicle
+  / Column Layout
+  .cp-column
+    / General Info
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Vehicle
+          .cp-typo-title General Vehicle Info
 
       .cp-card-content
         .cp-label model
@@ -501,11 +518,80 @@
             .kv-avatar
               %input.cp-upimage.file-loading(name="driver-identity-right" type="file" )
 
+    / Fake Column Item
+    .cp-column-item-fake.cp-fake-margin-1
+
+    / Registration Certificate
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Vehicle Registration Certificate
+
+      .cp-card-content
+        .cp-label registration number
+        %input(type="text" placeholder="Enter registration number" )
+        .cp-label issued by
+        %input(type="text" placeholder="Enter issued by" )
+        .cp-label issue date
+        .cp-date
+          %select
+            %option(disabled selected) Day
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Month
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+            %option 11
+            %option 12
+          %select
+            %option(disabled selected) Year
+            %option 1990
+            %option 1991
+            %option 1992
+            %option 1993
+            %option 1994
+            %option 1995
+            %option 1996
+            %option 1997Float Container
+            %option 1998
+            %option 1999
+            %option 2000
+        .cp-label license plate
+        %input(type="text" placeholder="Enter license plate" )
+        .cp-upload-oneline.clearfix
+          .cp-upload-item
+            .cp-label front
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-front" type="file" )
+          .cp-upload-item
+            .cp-label back
+            .kv-avatar
+              %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
+
     / Insurance
     .cp-column-item.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Insurance
+          .cp-typo-title Vehicle Insurance
 
       .cp-card-content
         .cp-label insurance number
@@ -610,90 +696,6 @@
             .kv-avatar
               %input.cp-upimage.file-loading(name="driver-insurance-back" type="file" )
 
-    / Registration Certificate
-    .cp-column-item.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title Registration Certificate
-
-      .cp-card-content
-        .cp-label registration number
-        %input(type="text" placeholder="Enter registration number" )
-        .cp-label issued by
-        %input(type="text" placeholder="Enter issued by" )
-        .cp-label issue date
-        .cp-date
-          %select
-            %option(disabled selected) Day
-            %option 1
-            %option 2
-            %option 3
-            %option 4
-            %option 5
-            %option 6
-            %option 7
-            %option 8
-            %option 9
-            %option 10
-            %option 11
-            %option 12
-          %select
-            %option(disabled selected) Month
-            %option 1
-            %option 2
-            %option 3
-            %option 4
-            %option 5
-            %option 6
-            %option 7
-            %option 8
-            %option 9
-            %option 10
-            %option 11
-            %option 12
-          %select
-            %option(disabled selected) Year
-            %option 1990
-            %option 1991
-            %option 1992
-            %option 1993
-            %option 1994
-            %option 1995
-            %option 1996
-            %option 1997Float Container
-            %option 1998
-            %option 1999
-            %option 2000
-        .cp-label license plate
-        %input(type="text" placeholder="Enter license plate" )
-        .cp-upload-oneline.clearfix
-          .cp-upload-item
-            .cp-label front
-            .kv-avatar
-              %input.cp-upimage.file-loading(name="driver-identity-front" type="file" )
-          .cp-upload-item
-            .cp-label back
-            .kv-avatar
-              %input.cp-upimage.file-loading(name="driver-identity-back" type="file" )
-
-    / Banking Information
-    .cp-column-item.cp-cutout.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title Banking Information
-
-      .cp-card-content
-        .cp-label bank name
-        %input(type="text" placeholder="Enter bank name" )
-        .cp-label bank branch
-        %input(type="text" placeholder="Enter bank branch" )
-        .cp-label account number
-        %input(type="text" placeholder="Enter account number" )
-        .cp-label account name
-        %input(type="text" placeholder="Enter account name" )
-
-  / End Column Layout
-
   / Column Layout
   .cp-column
     / Action
@@ -708,7 +710,6 @@
           %option Active
           %option Deactive
         %button.cp-btn.cp-btn-success(type="submit" ) Save
-  / End Column Layout
 
 \</div>
 / End Content

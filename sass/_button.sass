@@ -93,8 +93,8 @@ $btn-customer-act: zip($list-customer-act, $list-customer-color)
   .cp-customer-#{nth($btn, 1)}
     background-color: nth($btn, 2)
 
-$list-trip-act: requesting onway ontrip complete cancel
-$list-trip-color: $orange $lightRed $blue $green $primaryText
+$list-trip-act: requesting onway ontrip complete cancel fail
+$list-trip-color: $orange $lightRed $blue $green $primaryText $red
 $btn-trip-act: zip($list-trip-act, $list-trip-color)
 
 @each $btn in $btn-trip-act
@@ -155,3 +155,4 @@ $bubble-act: zip($list-bubble, $list-bubble-color)
 @each $bubble in $bubble-act
   .cp-dot-#{nth($bubble, 1)}
     background-color: nth($bubble, 2)
+

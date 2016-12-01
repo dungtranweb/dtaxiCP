@@ -523,42 +523,31 @@
     <a href='index.html'>Home</a>
   </li>
   <li class='cp-breadcrumb-item'>
-    <a href='customer-dashboard.html'>Customer</a>
+    <a href='noti-dashboard.html'>Notification</a>
   </li>
-  <li class='cp-breadcrumb-item'>
-    <a href='customer-list-customer.html'>List Customer</a>
-  </li>
-  <li class='cp-breadcrumb-item active'>Change Password</li>
+  <li class='cp-breadcrumb-item active'>Configuration</li>
 </ol>
 <!-- End Breadcrumb -->
 <!-- Float Container -->
-<form class='cp-float-container clearfix' method='post'>
-  <div class='cp-float-item-13 cp-card cp-left'>
-    <header>
-      <div class='cp-card-title'>
-        <div class='cp-typo-title'>Change Password</div>
+<form class='cp-float-container clearfix' enctype='multipart/form-data' method='post'>
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Create Deposit -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Configuration</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>maximum notification in a day</div>
+        <input placeholder='Enter maximum notification in a day' type='text'>
+        <div class='cp-label'>maximum character of title</div>
+        <input placeholder='Enter maximum character of title' type='text'>
+        <div class='cp-label'>maximum character of content</div>
+        <input placeholder='Enter maximum character of title' type='text'>
+        <button class='cp-btn cp-btn-success' type='submit'>Save</button>
       </div>
-    </header>
-    <div class='cp-card-content'>
-      <table class='cp-card-detail'>
-        <tr>
-          <td>Name:</td>
-          <td>Thang Tran</td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td>thang.tran@nexx.vn</td>
-        </tr>
-        <tr>
-          <td>Phone:</td>
-          <td>01234567890</td>
-        </tr>
-      </table>
-      <div class='cp-label'>password</div>
-      <input placeholder='Enter password' type='password'>
-      <div class='cp-label'>retype password</div>
-      <input placeholder='Retype password' type='password'>
-      <button class='cp-btn cp-btn-success' type='submit'>Save</button>
     </div>
   </div>
 </form>

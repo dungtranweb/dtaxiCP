@@ -156,11 +156,43 @@ $(document).ready(function () {
 		$('.cp-fake-margin-2').css('margin', '-269px');
 	});
 
-	var newLine = $('#new-line-template').html();
-
 	$('#add-new-line').click(function () {
-		$('tbody').append(newLine);
+      var newLine = $('#new-line-template').html();
+      $('tbody').append(newLine);
 	});
+
+// Create Vehicle
+// ============
+   $('#create-vehicle').change(function () {
+      var createVehicle = $(this).prop('checked');
+      console.log('createVehicle: ' + createVehicle);
+      if (createVehicle) {
+         $('.cp-vehicle-info').css('display', 'inline-block');
+         console.log('show vehicle info');
+      } else {
+         $('.cp-vehicle-info').css('display', 'none');
+         console.log('hide vehicle info');
+      }
+   });
+
+// Notification
+// ============
+   CKEDITOR.replace('noti-editor');
+
+   $('#form-send').change(function () {
+      var formSend = $(this).val();
+      var sendListDisabled = $('#send-list').is(':disabled');
+      // console.log('formSend = ' + formSend + ' - sendListDisable = ' + sendListDisabled);
+      if(formSend == 1 && sendListDisabled ) {
+         $('#send-list').prop('disabled', false);
+         // console.log('sendList is not disabled');
+      } else if(formSend == 0 && !sendListDisabled) {
+         $('#send-list').prop('disabled', true);
+         // console.log('sendList is disabled');
+      } else {
+         // console.log('don\'t fuck me!');
+      }
+   });
 
 
 // End Nexx Control Panel Javascript

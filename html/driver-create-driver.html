@@ -77,6 +77,9 @@
             <a href='user-create-user.html'>Create User</a>
           </li>
           <li>
+            <a href='user-role.html'>User Roles</a>
+          </li>
+          <li>
             <a href='user-configuration.html'>Configuration</a>
           </li>
         </ul>
@@ -97,7 +100,7 @@
             <a href='driver-create-driver.html'>Driver Group</a>
           </li>
           <li>
-            <a href='driver-create-driver.html'>Driver Report</a>
+            <a href='driver-group.html'>Driver Report</a>
           </li>
           <li>
             <a href='driver-configuration.html'>Configuration</a>
@@ -615,7 +618,7 @@
     <div class='cp-column-item cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Address</div>
+          <div class='cp-typo-title'>Driver Address</div>
         </div>
       </header>
       <div class='cp-card-content'>
@@ -677,7 +680,7 @@
     <div class='cp-column-item cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Identity</div>
+          <div class='cp-typo-title'>Driver Identity</div>
         </div>
       </header>
       <div class='cp-card-content'>
@@ -744,6 +747,51 @@
             <div class='kv-avatar'>
               <input class='cp-upimage file-loading' name='driver-identity-back' type='file'>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- System Information -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Driver System Information</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>is verified?</div>
+        <div class='cp-is'>
+          <input checked id='is-verify-driver' type='checkbox'>
+          <label class='checkbox' for='is-verify-driver'></label>
+        </div>
+        <div class='cp-label'>driver rate (%)</div>
+        <input placeholder='Enter driver rate' type='text'>
+        <div class='cp-label'>driver group</div>
+        <select>
+          <option disabled selected>Select one</option>
+          <option>Dam Sen</option>
+          <option>Vinasun</option>
+          <option>Mai Linh</option>
+        </select>
+        <div class='cp-label'>service location</div>
+        <select>
+          <option disabled selected>Select one</option>
+          <option>HCM1 include District 1, District 3, District 11, District 5, District 10</option>
+          <option>HCM2 include District 2, District 9, District 12, District 4, District 8</option>
+        </select>
+        <div class='cp-label'>service type</div>
+        <div class='cp-group-checkbox'>
+          <div>
+            <input id='dtaxi-4-seats' type='checkbox'>
+            <label class='checkbox' for='dtaxi-4-seats'>DTaxi 4 Seats</label>
+          </div>
+          <div>
+            <input id='dtaxi-7-seats' type='checkbox'>
+            <label class='checkbox' for='dtaxi-7-seats'>DTaxi 7 Seats</label>
+          </div>
+          <div>
+            <input id='dtaxi-suburban' type='checkbox'>
+            <label class='checkbox' for='dtaxi-suburban'>DTaxi Suburban</label>
           </div>
         </div>
       </div>
@@ -874,58 +922,47 @@
         </div>
       </div>
     </div>
-    <!-- Fake Column Item -->
-    <div class='cp-column-item-fake cp-fake-margin-1'></div>
-    <!-- System Information -->
-    <div class='cp-column-item cp-card'>
+    <!-- Banking Information -->
+    <div class='cp-column-item cp-cutout cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>System Information</div>
+          <div class='cp-typo-title'>Driver Banking Information</div>
         </div>
       </header>
       <div class='cp-card-content'>
-        <div class='cp-label'>is verified?</div>
-        <div class='cp-is'>
-          <input checked id='is-verify-driver' type='checkbox'>
-          <label class='checkbox' for='is-verify-driver'></label>
-        </div>
-        <div class='cp-label'>driver rate (%)</div>
-        <input placeholder='Enter driver rate' type='text'>
-        <div class='cp-label'>driver group</div>
-        <select>
-          <option disabled selected>Select one</option>
-          <option>Dam Sen</option>
-          <option>Vinasun</option>
-          <option>Mai Linh</option>
-        </select>
-        <div class='cp-label'>service location</div>
-        <select>
-          <option disabled selected>Select one</option>
-          <option>HCM1 include District 1, District 3, District 11, District 5, District 10</option>
-          <option>HCM2 include District 2, District 9, District 12, District 4, District 8</option>
-        </select>
-        <div class='cp-label'>service type</div>
-        <div class='cp-group-checkbox'>
-          <div>
-            <input id='dtaxi-4-seats' type='checkbox'>
-            <label class='checkbox' for='dtaxi-4-seats'>DTaxi 4 Seats</label>
-          </div>
-          <div>
-            <input id='dtaxi-7-seats' type='checkbox'>
-            <label class='checkbox' for='dtaxi-7-seats'>DTaxi 7 Seats</label>
-          </div>
-          <div>
-            <input id='dtaxi-suburban' type='checkbox'>
-            <label class='checkbox' for='dtaxi-suburban'>DTaxi Suburban</label>
-          </div>
-        </div>
+        <div class='cp-label'>bank name</div>
+        <input placeholder='Enter bank name' type='text'>
+        <div class='cp-label'>bank branch</div>
+        <input placeholder='Enter bank branch' type='text'>
+        <div class='cp-label'>account number</div>
+        <input placeholder='Enter account number' type='text'>
+        <div class='cp-label'>account name</div>
+        <input placeholder='Enter account name' type='text'>
       </div>
     </div>
-    <!-- Vehicle -->
+  </div>
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Create Vehicle -->
     <div class='cp-column-item cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Vehicle</div>
+          <div class='cp-typo-title'>Create Vehicle</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>create vehicle?</div>
+        <div class='cp-is'>
+          <input id='create-vehicle' type='checkbox'>
+          <label class='checkbox' for='create-vehicle'></label>
+        </div>
+      </div>
+    </div>
+    <!-- General Info -->
+    <div class='cp-column-item cp-card cp-vehicle-info'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>General Vehicle Info</div>
         </div>
       </header>
       <div class='cp-card-content'>
@@ -986,11 +1023,13 @@
         </div>
       </div>
     </div>
+    <!-- Fake Column Item -->
+    <div class='cp-column-item-fake cp-fake-margin-1'></div>
     <!-- Registration Certificate -->
-    <div class='cp-column-item cp-card'>
+    <div class='cp-column-item cp-card cp-vehicle-info'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Registration Certificate</div>
+          <div class='cp-typo-title'>Vehicle Registration Certificate</div>
         </div>
       </header>
       <div class='cp-card-content'>
@@ -1064,10 +1103,10 @@
       </div>
     </div>
     <!-- Insurance -->
-    <div class='cp-column-item cp-card'>
+    <div class='cp-column-item cp-card cp-vehicle-info'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Insurance</div>
+          <div class='cp-typo-title'>Vehicle Insurance</div>
         </div>
       </header>
       <div class='cp-card-content'>
@@ -1187,26 +1226,7 @@
         </div>
       </div>
     </div>
-    <!-- Banking Information -->
-    <div class='cp-column-item cp-cutout cp-card'>
-      <header>
-        <div class='cp-card-title'>
-          <div class='cp-typo-title'>Banking Information</div>
-        </div>
-      </header>
-      <div class='cp-card-content'>
-        <div class='cp-label'>bank name</div>
-        <input placeholder='Enter bank name' type='text'>
-        <div class='cp-label'>bank branch</div>
-        <input placeholder='Enter bank branch' type='text'>
-        <div class='cp-label'>account number</div>
-        <input placeholder='Enter account number' type='text'>
-        <div class='cp-label'>account name</div>
-        <input placeholder='Enter account name' type='text'>
-      </div>
-    </div>
   </div>
-  <!-- End Column Layout -->
   <!-- Column Layout -->
   <div class='cp-column'>
     <!-- Action -->
@@ -1264,6 +1284,7 @@
 <script src='../js/cp-chart-payment.js' type='text/javascript'></script>
 <script src='../js/cp-chart-news.js' type='text/javascript'></script>
 <script src='../js/cp-chart-geography.js' type='text/javascript'></script>
+<script src='https://cdn.ckeditor.com/4.6.0/full/ckeditor.js' type='text/javascript'></script>
 <script src='../js/main.js' type='text/javascript'></script>
 </body>
 </html>

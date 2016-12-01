@@ -77,6 +77,9 @@
             <a href='user-create-user.html'>Create User</a>
           </li>
           <li>
+            <a href='user-role.html'>User Roles</a>
+          </li>
+          <li>
             <a href='user-configuration.html'>Configuration</a>
           </li>
         </ul>
@@ -97,7 +100,7 @@
             <a href='driver-create-driver.html'>Driver Group</a>
           </li>
           <li>
-            <a href='driver-create-driver.html'>Driver Report</a>
+            <a href='driver-group.html'>Driver Report</a>
           </li>
           <li>
             <a href='driver-configuration.html'>Configuration</a>
@@ -218,16 +221,16 @@
             <a href='service-dashboard.html'>Dashboard</a>
           </li>
           <li>
-            <a href='service-training-level.html'>Service Type</a>
+            <a href='service-service-type.html'>Service Type</a>
           </li>
           <li>
-            <a href='service-driver-level.html'>Create Service Type</a>
+            <a href='service-create-service.html'>Create Service Type</a>
           </li>
           <li>
-            <a href='service-categories.html'>Location & Fare</a>
+            <a href='service-location-fare.html'>Location & Fare</a>
           </li>
           <li>
-            <a href='service-create-category.html'>Create Location</a>
+            <a href='service-create-location.html'>Create Location</a>
           </li>
           <li>
             <a href='service-configuration.html'>Configuration</a>
@@ -522,42 +525,67 @@
   <li class='cp-breadcrumb-item'>
     <a href='noti-dashboard.html'>Notification</a>
   </li>
-  <li class='cp-breadcrumb-item active'>Send SMS</li>
+  <li class='cp-breadcrumb-item active'>Create Notification</li>
 </ol>
 <!-- End Breadcrumb -->
 <!-- Float Container -->
-<form class='cp-float-container clearfix' enctype='multipart/form-data' method='post'>
+<form enctype='multipart/form-data' method='post'>
   <!-- Column Layout -->
   <div class='cp-column'>
-    <!-- Create Deposit -->
+    <!-- Create Notification -->
     <div class='cp-column-item cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Send SMS</div>
+          <div class='cp-typo-title'>Create Notification</div>
         </div>
       </header>
       <div class='cp-card-content'>
-        <div class='cp-label'>list phone number</div>
-        <textarea placeholder='Enter phone number separated by commas (,)'></textarea>
         <div class='cp-label'>target</div>
-        <div class='cp-group-checkbox'>
-          <div>
-            <input id='send-customer' type='checkbox'>
-            <label class='checkbox' for='send-customer'>Send to all customer</label>
-          </div>
-          <div>
-            <input id='send-driver' type='checkbox'>
-            <label class='checkbox' for='send-driver'>Send to all driver</label>
-          </div>
-        </div>
-        <div class='cp-label'>Message</div>
-        <textarea placeholder='Enter message'></textarea>
-        <button class='cp-btn cp-btn-success' type='submit'>Send</button>
+        <select>
+          <option>Customer</option>
+          <option>Driver</option>
+        </select>
+        <div class='cp-label'>category</div>
+        <select>
+          <option>News - Raw</option>
+          <option>News - Article</option>
+        </select>
+        <div class='cp-label'>form</div>
+        <select id='form-send'>
+          <option selected value='0'>Send all</option>
+          <option value='1'>Send list</option>
+        </select>
+        <div class='cp-label'>send list</div>
+        <textarea disabled id='send-list' placeholder='Enter list of target by phone number or code separated by comas (,)'></textarea>
+        <div class='cp-label'>title</div>
+        <input placeholder='Enter title' type='text'>
+        <div class='cp-label'>content</div>
+        <textarea id='noti-editor' placeholder='Enter content'></textarea>
       </div>
     </div>
   </div>
+  <!-- End Column Layout -->
+  <!-- Column Layout -->
+  <div class='cp-column'>
+    <!-- Action -->
+    <div class='cp-column-item cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Action</div>
+        </div>
+      </header>
+      <div class='cp-card-content'>
+        <div class='cp-label'>status</div>
+        <select>
+          <option>Send now</option>
+          <option>Save and send later</option>
+        </select>
+        <button class='cp-btn cp-btn-success' type='submit'>Create</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Column Layout -->
 </form>
-<!-- End Float Container -->
 </div>
 <!-- End Content -->
 <!-- Foobar -->
@@ -594,6 +622,7 @@
 <script src='../js/cp-chart-payment.js' type='text/javascript'></script>
 <script src='../js/cp-chart-news.js' type='text/javascript'></script>
 <script src='../js/cp-chart-geography.js' type='text/javascript'></script>
+<script src='https://cdn.ckeditor.com/4.6.0/full/ckeditor.js' type='text/javascript'></script>
 <script src='../js/main.js' type='text/javascript'></script>
 </body>
 </html>

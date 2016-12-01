@@ -1,0 +1,99 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="noti-dashboard.html") Notification
+  %li.cp-breadcrumb-item.active Create Notification
+/ End Breadcrumb
+
+/ Float Container
+%form(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Create Notification
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Create Notification
+
+      .cp-card-content
+        .cp-label target
+        %select
+          %option Customer
+          %option Driver
+        .cp-label category
+        %select
+          %option News - Raw
+          %option News - Article
+        .cp-label form
+        %select#form-send
+          %option(value="0" selected) Send all
+          %option(value="1" ) Send list
+        .cp-label send list
+        %textarea#send-list(placeholder="Enter list of target by phone number or code separated by comas (,)" disabled )
+        .cp-label title
+        %input(type="text" placeholder="Enter title" )
+        .cp-label content
+        %textarea#noti-editor(placeholder="Enter content" )
+
+  / End Column Layout
+
+  / Column Layout
+  .cp-column
+    / Action
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Action
+
+      .cp-card-content
+        .cp-label status
+        %select
+          %option Send now
+          %option Save and send later
+        %button.cp-btn.cp-btn-success(type="submit" ) Create
+
+  / End Column Layout
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
+

@@ -1,0 +1,70 @@
+= Haml::Engine.new(File.read('header.haml')).render
+
+/ Container
+/ =========
+\<div class="cp-container">
+
+/ Sidebar
+/ =======
+= Haml::Engine.new(File.read('sidebar.haml')).render
+/ End Sidebar
+
+/ Right Block
+/ ===========
+\<div class="cp-right-block">
+
+/ Topbar
+/ ======
+= Haml::Engine.new(File.read('topbar.haml')).render
+/ End Topbar
+
+/ Content
+/ =======
+\<div class="cp-content">
+
+/ Breadcrumb
+%ol.cp-breadcrumb
+  %li.cp-breadcrumb-item
+    %a(href="index.html") Home
+  %li.cp-breadcrumb-item
+    %a(href="noti-dashboard.html") Notification
+  %li.cp-breadcrumb-item.active Configuration
+/ End Breadcrumb
+
+/ Float Container
+%form.cp-float-container.clearfix(method="post" enctype="multipart/form-data" )
+  / Column Layout
+  .cp-column
+    / Create Deposit
+    .cp-column-item.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Configuration
+
+      .cp-card-content
+        .cp-label maximum notification in a day
+        %input(type="text" placeholder="Enter maximum notification in a day" )
+        .cp-label maximum character of title
+        %input(type="text" placeholder="Enter maximum character of title" )
+        .cp-label maximum character of content
+        %input(type="text" placeholder="Enter maximum character of title" )
+        %button.cp-btn.cp-btn-success(type="submit" ) Save
+
+/ End Float Container
+
+\</div>
+/ End Content
+
+/ Foobar
+/ ======
+= Haml::Engine.new(File.read('foobar.haml')).render
+/ End Foobar
+
+\</div>
+/ End Right Block
+
+\</div>
+/ End Container
+
+= Haml::Engine.new(File.read('footer.haml')).render
+
