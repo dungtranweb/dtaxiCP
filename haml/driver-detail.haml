@@ -65,11 +65,6 @@
             %td
               %i.cp-icn-male
           %tr
-            %td Is Verified:
-            %td
-              %i.cp-icn-yes
-              %i.cp-icn-no
-          %tr
             %td Rating:
             %td
               3.5
@@ -93,6 +88,11 @@
           .cp-typo-title Service & Banking
       .cp-detail-container
         %table.cp-card-detail
+          %tr
+            %td Is Verified:
+            %td
+              %i.cp-icn-yes
+              %i.cp-icn-no
           %tr
             %td Driver Rate:
             %td 5%
@@ -257,20 +257,82 @@
                 %li.cp-pagination-item
                   %a.cp-pagination-link(href="#" ) &raquo;
 
+  / Document
+  .cp-flex-item.cp-flex-1of1
+    .cp-flex-content.cp-card
+      %header
+        .cp-card-title
+          .cp-typo-title Driver Document
+      .scrollable
+        .cp-detail-container
+          .cp-flex-inner
+            .cp-detail-flex.cp-flex-1of2
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label driver identity card
+                %tr
+                  %td Identity Card No.:
+                  %td 257456985
+                %tr
+                  %td Issue Date:
+                  %td 17/11/2005
+                %tr
+                  %td Issue By:
+                  %td HTPD
+              .cp-document-image
+                .cp-image-item
+                  .cp-label Identity Card Front Image
+                  %img(src="http://media.blogkhoahoc.net/files/elenabui/2016/09/26/trac-nghiem-vui-doan-so-menh-qua-so-chung-minh-thu-nhan-dan-1-blogkhoahocnet-2002.jpg" alt="ID front" )
+                .cp-image-item
+                  .cp-label Identity Card Back Image
+                  %img(src="../images/id-back.png" alt="ID back" )
+
+            .cp-detail-flex.cp-flex-1of2
+              %table.cp-card-detail
+                %tr
+                  %td(colspan="2" )
+                    .cp-label driver license
+                %tr
+                  %td Experience Years:
+                  %td 20
+                %tr
+                  %td Driver License No.:
+                  %td 257456985
+                %tr
+                  %td Driver License Type:
+                  %td B2
+                %tr
+                  %td Issue Date:
+                  %td 17/09/2010
+                %tr
+                  %td Expire Date:
+                  %td 17/09/2025
+                %tr
+                  %td Issue By:
+                  %td HPD
+              .cp-document-image
+                .cp-image-item
+                  .cp-label Driver License Front Image
+                  %img(src="../images/placeholder-document.png" alt="Driver License front" )
+                .cp-image-item
+                  .cp-label Driver License Back Image
+                  %img(src="../images/placeholder-document.png" alt="Driver License back" )
+
   / Vehicle
   .cp-flex-item.cp-flex-1of1
     .cp-flex-content.cp-card
       %header
         .cp-card-title
-          .cp-typo-title Vehicle
+          .cp-typo-title Vehicle Information
       .scrollable
         .cp-detail-container
           .cp-flex-inner
-            .cp-detail-flex.cp-flex-2of3
+            .cp-detail-flex.cp-flex-1of3
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
-                    .cp-label driver vehicle
+                    .cp-label vehicle general info
                 %tr
                   %td Brand:
                   %td Toyota
@@ -298,81 +360,22 @@
                 %tr
                   %td Chassis No.:
                   %td OBH088005N
-              .cp-document-image.cp-flex-center
+              .cp-document-image
                 .cp-image-item
-                  .cp-label Vehicle Front Image
+                  .cp-label Vehicle Image
                   %img(src="../images/placeholder-document.png" alt="Vehicle front" )
                 .cp-image-item
-                  .cp-label Vehicle Back Image
                   %img(src="../images/placeholder-document.png" alt="Vehicle back" )
                 .cp-image-item
-                  .cp-label Vehicle Left Image
                   %img(src="../images/placeholder-document.png" alt="Vehicle front" )
                 .cp-image-item
-                  .cp-label Vehicle Right Image
                   %img(src="../images/placeholder-document.png" alt="Vehicle back" )
 
             .cp-detail-flex.cp-flex-1of3
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
-                    .cp-label Registration Certificate
-                %tr
-                  %td RC No.:
-                  %td 65454518489461
-                %tr
-                  %td License Plate:
-                  %td 59H1-23.841
-                %tr
-                  %td Issue Date:
-                  %td 25/09/2016
-                %tr
-                  %td Issued By:
-                  %td HPD
-              .cp-document-image
-                .cp-image-item
-                  .cp-label RC Front Image
-                  %img(src="../images/placeholder-document.png" alt="Registration Certificate front" )
-                .cp-image-item
-                  .cp-label RC Back Image
-                  %img(src="../images/placeholder-document.png" alt="Registration Certificate back" )
-
-  / Document
-  .cp-flex-item.cp-flex-1of1
-    .cp-flex-content.cp-card
-      %header
-        .cp-card-title
-          .cp-typo-title Document
-      .scrollable
-        .cp-detail-container
-          .cp-flex-inner
-            .cp-detail-flex
-              %table.cp-card-detail
-                %tr
-                  %td(colspan="2" )
-                    .cp-label identity card
-                %tr
-                  %td ID No.:
-                  %td 257456985
-                %tr
-                  %td Issue Date:
-                  %td 17/11/2005
-                %tr
-                  %td Issue By:
-                  %td HTPD
-              .cp-document-image
-                .cp-image-item
-                  .cp-label ID Front Image
-                  %img(src="http://media.blogkhoahoc.net/files/elenabui/2016/09/26/trac-nghiem-vui-doan-so-menh-qua-so-chung-minh-thu-nhan-dan-1-blogkhoahocnet-2002.jpg" alt="ID front" )
-                .cp-image-item
-                  .cp-label ID Back Image
-                  %img(src="../images/id-back.png" alt="ID back" )
-
-            .cp-detail-flex
-              %table.cp-card-detail
-                %tr
-                  %td(colspan="2" )
-                    .cp-label insurance
+                    .cp-label Vehicle insurance
                 %tr
                   %td Insurance No.:
                   %td 5693578451346
@@ -390,42 +393,35 @@
                   %td Bao Viet Insurance
               .cp-document-image
                 .cp-image-item
-                  .cp-label Insurance Front Image
+                  .cp-label Insurance Image
                   %img(src="../images/placeholder-document.png" alt="Insurance front" )
                 .cp-image-item
-                  .cp-label Insurance Back Image
                   %img(src="../images/placeholder-document.png" alt="Insurance back" )
 
-            .cp-detail-flex
+            .cp-detail-flex.cp-flex-1of3
               %table.cp-card-detail
                 %tr
                   %td(colspan="2" )
-                    .cp-label driver license
+                    .cp-label Vehicle Registration Certificate
                 %tr
-                  %td Experience Years:
-                  %td 20
+                  %td Registration Certificate No.:
+                  %td 65454518489461
                 %tr
-                  %td DL No.:
-                  %td 257456985
-                %tr
-                  %td DL Type:
-                  %td B2
+                  %td License Plate:
+                  %td 59H1-23.841
                 %tr
                   %td Issue Date:
-                  %td 17/09/2010
+                  %td 25/09/2016
                 %tr
-                  %td Expire Date:
-                  %td 17/09/2025
-                %tr
-                  %td Issue By:
+                  %td Issued By:
                   %td HPD
               .cp-document-image
                 .cp-image-item
-                  .cp-label Driver License Front Image
-                  %img(src="../images/placeholder-document.png" alt="Driver License front" )
+                  .cp-label Registration Certificate Front Image
+                  %img(src="../images/placeholder-document.png" alt="Registration Certificate front" )
                 .cp-image-item
-                  .cp-label Driver License Back Image
-                  %img(src="../images/placeholder-document.png" alt="Driver License back" )
+                  .cp-label Registration Certificate Back Image
+                  %img(src="../images/placeholder-document.png" alt="Registration Certificate back" )
 
   / System & Meta Data
   .cp-flex-item.cp-flex-1of1

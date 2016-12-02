@@ -187,11 +187,46 @@
     hr
       margin: 15px 0
   .cp-detail-flex
-    &.cp-flex-2of3
-      padding-right: 50px
+    &.cp-flex-1of2
+      padding-right: 30px
+      @media (max-width: 1100px) and (min-width: 901px)
+        width: 50%
+      @media (max-width: 900px)
+        width: 100%
+        max-width: 285px
+        padding-left: 0
+        padding-right: 0
+      &:last-child
+        padding-left: 30px
+        padding-right: 0
+        @media (max-width: 900px)
+          padding-left: 0
+    &.cp-flex-1of3
+      padding-right: 20px
+      padding-left: 20px
+      @media (max-width: 1100px) and (min-width: 901px)
+        width: 50%
+      @media (max-width: 900px)
+        width: 100%
+        max-width: 285px
+        padding-left: 0
+        padding-right: 0
+      &:first-child
+        padding-left: 0
+        padding-right: 40px
+        @media (max-width: 900px)
+          padding-right: 0
+      &:last-child
+        padding-right: 0
+        padding-left: 40px
+        @media (max-width: 1100px) and (min-width: 901px)
+          margin-top: 30px
+          padding-left: 0
+        @media (max-width: 900px)
+          padding-left: 0
     &:last-child
       margin-right: 0
-    @media (max-width: 1100px)
+    @media (max-width: 900px)
       margin-top: 30px
       &:first-child
         margin-top: 0
@@ -200,13 +235,15 @@
       .cp-image-item
         margin-top: 15px
         max-width: 285px
-        .cp-label
-          padding-bottom: 6px
-          font-style: italic
-          font-weight: 400
-          text-transform: capitalize
-        img
-          width: 100%
+      .cp-label
+        padding-bottom: 6px
+        font-style: italic
+        font-weight: 400
+        text-transform: capitalize
+        &.cp-label-hidden
+          visibility: hidden
+      img
+        width: 100%
 
   .cp-card-rank
     .cp-flex-1of3

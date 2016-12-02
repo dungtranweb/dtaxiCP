@@ -13,6 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=vietnamese' rel='stylesheet'>
   <!-- External Style Sheet -->
   <link href='../css/bootstrap.min.css' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css' rel='stylesheet'>
   <link href='../css/animate.css' rel='stylesheet'>
   <link href='../css/lightbox.min.css' rel='stylesheet'>
   <link href='../css/metisMenu.min.css' rel='stylesheet'>
@@ -77,6 +78,9 @@
             <a href='user-create-user.html'>Create User</a>
           </li>
           <li>
+            <a href='user-role.html'>User Roles</a>
+          </li>
+          <li>
             <a href='user-configuration.html'>Configuration</a>
           </li>
         </ul>
@@ -97,7 +101,7 @@
             <a href='driver-create-driver.html'>Driver Group</a>
           </li>
           <li>
-            <a href='driver-create-driver.html'>Driver Report</a>
+            <a href='driver-group.html'>Driver Report</a>
           </li>
           <li>
             <a href='driver-configuration.html'>Configuration</a>
@@ -571,13 +575,6 @@
             </td>
           </tr>
           <tr>
-            <td>Is Verified:</td>
-            <td>
-              <i class='cp-icn-yes'></i>
-              <i class='cp-icn-no'></i>
-            </td>
-          </tr>
-          <tr>
             <td>Rating:</td>
             <td>
               3.5
@@ -612,6 +609,13 @@
       </header>
       <div class='cp-detail-container'>
         <table class='cp-card-detail'>
+          <tr>
+            <td>Is Verified:</td>
+            <td>
+              <i class='cp-icn-yes'></i>
+              <i class='cp-icn-no'></i>
+            </td>
+          </tr>
           <tr>
             <td>Driver Rate:</td>
             <td>5%</td>
@@ -837,22 +841,112 @@
       </div>
     </div>
   </div>
-  <!-- Vehicle -->
+  <!-- Document -->
   <div class='cp-flex-item cp-flex-1of1'>
     <div class='cp-flex-content cp-card'>
       <header>
         <div class='cp-card-title'>
-          <div class='cp-typo-title'>Vehicle</div>
+          <div class='cp-typo-title'>Driver Document</div>
         </div>
       </header>
       <div class='scrollable'>
         <div class='cp-detail-container'>
           <div class='cp-flex-inner'>
-            <div class='cp-detail-flex cp-flex-2of3'>
+            <div class='cp-detail-flex cp-flex-1of2'>
               <table class='cp-card-detail'>
                 <tr>
                   <td colspan='2'>
-                    <div class='cp-label'>driver vehicle</div>
+                    <div class='cp-label'>driver identity card</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Card No.:</td>
+                  <td>257456985</td>
+                </tr>
+                <tr>
+                  <td>Issue Date:</td>
+                  <td>17/11/2005</td>
+                </tr>
+                <tr>
+                  <td>Issue By:</td>
+                  <td>HTPD</td>
+                </tr>
+              </table>
+              <div class='cp-document-image'>
+                <div class='cp-image-item'>
+                  <div class='cp-label'>Identity Card Front Image</div>
+                  <img alt='ID front' src='http://media.blogkhoahoc.net/files/elenabui/2016/09/26/trac-nghiem-vui-doan-so-menh-qua-so-chung-minh-thu-nhan-dan-1-blogkhoahocnet-2002.jpg'>
+                </div>
+                <div class='cp-image-item'>
+                  <div class='cp-label'>Identity Card Back Image</div>
+                  <img alt='ID back' src='../images/id-back.png'>
+                </div>
+              </div>
+            </div>
+            <div class='cp-detail-flex cp-flex-1of2'>
+              <table class='cp-card-detail'>
+                <tr>
+                  <td colspan='2'>
+                    <div class='cp-label'>driver license</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Experience Years:</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Driver License No.:</td>
+                  <td>257456985</td>
+                </tr>
+                <tr>
+                  <td>Driver License Type:</td>
+                  <td>B2</td>
+                </tr>
+                <tr>
+                  <td>Issue Date:</td>
+                  <td>17/09/2010</td>
+                </tr>
+                <tr>
+                  <td>Expire Date:</td>
+                  <td>17/09/2025</td>
+                </tr>
+                <tr>
+                  <td>Issue By:</td>
+                  <td>HPD</td>
+                </tr>
+              </table>
+              <div class='cp-document-image'>
+                <div class='cp-image-item'>
+                  <div class='cp-label'>Driver License Front Image</div>
+                  <img alt='Driver License front' src='../images/placeholder-document.png'>
+                </div>
+                <div class='cp-image-item'>
+                  <div class='cp-label'>Driver License Back Image</div>
+                  <img alt='Driver License back' src='../images/placeholder-document.png'>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vehicle -->
+  <div class='cp-flex-item cp-flex-1of1'>
+    <div class='cp-flex-content cp-card'>
+      <header>
+        <div class='cp-card-title'>
+          <div class='cp-typo-title'>Vehicle Information</div>
+        </div>
+      </header>
+      <div class='scrollable'>
+        <div class='cp-detail-container'>
+          <div class='cp-flex-inner'>
+            <div class='cp-detail-flex cp-flex-1of3'>
+              <table class='cp-card-detail'>
+                <tr>
+                  <td colspan='2'>
+                    <div class='cp-label'>vehicle general info</div>
                   </td>
                 </tr>
                 <tr>
@@ -892,21 +986,18 @@
                   <td>OBH088005N</td>
                 </tr>
               </table>
-              <div class='cp-document-image cp-flex-center'>
+              <div class='cp-document-image'>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Vehicle Front Image</div>
+                  <div class='cp-label'>Vehicle Image</div>
                   <img alt='Vehicle front' src='../images/placeholder-document.png'>
                 </div>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Vehicle Back Image</div>
                   <img alt='Vehicle back' src='../images/placeholder-document.png'>
                 </div>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Vehicle Left Image</div>
                   <img alt='Vehicle front' src='../images/placeholder-document.png'>
                 </div>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Vehicle Right Image</div>
                   <img alt='Vehicle back' src='../images/placeholder-document.png'>
                 </div>
               </div>
@@ -915,89 +1006,7 @@
               <table class='cp-card-detail'>
                 <tr>
                   <td colspan='2'>
-                    <div class='cp-label'>Registration Certificate</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>RC No.:</td>
-                  <td>65454518489461</td>
-                </tr>
-                <tr>
-                  <td>License Plate:</td>
-                  <td>59H1-23.841</td>
-                </tr>
-                <tr>
-                  <td>Issue Date:</td>
-                  <td>25/09/2016</td>
-                </tr>
-                <tr>
-                  <td>Issued By:</td>
-                  <td>HPD</td>
-                </tr>
-              </table>
-              <div class='cp-document-image'>
-                <div class='cp-image-item'>
-                  <div class='cp-label'>RC Front Image</div>
-                  <img alt='Registration Certificate front' src='../images/placeholder-document.png'>
-                </div>
-                <div class='cp-image-item'>
-                  <div class='cp-label'>RC Back Image</div>
-                  <img alt='Registration Certificate back' src='../images/placeholder-document.png'>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Document -->
-  <div class='cp-flex-item cp-flex-1of1'>
-    <div class='cp-flex-content cp-card'>
-      <header>
-        <div class='cp-card-title'>
-          <div class='cp-typo-title'>Document</div>
-        </div>
-      </header>
-      <div class='scrollable'>
-        <div class='cp-detail-container'>
-          <div class='cp-flex-inner'>
-            <div class='cp-detail-flex'>
-              <table class='cp-card-detail'>
-                <tr>
-                  <td colspan='2'>
-                    <div class='cp-label'>identity card</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>ID No.:</td>
-                  <td>257456985</td>
-                </tr>
-                <tr>
-                  <td>Issue Date:</td>
-                  <td>17/11/2005</td>
-                </tr>
-                <tr>
-                  <td>Issue By:</td>
-                  <td>HTPD</td>
-                </tr>
-              </table>
-              <div class='cp-document-image'>
-                <div class='cp-image-item'>
-                  <div class='cp-label'>ID Front Image</div>
-                  <img alt='ID front' src='http://media.blogkhoahoc.net/files/elenabui/2016/09/26/trac-nghiem-vui-doan-so-menh-qua-so-chung-minh-thu-nhan-dan-1-blogkhoahocnet-2002.jpg'>
-                </div>
-                <div class='cp-image-item'>
-                  <div class='cp-label'>ID Back Image</div>
-                  <img alt='ID back' src='../images/id-back.png'>
-                </div>
-              </div>
-            </div>
-            <div class='cp-detail-flex'>
-              <table class='cp-card-detail'>
-                <tr>
-                  <td colspan='2'>
-                    <div class='cp-label'>insurance</div>
+                    <div class='cp-label'>Vehicle insurance</div>
                   </td>
                 </tr>
                 <tr>
@@ -1023,55 +1032,46 @@
               </table>
               <div class='cp-document-image'>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Insurance Front Image</div>
+                  <div class='cp-label'>Insurance Image</div>
                   <img alt='Insurance front' src='../images/placeholder-document.png'>
                 </div>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Insurance Back Image</div>
                   <img alt='Insurance back' src='../images/placeholder-document.png'>
                 </div>
               </div>
             </div>
-            <div class='cp-detail-flex'>
+            <div class='cp-detail-flex cp-flex-1of3'>
               <table class='cp-card-detail'>
                 <tr>
                   <td colspan='2'>
-                    <div class='cp-label'>driver license</div>
+                    <div class='cp-label'>Vehicle Registration Certificate</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>Experience Years:</td>
-                  <td>20</td>
+                  <td>Registration Certificate No.:</td>
+                  <td>65454518489461</td>
                 </tr>
                 <tr>
-                  <td>DL No.:</td>
-                  <td>257456985</td>
-                </tr>
-                <tr>
-                  <td>DL Type:</td>
-                  <td>B2</td>
+                  <td>License Plate:</td>
+                  <td>59H1-23.841</td>
                 </tr>
                 <tr>
                   <td>Issue Date:</td>
-                  <td>17/09/2010</td>
+                  <td>25/09/2016</td>
                 </tr>
                 <tr>
-                  <td>Expire Date:</td>
-                  <td>17/09/2025</td>
-                </tr>
-                <tr>
-                  <td>Issue By:</td>
+                  <td>Issued By:</td>
                   <td>HPD</td>
                 </tr>
               </table>
               <div class='cp-document-image'>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Driver License Front Image</div>
-                  <img alt='Driver License front' src='../images/placeholder-document.png'>
+                  <div class='cp-label'>Registration Certificate Front Image</div>
+                  <img alt='Registration Certificate front' src='../images/placeholder-document.png'>
                 </div>
                 <div class='cp-image-item'>
-                  <div class='cp-label'>Driver License Back Image</div>
-                  <img alt='Driver License back' src='../images/placeholder-document.png'>
+                  <div class='cp-label'>Registration Certificate Back Image</div>
+                  <img alt='Registration Certificate back' src='../images/placeholder-document.png'>
                 </div>
               </div>
             </div>
@@ -1152,6 +1152,7 @@
 <script src='../js/jquery-2.2.4.min.js' type='text/javascript'></script>
 <script src='../js/tether.min.js' type='text/javascript'></script>
 <script src='../js/bootstrap.min.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js' type='text/javascript'></script>
 <script src='../js/jquery.nicescroll.min.js' type='text/javascript'></script>
 <script src='../js/metisMenu.min.js' type='text/javascript'></script>
 <script src='../js/fileinput.min.js' type='text/javascript'></script>
@@ -1172,6 +1173,7 @@
 <script src='../js/cp-chart-payment.js' type='text/javascript'></script>
 <script src='../js/cp-chart-news.js' type='text/javascript'></script>
 <script src='../js/cp-chart-geography.js' type='text/javascript'></script>
+<script src='https://cdn.ckeditor.com/4.6.0/full/ckeditor.js' type='text/javascript'></script>
 <script src='../js/main.js' type='text/javascript'></script>
 </body>
 </html>
