@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73cd2120-2d95-450f-95ab-b2b8600d2366" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_card.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_card.sassc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/icons-s2ec71b11b7.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_sprite.sassc" afterPath="$PROJECT_DIR$/sass/.sass-cache/9f3b6027c000ed37f5c14dbaccd95727aadba2b5/_sprite.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/driver-detail.haml" afterPath="$PROJECT_DIR$/haml/driver-detail.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/driver-detail.html" afterPath="$PROJECT_DIR$/html/driver-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_card.sass" afterPath="$PROJECT_DIR$/sass/_card.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/index.haml" afterPath="$PROJECT_DIR$/haml/index.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/sidebar.haml" afterPath="$PROJECT_DIR$/haml/sidebar.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haml/user-dashboard.haml" afterPath="$PROJECT_DIR$/haml/user-dashboard.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/sidebar.html" afterPath="$PROJECT_DIR$/html/sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user-dashboard.html" afterPath="$PROJECT_DIR$/html/user-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_sprite.sass" afterPath="$PROJECT_DIR$/sass/_sprite.sass" />
     </list>
     <ignored path="dtaxiCP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,52 +35,42 @@
     <favorites_list name="dtaxiCP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="driver-detail.haml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/haml/driver-detail.haml">
+    <leaf>
+      <file leaf-file-name="_sprite.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_sprite.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1441">
-              <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_card.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_card.sass">
+      <file leaf-file-name="sidebar.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haml/sidebar.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="223" column="25" lean-forward="false" selection-start-line="223" selection-start-column="25" selection-end-line="223" selection-end-column="25" />
+            <state relative-caret-position="290">
+              <caret line="89" column="52" lean-forward="false" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_general.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_general.sass">
+      <file leaf-file-name="index.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haml/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_table.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_table.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_layout.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_layout.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="90" column="25" lean-forward="true" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -154,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/haml/finance-configuration.haml" />
         <option value="$PROJECT_DIR$/haml/finance-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/finance-deposit.haml" />
         <option value="$PROJECT_DIR$/haml/finance-driver-transaction.haml" />
@@ -170,11 +165,9 @@
         <option value="$PROJECT_DIR$/haml/driver-group.haml" />
         <option value="$PROJECT_DIR$/haml/driver-group-detail.haml" />
         <option value="$PROJECT_DIR$/sass/_typography.sass" />
-        <option value="$PROJECT_DIR$/haml/sidebar.haml" />
         <option value="$PROJECT_DIR$/sass/_table.sass" />
         <option value="$PROJECT_DIR$/haml/user-change-pass.haml" />
         <option value="$PROJECT_DIR$/haml/user-create-user.haml" />
-        <option value="$PROJECT_DIR$/haml/user-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/user-detail.haml" />
         <option value="$PROJECT_DIR$/haml/user-list-user.haml" />
         <option value="$PROJECT_DIR$/haml/user-edit.haml" />
@@ -185,7 +178,6 @@
         <option value="$PROJECT_DIR$/haml/service-dashboard.haml" />
         <option value="$PROJECT_DIR$/haml/layout.haml" />
         <option value="$PROJECT_DIR$/haml/noti-dashboard.haml" />
-        <option value="$PROJECT_DIR$/sass/_sprite.sass" />
         <option value="$PROJECT_DIR$/haml/service-fare-manager.haml" />
         <option value="$PROJECT_DIR$/haml/noti-categories.haml" />
         <option value="$PROJECT_DIR$/haml/noti-create-noti.haml" />
@@ -205,6 +197,10 @@
         <option value="$PROJECT_DIR$/sass/_form.sass" />
         <option value="$PROJECT_DIR$/sass/_card.sass" />
         <option value="$PROJECT_DIR$/haml/driver-detail.haml" />
+        <option value="$PROJECT_DIR$/haml/user-dashboard.haml" />
+        <option value="$PROJECT_DIR$/sass/_sprite.sass" />
+        <option value="$PROJECT_DIR$/haml/sidebar.haml" />
+        <option value="$PROJECT_DIR$/haml/index.haml" />
       </list>
     </option>
   </component>
@@ -215,10 +211,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
     <option name="y" value="24" />
-    <option name="width" value="1547" />
-    <option name="height" value="876" />
+    <option name="width" value="1600" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -238,8 +233,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,8 +268,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/nexxCP" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -321,7 +316,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -377,17 +372,38 @@
       <workItem from="1480569782262" duration="90000" />
       <workItem from="1480571196162" duration="10283000" />
       <workItem from="1480648605639" duration="6054000" />
+      <workItem from="1480775520502" duration="142000" />
+      <workItem from="1480777854487" duration="13000" />
+      <workItem from="1480906129188" duration="2919000" />
+      <workItem from="1480912604314" duration="41000" />
+      <workItem from="1480912663560" duration="36000" />
+      <workItem from="1480912720037" duration="34000" />
+      <workItem from="1480912773519" duration="606000" />
+      <workItem from="1480913399118" duration="49000" />
+      <workItem from="1480913468469" duration="654000" />
+      <workItem from="1481014841357" duration="1822000" />
+      <workItem from="1482205627183" duration="21000" />
+      <workItem from="1482205661582" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239753000" />
+    <option name="totallyTimeSpent" value="246244000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="24" width="1547" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="24" width="1600" height="821" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21011162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -427,41 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/haml/driver-list-driver.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="473" column="0" lean-forward="true" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/service-detail-location.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/user-role-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/user-dashboard.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/user-detail.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1877">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haml/user-role-detail.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1517">
@@ -553,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_sprite.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/noti-categories.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -644,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haml/sidebar.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haml/noti-customer-devices.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1877">
@@ -669,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="136" column="28" lean-forward="true" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,10 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
-          <folding>
-            <marker date="1480581520025" expanded="true" signature="1518:1534" ph="..." />
-            <marker date="1480581520025" expanded="true" signature="2102:2114" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,9 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11420">
           <caret line="612" column="28" lean-forward="false" selection-start-line="612" selection-start-column="28" selection-end-line="612" selection-end-column="28" />
-          <folding>
-            <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,15 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haml/header.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-860">
           <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,16 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="213" column="28" lean-forward="false" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
-          <folding>
-            <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#div#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#3;n#div#1;n#form#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,15 +706,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_layout.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="90" column="25" lean-forward="true" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="1620">
+          <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -784,30 +720,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_table.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="1062">
+          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_card.sass">
+    <entry file="file://$PROJECT_DIR$/haml/header.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="223" column="25" lean-forward="false" selection-start-line="223" selection-start-column="25" selection-end-line="223" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haml/driver-detail.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1441">
-          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        <state relative-caret-position="608">
+          <caret line="478" column="51" lean-forward="false" selection-start-line="478" selection-start-column="51" selection-end-line="478" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_card.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4914">
+          <caret line="273" column="18" lean-forward="false" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user-dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/user-dashboard.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/customer-list-customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_sprite.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/sidebar.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="89" column="52" lean-forward="false" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haml/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
